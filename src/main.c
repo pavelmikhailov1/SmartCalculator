@@ -60,8 +60,12 @@ double get_number(char **pointer);
 char get_character(char **str, int *err);
 char get_function(char **str);
 // int check_correct_func(char **str);
-char get_triginometric_func(char **str);
 void remove_spases(char *str, char **result);
+char get_triginometric_func(char **str);
+char get_inverse_triginometric_func(char **str);
+char get_sqrt_func(char **str);
+char get_log_func(char **str);
+char get_mod_func(char **str);
 
 int main(int argc, char const *argv[])
 {
@@ -69,8 +73,14 @@ int main(int argc, char const *argv[])
 	char *p = a;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	// printf("%d\n", parser("-tn(-5)"));
-	parser("-tn(-5)");
+	printf("%d\n", parser("+sin(sqrt(2)*10asin(1))"));
+
+//НАПИСАТЬ ФУНКЦИЮ ПРОВЕРКИ СТРОКИ ПОСЛЕ ПАРСЕРА! 
+// "+sin(sqrt(2)*10asin(1))" между числом и функцией должени быть оператор и тд
+//не может быть двух операторов подряд
+//количество открывающихся скобок равно открывающимся
+//после числа с точкой не должно быть точки
+
 	// while (head_value != NULL) 
 	// {
 		// printf("%d\n", head_value->val);
@@ -143,7 +153,13 @@ char get_character(char **str, int *err) {
 		char tmp = **str;
 		(*str)++;
 		return tmp;
-	} 
+	} else if (**str == 'm') { //если текущий символ 'm'(если это mod)
+		if (*(*str-1) != ')' || !isdigit(*(*str-1)) || *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
+			*err = 1;
+		} else {
+			res = get_function(str);
+		}
+	}
 	return res;
 }
 
@@ -151,8 +167,74 @@ char get_function(char **str) {
 	char res = '!';
 	if (strchr("cst", **str) != NULL && *(*str+1) != 'q') { //если это тригонометрическая функция
 		res = get_triginometric_func(str);
-	} else if (**str == 'a') {
-		res = get_triginometric_func(str);
+	} else if (**str == 'a') { //если это обратная тригонометрическая функция
+		res = get_inverse_triginometric_func(str);
+	} else if (**str == 's' && *(*str+1) == 'q') { //если это корень
+		res = get_sqrt_func(str);
+	} else if (**str == 'l') { //если это логарифм
+		res = get_log_func(str);
+	} else if (**str == 'm') {
+		res = get_mod_func(str);
+	}
+	return res;
+}
+
+char get_mod_func(char **str) {
+	char res = '!';
+	char buff[4];
+	strncpy(buff, *str, 3);
+	buff[3] = '\0';
+	if (strcmp("mod", buff) == 0) {
+		*str = *str + 3;
+		res = 'm';
+	}
+	return res;
+}
+
+char get_log_func(char **str) {
+	char res = '!';
+	char buff_ln[4];
+	char buff_log[5];
+	strncpy(buff_ln, *str, 3);
+	strncpy(buff_log, *str, 4);
+	buff_ln[3] = '\0';
+	buff_log[4] = '\0';
+	if (strcmp("ln(", buff_ln) == 0) {
+		*str = *str + 2;
+		res = 'z'; //возвращаем z если в строке корректный ln()
+	} else if (strcmp("log(", buff_log) == 0) {
+		*str = *str + 3;
+		res = 'x'; //возвращаем x если в строке корректный log()
+	}
+	return res;
+}
+
+char get_sqrt_func(char **str) {
+	char res = '!';
+	char buff[6];
+	strncpy(buff, *str, 5);
+	buff[5] = '\0';
+	if (strcmp("sqrt(", buff) == 0) {
+		*str = *str + 4;
+		res = 'q'; //возвращаем q если в строке корректный sqrt()
+	}
+	return res;
+}
+
+char get_inverse_triginometric_func(char **str) {
+	char res = '!';
+	char buff[6];
+	strncpy(buff, *str, 5);
+	buff[5] = '\0';
+	if (strcmp("acos(", buff) == 0) {
+		*str = *str + 4;
+		res = 'b'; //возвращаем b если в строке корректный acos()
+	} else if (strcmp("asin(", buff) == 0) {
+		*str = *str + 4;
+		res = 'n'; //возвращаем n если в строке корректный asin()
+	} else if (strcmp("atan(", buff) == 0) {
+		*str = *str + 4;
+		res = 'v'; //возвращаем v если в строке корректный atan()
 	}
 	return res;
 }
@@ -176,10 +258,6 @@ char get_triginometric_func(char **str) {
 		res = 't'; //возвращаем t если в строке корректный tan()
 		// err = 0;
 	}
-	
-	// if (check_correct_func(str) == 0 && err == 0) {
-	// 	return res;
-	// }
 	return res;
  }
 
