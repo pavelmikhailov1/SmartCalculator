@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <ctype.h>
+#include <check.h>
 
 
 #define OPERAND   	 0
@@ -59,13 +60,15 @@ int parser(char *str);
 double get_number(char **pointer);
 char get_character(char **str, int *err);
 char get_function(char **str);
-// int check_correct_func(char **str);
+int check_correct_string(char *str);
 void remove_spases(char *str, char **result);
 char get_triginometric_func(char **str);
 char get_inverse_triginometric_func(char **str);
 char get_sqrt_func(char **str);
 char get_log_func(char **str);
 char get_mod_func(char **str);
+int check_error_flags(int error_flag, char *a, char *b);
+void free_buffers(char *a, char *b);
 
 int main(int argc, char const *argv[])
 {
@@ -114,29 +117,49 @@ int parser(char *str) {
 	while (*str_buf) {
 		if (strchr(VALID_CHARACTERS, *str_buf) == NULL) return ERROR; //проверка каждого символа
 		if (isdigit(*str_buf)) { //если символ цифра
-			if (num_flag_err == 1) return ERROR;
+			if (check_error_flags(num_flag_err, result, str_buf) == 1) {
+				return ERROR;
+			}
 			double num = get_number(&str_buf);
 			char buff[50];
 			sprintf(buff, "%.13f", num);
 			strcat(result, buff);
 			num_flag_err = 1;
-			// printf("%s\n", result);
-			// printf("%s\n", str_buf);
 		} else {
 			if (*str_buf == '(' && (*(str_buf+1) == '+' || *(str_buf+1) == '-') && isdigit(*(str_buf+2))) { //если скобка а за ней унарный оператор(обработка краевой ситуации)
 				strcat(result, "(0");
 				str_buf++;
 				continue;
 			}
-			// printf("%c\n", get_character(&str_buf, &char_flag_err));
 			result[strlen(result)] = get_character(&str_buf, &char_flag_err);
-			if (char_flag_err == 1) return ERROR;
+			if (check_error_flags(char_flag_err, result, str_buf) == 1) {
+				return ERROR;
+			}
 			num_flag_err = 0;
 		}
 	}
 	printf("%s\n", result);
+	check_correct_string(result);
 	free(p);
 	return 0;
+}
+
+int check_error_flags(int error_flag, char *a, char *b) {
+	int result = 0;
+	if (error_flag == 1) {
+		free_buffers(a, b);
+		result = 1;
+	}
+	return result;
+}
+
+void free_buffers(char *a, char *b) {
+	free(a);
+	free(b);
+}
+
+int check_correct_string(char *str) {
+
 }
 
 char get_character(char **str, int *err) {
@@ -173,7 +196,7 @@ char get_function(char **str) {
 		res = get_sqrt_func(str);
 	} else if (**str == 'l') { //если это логарифм
 		res = get_log_func(str);
-	} else if (**str == 'm') {
+	} else if (**str == 'm') { //если это мод
 		res = get_mod_func(str);
 	}
 	return res;
