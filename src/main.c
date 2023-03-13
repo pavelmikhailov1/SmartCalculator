@@ -8,24 +8,26 @@
 
 #define OPERAND   	 0
 #define NUMBER 	  	 1
+#define OK     	 	 0
 #define ERROR     	 1
 #define ERROR_CH    '!'
-#define VALID_CHARACTERS "1234567890.()+-*/^modcsintaqrtlg "
+#define VALID_CHARACTERS "1234567890.()+-*/^modcsintaqrtlgx "
 
-typedef union Value
-{
-	__int128_t val_int;
-	double     val_double;
-} size_of_memory;
+// typedef union Value
+// {
+// 	__int128_t val_int;
+// 	double     val_double;
+// } size_of_memory;
 
-typedef enum Enum {
-	PLUS,  //0
-	MINUS, //1
-} operands;
+// typedef enum Enum {
+// 	PLUS,  //0
+// 	MINUS, //1
+// } operands;
 
 typedef struct Stack_oper // передаю 0
 {
-	operands c;						    ///////// есть енам для видов операторов
+	char c;
+	int priority;
 	struct Stack_oper *next;
 } t_node_oper;
 
@@ -35,28 +37,12 @@ typedef struct Stack_value // передаю 1
 	struct Stack_value *next;
 } t_node_value;
 
-
-void* allocate(int flag) {
-	return flag ? calloc(32, 1) : calloc(16, 1);
-}
-
-void* push(void* head, void* value, int flag_head) {
-	void *current = NULL;
-	if (flag_head == 0) {
-		current = (t_node_oper*)allocate(OPERAND);
-		((t_node_oper*)current)->c = *((int*)value);
-		((t_node_oper*)current)->next = (t_node_oper*)head;
-	} else {
-		current = (t_node_value*)allocate(NUMBER);
-		((t_node_value*)current)->val = *((double *)value);
-		((t_node_value*)current)->next = (t_node_value*)head;
-	}
-	return (void*)current;
-}
-
+double calculator(char *str);
+int infix_to_polish(char *str, char *polish_str, t_node_oper *head_oper);
 void* allocate(int flag_head);
-void* push(void *head, void* c, int flag_head);
-int parser(char *str);
+void* push(void *head, void* c, int priority, int flag_head);
+void* pop(void *head, int flag_head);
+int parser(char *str, char *result);
 double get_number(char **pointer);
 char get_character(char **str, int *err);
 char get_function(char **str);
@@ -76,7 +62,9 @@ int main(int argc, char const *argv[])
 	char *p = a;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("%d\n", parser("+sin(sqrt(2)*10asin(1))"));
+	printf("%f\n", calculator("2.-5*6-(sqrt(2mod5))"));
+	// /2.-5*6-(sqrt(2mod5))
+	// printf("%f\n", strtod("10e-5", NULL));
 
 //НАПИСАТЬ ФУНКЦИЮ ПРОВЕРКИ СТРОКИ ПОСЛЕ ПАРСЕРА! 
 // "+sin(sqrt(2)*10asin(1))" между числом и функцией должени быть оператор и тд
@@ -93,20 +81,109 @@ int main(int argc, char const *argv[])
 	return 0;
 }
 void remove_spases(char *str, char **result) {
+	char *p = str;
 	int i = 0;
-	while (*str != '\0') {
-		if (*str != ' ') {
-			*((*result)+i) = *str;
+	while (*p != '\0') {
+		if (*p != ' ') {
+			*((*result)+i) = *p;
 			i++;
 		}
-		str++;
+		p++;
 	}
 }
 
-int parser(char *str) {
-	char *result = (char *)calloc(1000, sizeof(char));
+void* allocate(int flag) {
+	return flag ? calloc(32, 1) : calloc(16, 1);
+}
+
+void* push(void* head, void* value, int priority, int flag_head) {
+	void *current = NULL;
+	if (flag_head == 0) {
+		current = (t_node_oper*)allocate(OPERAND);
+		((t_node_oper*)current)->priority = priority;
+		((t_node_oper*)current)->c = *((char*)value);
+		((t_node_oper*)current)->next = (t_node_oper*)head;
+	} else {
+		current = (t_node_value*)allocate(NUMBER);
+		((t_node_value*)current)->val = *((double *)value);
+		((t_node_value*)current)->next = (t_node_value*)head;
+	}
+	return (void*)current;
+}
+
+void* pop(void *head, int flag_head) {
+	void *buff = NULL;
+	if (flag_head == 0) {
+		buff = head;
+		head = ((t_node_oper *)head)->next;
+		
+	}
+}
+
+double calculator(char *str) {
+	t_node_value* head_value = NULL;
+	t_node_oper* head_oper = NULL;
+	char *buff = (char *)calloc(1000, sizeof(char));
+	char *polish_str = (char *)calloc(1000, sizeof(char));
+	int status = OK;
+	status = parser(str, buff);
+	printf("%s\n", buff);
+	infix_to_polish(buff, polish_str, head_oper);
+
+
+	free(buff);
+	return status;
+}
+
+int infix_to_polish(char *str, char *polish_str, t_node_oper *head_oper) {
+	int error = 0;
+	// int marker = 0;
+	// sprintf(polish_str, "%f", get_number(&str));
+	// polish_str[strlen(polish_str)] = ' ';
+	// printf("aboba %s\n", polish_str);
+	while (*str)
+	{
+		if (isdigit(*str)) {
+			double num = get_number(&str);
+			char buff[50];
+			sprintf(buff, "%.13f", num);
+			strcat(polish_str, buff);
+		} else {
+			int priority = get_priority(*str);
+		// if (head_oper == NULL) {
+		// 	head_oper = (t_node_oper *)push((void *)head_oper, (void *)*str, priority, 0);
+		// } else {
+			if (*str == ')') {
+				while(head_oper->c != '(' && head_oper != NULL) {
+					// polish_str[strlen(polish_str)] = ' ';
+					char buff[3];
+					buff[0] = ' ';
+					buff[1] = head_oper->c;
+					strcat(polish_str, buff);
+
+				}
+				if (head_oper == NULL) {
+					error = ERROR;
+					break;
+				} else {
+
+				}
+			}
+			while(priority <= head_oper->priority && head_oper != NULL) {
+				polish_str[strlen(polish_str)] = ' ';
+				
+
+			}
+			head_oper = (t_node_oper *)push((void *)head_oper, (void *)*str, priority, 0);
+		}
+	}
+}
+
+
+int parser(char *str, char *result) {
 	char *str_buf = (char *)calloc(1000, sizeof(char));
 	char *p = str_buf;
+	int error = OK;
 	int num_flag_err = 0;
 	int char_flag_err = 0;
 	remove_spases(str, &str_buf);
@@ -115,57 +192,63 @@ int parser(char *str) {
 		result[0] = '0';
 	}
 	while (*str_buf) {
-		if (strchr(VALID_CHARACTERS, *str_buf) == NULL) return ERROR; //проверка каждого символа
-		if (isdigit(*str_buf)) { //если символ цифра
-			if (check_error_flags(num_flag_err, result, str_buf) == 1) {
-				return ERROR;
+		if (error == ERROR) break;
+		if (strchr(VALID_CHARACTERS, *str_buf) == NULL) { //проверка каждого символа на валидность
+			error = ERROR;
+		}
+		if (isdigit(*str_buf) || *str_buf == '.') { //если символ - цифра
+			if (num_flag_err == ERROR) {
+				error = ERROR;
 			}
 			double num = get_number(&str_buf);
 			char buff[50];
 			sprintf(buff, "%.13f", num);
 			strcat(result, buff);
 			num_flag_err = 1;
-		} else {
+		} else { //если символ - символ
 			if (*str_buf == '(' && (*(str_buf+1) == '+' || *(str_buf+1) == '-') && isdigit(*(str_buf+2))) { //если скобка а за ней унарный оператор(обработка краевой ситуации)
 				strcat(result, "(0");
 				str_buf++;
 				continue;
 			}
 			result[strlen(result)] = get_character(&str_buf, &char_flag_err);
-			if (check_error_flags(char_flag_err, result, str_buf) == 1) {
-				return ERROR;
+			if (char_flag_err == ERROR) {
+				error = ERROR;
 			}
 			num_flag_err = 0;
 		}
 	}
-	printf("%s\n", result);
-	check_correct_string(result);
-	free(p);
-	return 0;
-}
-
-int check_error_flags(int error_flag, char *a, char *b) {
-	int result = 0;
-	if (error_flag == 1) {
-		free_buffers(a, b);
-		result = 1;
+	if (!error) {
+		if (check_correct_string(result) == 1) {
+			error = ERROR;
+		}
 	}
-	return result;
+	free(p);
+	return error ? ERROR : OK;
 }
 
-void free_buffers(char *a, char *b) {
-	free(a);
-	free(b);
-}
-
-int check_correct_string(char *str) {
-
+int check_correct_string(char *str) { //обработка возможных ошибок в строке после парсинга
+	int status = OK;
+	char *ptr = str;
+	while (*ptr) {
+		if (status == ERROR) break;
+		if ((strchr("+-*/^", *ptr) != NULL) && (strchr("+-*/^", *(ptr+1)) != NULL)) { //если в строке идут подряд два оператора
+			status = ERROR;
+		} else if (*ptr == ')' && strchr("+-*/^", *(ptr+1)) != NULL && *(ptr+1) != '\0') { //после скобки должен быть оператор или конец строки
+			status = ERROR;
+		} else if (*ptr == 'm' && (!isdigit(*(ptr+1)) || !isdigit(*(ptr-1)))) { //между функцией мод обязанны быть два числа
+			status = ERROR;
+		} else if (strchr("+-*/^", *ptr) != NULL && (*(ptr+1) == ')' || *(ptr+1) == '\0')) {
+			status = ERROR;
+		}
+		ptr++;
+	}
+	return status;
 }
 
 char get_character(char **str, int *err) {
-	// printf("aboba %s\n", *str);
 	char res = 0;
-	if (strchr("+-*/^", **str) != NULL && strchr("+-*/^m", *(*str+1)) == NULL) { //если текущий символ оператор +-*/^ и следущий не оператор +-*/^
+	if (strchr("+-*/^", **str) != NULL) { //если текущий символ оператор +-*/^
 		char tmp = **str;
 		(*str)++;
 		return tmp;
@@ -177,8 +260,9 @@ char get_character(char **str, int *err) {
 		(*str)++;
 		return tmp;
 	} else if (**str == 'm') { //если текущий символ 'm'(если это mod)
-		if (*(*str-1) != ')' || !isdigit(*(*str-1)) || *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
+		if (*(*str-1) != ')' && !isdigit(*(*str-1)) && *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
 			*err = 1;
+			printf("%c\n", *(*str-1));
 		} else {
 			res = get_function(str);
 		}
@@ -263,7 +347,6 @@ char get_inverse_triginometric_func(char **str) {
 }
 
 char get_triginometric_func(char **str) {
-	// int err = 1;
 	char res = '!';
 	char buff[5];
 	strncpy(buff, *str, 4);
@@ -271,22 +354,15 @@ char get_triginometric_func(char **str) {
 	if (strcmp("sin(", buff) == 0) {
 		*str = *str + 3;
 		res = 's'; //возвращаем s если в строке корректный sin()
-		// err = 0;
 	} else if (strcmp("cos(", buff) == 0) {
 		*str = *str + 3;
 		res = 'c'; //возвращаем c если в строке корректный cos()
-		// err = 0;
 	} else if (strcmp("tan(", buff) == 0) {
 		*str = *str + 3;
 		res = 't'; //возвращаем t если в строке корректный tan()
-		// err = 0;
 	}
 	return res;
  }
-
-//  int check_correct_func(char **str) {
-
-//  }
 
 double get_number(char **pointer) {
 	char *buff = *pointer;
@@ -299,10 +375,3 @@ double get_number(char **pointer) {
 	}
 	return num;
 }
-
-// void calculator(const char *str) {
-// 	t_node_value* head_value = (t_node_value*) allocate(NUMBER);
-// 	t_node_oper* head_oper = (t_node_oper*) allocate(OPERAND);
-// 	head_value->previos = NULL;
-// 	head_oper->previos =  NULL;
-// }
