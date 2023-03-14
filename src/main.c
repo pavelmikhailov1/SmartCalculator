@@ -38,12 +38,12 @@ typedef struct Stack_value // передаю 1
 } t_node_value;
 
 double calculator(char *str);
-int infix_to_polish(char *str, char *polish_str, t_node_oper *head_oper);
+int infix_to_polish(char *str, char *polish_str);
 void* allocate(int flag_head);
 void* push(void *head, void* c, int priority, int flag_head);
 void* pop(void *head, int flag_head);
 int parser(char *str, char *result);
-double get_number(char **pointer);
+double add_number_to_str(char **pointer);
 char get_character(char **str, int *err);
 char get_function(char **str);
 int check_correct_string(char *str);
@@ -56,13 +56,16 @@ char get_mod_func(char **str);
 int check_error_flags(int error_flag, char *a, char *b);
 void free_buffers(char *a, char *b);
 
+void get_number(char **str, char *result);
+int get_priority(char c);
+
 int main(int argc, char const *argv[])
 {
 	char a[10];
 	char *p = a;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("%f\n", calculator("2.-5*6-(sqrt(2mod5))"));
+	printf("%f\n", calculator("-5*6-2+3+4-(2+2)"));
 	// /2.-5*6-(sqrt(2mod5))
 	// printf("%f\n", strtod("10e-5", NULL));
 
@@ -113,30 +116,35 @@ void* push(void* head, void* value, int priority, int flag_head) {
 
 void* pop(void *head, int flag_head) {
 	void *buff = NULL;
+	buff = head;
 	if (flag_head == 0) {
-		buff = head;
 		head = ((t_node_oper *)head)->next;
-		
+	} else {
+		head = ((t_node_value *)head)->next;
 	}
+	free(buff);
+	return (void *)head;
 }
 
 double calculator(char *str) {
 	t_node_value* head_value = NULL;
-	t_node_oper* head_oper = NULL;
+	// t_node_oper* head_oper = NULL;
 	char *buff = (char *)calloc(1000, sizeof(char));
 	char *polish_str = (char *)calloc(1000, sizeof(char));
 	int status = OK;
 	status = parser(str, buff);
 	printf("%s\n", buff);
-	infix_to_polish(buff, polish_str, head_oper);
+	infix_to_polish(buff, polish_str);
 
 
 	free(buff);
 	return status;
 }
 
-int infix_to_polish(char *str, char *polish_str, t_node_oper *head_oper) {
-	int error = 0;
+int infix_to_polish(char *str, char *polish_str) {
+	t_node_oper* head_oper = NULL;
+	int error = OK;
+	int flag = 0;
 	// int marker = 0;
 	// sprintf(polish_str, "%f", get_number(&str));
 	// polish_str[strlen(polish_str)] = ' ';
@@ -144,41 +152,68 @@ int infix_to_polish(char *str, char *polish_str, t_node_oper *head_oper) {
 	while (*str)
 	{
 		if (isdigit(*str)) {
-			double num = get_number(&str);
-			char buff[50];
-			sprintf(buff, "%.13f", num);
-			strcat(polish_str, buff);
+			get_number(&str, polish_str);
+			polish_str[strlen(polish_str)] = ' ';
 		} else {
+			// char ch = *str;
 			int priority = get_priority(*str);
 		// if (head_oper == NULL) {
 		// 	head_oper = (t_node_oper *)push((void *)head_oper, (void *)*str, priority, 0);
 		// } else {
 			if (*str == ')') {
-				while(head_oper->c != '(' && head_oper != NULL) {
+				while(head_oper->c != '(' || head_oper != NULL) {
 					// polish_str[strlen(polish_str)] = ' ';
 					char buff[3];
 					buff[0] = ' ';
 					buff[1] = head_oper->c;
 					strcat(polish_str, buff);
-
+					head_oper = pop((void *)head_oper, OPERAND);
 				}
 				if (head_oper == NULL) {
 					error = ERROR;
 					break;
 				} else {
-
+					str++;
+					continue;
 				}
 			}
-			while(priority <= head_oper->priority && head_oper != NULL) {
-				polish_str[strlen(polish_str)] = ' ';
-				
-
+			if (head_oper == NULL) {
+				head_oper = (t_node_oper *)push((void *)head_oper, (void *)str, priority, 0);
+				str++;
+				continue;
+			} else {
+				while (head_oper != NULL && priority <= head_oper->priority) {
+					polish_str[strlen(polish_str)] = head_oper->c;
+					polish_str[strlen(polish_str)] = ' ';
+					head_oper = pop((void *)head_oper, OPERAND);
+				}
 			}
-			head_oper = (t_node_oper *)push((void *)head_oper, (void *)*str, priority, 0);
+			head_oper = (t_node_oper *)push((void *)head_oper, (void *)str, priority, 0);
+			str++;
 		}
 	}
+	while (head_oper != NULL) {
+		polish_str[strlen(polish_str)] = head_oper->c;
+		polish_str[strlen(polish_str)] = ' ';
+		head_oper = pop((void *)head_oper, OPERAND);
+	}
+	printf("%s\n", polish_str);
+	return error;
 }
 
+int get_priority(char c) {
+	int priority = 0;
+	if (strchr("+-", c) != NULL) priority = 1;
+	else if (strchr("*/", c) != NULL) priority = 2;
+	return priority;
+}
+
+void get_number(char **str, char *result) {
+	double num = add_number_to_str(str);
+	char buff[50];
+	sprintf(buff, "%.13f", num);
+	strcat(result, buff);
+}
 
 int parser(char *str, char *result) {
 	char *str_buf = (char *)calloc(1000, sizeof(char));
@@ -188,7 +223,7 @@ int parser(char *str, char *result) {
 	int char_flag_err = 0;
 	remove_spases(str, &str_buf);
 	printf("%s\n", str_buf);
-	if (*str_buf == '+' || *str_buf == '-') {
+	if (*str_buf == '+' || *str_buf == '-') { //если строка начинается с унарного + или -
 		result[0] = '0';
 	}
 	while (*str_buf) {
@@ -200,26 +235,27 @@ int parser(char *str, char *result) {
 			if (num_flag_err == ERROR) {
 				error = ERROR;
 			}
-			double num = get_number(&str_buf);
-			char buff[50];
-			sprintf(buff, "%.13f", num);
-			strcat(result, buff);
-			num_flag_err = 1;
+			get_number(&str_buf, result); // помещаем число в результирующую строку
+			// double num = get_number(&str_buf);
+			// char buff[50];
+			// sprintf(buff, "%.13f", num);
+			// strcat(result, buff);
+			num_flag_err = ERROR;
 		} else { //если символ - символ
 			if (*str_buf == '(' && (*(str_buf+1) == '+' || *(str_buf+1) == '-') && isdigit(*(str_buf+2))) { //если скобка а за ней унарный оператор(обработка краевой ситуации)
 				strcat(result, "(0");
 				str_buf++;
 				continue;
 			}
-			result[strlen(result)] = get_character(&str_buf, &char_flag_err);
+			result[strlen(result)] = get_character(&str_buf, &char_flag_err); //помещаем символ в результирующую строку
 			if (char_flag_err == ERROR) {
 				error = ERROR;
 			}
-			num_flag_err = 0;
+			num_flag_err = OK;
 		}
 	}
 	if (!error) {
-		if (check_correct_string(result) == 1) {
+		if (check_correct_string(result) == ERROR) {
 			error = ERROR;
 		}
 	}
@@ -364,7 +400,7 @@ char get_triginometric_func(char **str) {
 	return res;
  }
 
-double get_number(char **pointer) {
+double add_number_to_str(char **pointer) {
 	char *buff = *pointer;
 	double num = 0.;
 	strtoll(buff, &buff, 10);
