@@ -40,5 +40,13 @@ int main() {
     s.push(&s, 200); // trying to push to a full stack
     s.push(&s, 300); // 
 
+    float a=100;
+    while (a)
+    {
+        a=a>>1;
+    }
+    
+    printf("%d\n", sizeof(float));
+
     return 0;
 }

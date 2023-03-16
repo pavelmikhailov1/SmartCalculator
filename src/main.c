@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include <ctype.h>
-#include <check.h>
 
 
 #define OPERAND   	 0
@@ -11,7 +10,7 @@
 #define OK     	 	 0
 #define ERROR     	 1
 #define ERROR_CH    '!'
-#define VALID_CHARACTERS "1234567890.()+-*/^modcsintaqrtlgx "
+#define VALID_CHARACTERS "1234567890.()+-*/^modcsintaqrtlgx"
 
 // typedef union Value
 // {
@@ -59,15 +58,15 @@ void free_buffers(char *a, char *b);
 void get_number(char **str, char *result);
 int get_priority(char c);
 
+int StackDeallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket);
+
 int main(int argc, char const *argv[])
 {
-	char a[10];
-	char *p = a;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("%f\n", calculator("-5*6-2+3+4-(2+2)"));
+	printf("%f\n", calculator("(1221+((2mod5)+(2+3))"));
+	//"1+cos(sin(5) + 1)"
 	// /2.-5*6-(sqrt(2mod5))
-	// printf("%f\n", strtod("10e-5", NULL));
 
 //НАПИСАТЬ ФУНКЦИЮ ПРОВЕРКИ СТРОКИ ПОСЛЕ ПАРСЕРА! 
 // "+sin(sqrt(2)*10asin(1))" между числом и функцией должени быть оператор и тд
@@ -83,17 +82,19 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
-void remove_spases(char *str, char **result) {
-	char *p = str;
-	int i = 0;
-	while (*p != '\0') {
-		if (*p != ' ') {
-			*((*result)+i) = *p;
-			i++;
-		}
-		p++;
-	}
-}
+// void remove_spases(char *str, char **result) {
+// 	char *p = str;
+// 	int i = 0;
+// 	while (*p != '\0') {
+// 		if (*p != ' ') {
+// 			*((*result)+i) = *p;
+// 			i++;
+// 		} else {
+
+// 		}
+// 		p++;
+// 	}
+// }
 
 void* allocate(int flag) {
 	return flag ? calloc(32, 1) : calloc(16, 1);
@@ -128,56 +129,70 @@ void* pop(void *head, int flag_head) {
 
 double calculator(char *str) {
 	t_node_value* head_value = NULL;
-	// t_node_oper* head_oper = NULL;
 	char *buff = (char *)calloc(1000, sizeof(char));
 	char *polish_str = (char *)calloc(1000, sizeof(char));
 	int status = OK;
-	status = parser(str, buff);
 	printf("%s\n", buff);
-	infix_to_polish(buff, polish_str);
+	status = parser(str, buff);
+	
+	if (status == OK) {
+		status = infix_to_polish(buff, polish_str);
+	}
 
 
 	free(buff);
 	return status;
 }
 
+int StackDeallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket) {
+	int error = OK;
+	if (count_of_open_bracket == 0) {
+		error = ERROR;
+	} else {
+		while((*head_oper)->c != '(' && head_oper != NULL) {
+			(*polish_str)[strlen(*polish_str)] = (*head_oper)->c;
+			(*polish_str)[strlen(*polish_str)] = ' ';
+			*head_oper = pop((void *)*head_oper, OPERAND);
+		}
+	}
+	return error;
+}
+
 int infix_to_polish(char *str, char *polish_str) {
 	t_node_oper* head_oper = NULL;
 	int error = OK;
 	int flag = 0;
-	// int marker = 0;
-	// sprintf(polish_str, "%f", get_number(&str));
-	// polish_str[strlen(polish_str)] = ' ';
-	// printf("aboba %s\n", polish_str);
+	int count_of_open_bracket = 0;
 	while (*str)
 	{
 		if (isdigit(*str)) {
 			get_number(&str, polish_str);
 			polish_str[strlen(polish_str)] = ' ';
 		} else {
-			// char ch = *str;
 			int priority = get_priority(*str);
-		// if (head_oper == NULL) {
-		// 	head_oper = (t_node_oper *)push((void *)head_oper, (void *)*str, priority, 0);
-		// } else {
+			if (*str == '(')
+				count_of_open_bracket++;
+
 			if (*str == ')') {
-				while(head_oper->c != '(' || head_oper != NULL) {
-					// polish_str[strlen(polish_str)] = ' ';
-					char buff[3];
-					buff[0] = ' ';
-					buff[1] = head_oper->c;
-					strcat(polish_str, buff);
-					head_oper = pop((void *)head_oper, OPERAND);
-				}
-				if (head_oper == NULL) {
+				if ((StackDeallocation(&head_oper, &polish_str, count_of_open_bracket) == ERROR) || head_oper == NULL) {
 					error = ERROR;
 					break;
 				} else {
+					count_of_open_bracket--;
+					head_oper = pop((void *)head_oper, OPERAND);
+					if (head_oper != NULL) { 
+						if (strchr("sctbnvqzo", head_oper->c) != NULL) { //если после открытой скобки идет функция, то ее тоже помещаем в выходную строку
+							polish_str[strlen(polish_str)] = head_oper->c;
+							polish_str[strlen(polish_str)] = ' ';
+							head_oper = pop((void *)head_oper, OPERAND);
+						}
+					}
 					str++;
 					continue;
 				}
 			}
-			if (head_oper == NULL) {
+
+			if (head_oper == NULL || priority == -1) { // если стек пустой и символ открытая скобка
 				head_oper = (t_node_oper *)push((void *)head_oper, (void *)str, priority, 0);
 				str++;
 				continue;
@@ -191,8 +206,13 @@ int infix_to_polish(char *str, char *polish_str) {
 			head_oper = (t_node_oper *)push((void *)head_oper, (void *)str, priority, 0);
 			str++;
 		}
+		printf("%s\n", polish_str);
 	}
 	while (head_oper != NULL) {
+		if (head_oper->c == '(') {
+			error = ERROR;
+			break;
+		}
 		polish_str[strlen(polish_str)] = head_oper->c;
 		polish_str[strlen(polish_str)] = ' ';
 		head_oper = pop((void *)head_oper, OPERAND);
@@ -201,10 +221,15 @@ int infix_to_polish(char *str, char *polish_str) {
 	return error;
 }
 
+
+
 int get_priority(char c) {
 	int priority = 0;
 	if (strchr("+-", c) != NULL) priority = 1;
-	else if (strchr("*/", c) != NULL) priority = 2;
+	else if (strchr("*/m", c) != NULL) priority = 2;
+	else if (strchr("^", c) != NULL) priority = 3;
+	else if (strchr("sctbnvqzo", c) != NULL) priority = 4;
+	else if (strchr("(", c) != NULL) priority = -1;
 	return priority;
 }
 
@@ -216,12 +241,14 @@ void get_number(char **str, char *result) {
 }
 
 int parser(char *str, char *result) {
-	char *str_buf = (char *)calloc(1000, sizeof(char));
+	// char *str_buf = (char *)calloc(1000, sizeof(char));
+	char *str_buf = NULL;
+	str_buf = strdup(str);
 	char *p = str_buf;
 	int error = OK;
 	int num_flag_err = 0;
 	int char_flag_err = 0;
-	remove_spases(str, &str_buf);
+	// remove_spases(str, &str_buf);
 	printf("%s\n", str_buf);
 	if (*str_buf == '+' || *str_buf == '-') { //если строка начинается с унарного + или -
 		result[0] = '0';
@@ -230,6 +257,8 @@ int parser(char *str, char *result) {
 		if (error == ERROR) break;
 		if (strchr(VALID_CHARACTERS, *str_buf) == NULL) { //проверка каждого символа на валидность
 			error = ERROR;
+			printf("aboba\n");
+			break;
 		}
 		if (isdigit(*str_buf) || *str_buf == '.') { //если символ - цифра
 			if (num_flag_err == ERROR) {
@@ -242,7 +271,8 @@ int parser(char *str, char *result) {
 			// strcat(result, buff);
 			num_flag_err = ERROR;
 		} else { //если символ - символ
-			if (*str_buf == '(' && (*(str_buf+1) == '+' || *(str_buf+1) == '-') && isdigit(*(str_buf+2))) { //если скобка а за ней унарный оператор(обработка краевой ситуации)
+			if (*str_buf == '(' && (*(str_buf+1) == '+' || *(str_buf+1) == '-') 
+								&& (isdigit(*(str_buf+2)) || strchr("sctbnvqzo", *(str_buf+2)) != NULL)) { //если скобка а за ней унарный оператор(обработка краевой ситуации)
 				strcat(result, "(0");
 				str_buf++;
 				continue;
@@ -270,9 +300,9 @@ int check_correct_string(char *str) { //обработка возможных о
 		if (status == ERROR) break;
 		if ((strchr("+-*/^", *ptr) != NULL) && (strchr("+-*/^", *(ptr+1)) != NULL)) { //если в строке идут подряд два оператора
 			status = ERROR;
-		} else if (*ptr == ')' && strchr("+-*/^", *(ptr+1)) != NULL && *(ptr+1) != '\0') { //после скобки должен быть оператор или конец строки
+		} else if (*ptr == ')' && (strchr("+-*/^)", *(ptr+1)) == NULL && *(ptr+1) != '\0')) { //после скобки должен быть оператор или конец строки
 			status = ERROR;
-		} else if (*ptr == 'm' && (!isdigit(*(ptr+1)) || !isdigit(*(ptr-1)))) { //между функцией мод обязанны быть два числа
+		} else if (*ptr == 'm' && (!isdigit(*(ptr+1)) && *(ptr+1) != '(') && (!isdigit(*(ptr-1)) && *(ptr-1) != '(')) { //между функцией мод обязанны быть два числа или скобки
 			status = ERROR;
 		} else if (strchr("+-*/^", *ptr) != NULL && (*(ptr+1) == ')' || *(ptr+1) == '\0')) {
 			status = ERROR;
@@ -288,7 +318,7 @@ char get_character(char **str, int *err) {
 		char tmp = **str;
 		(*str)++;
 		return tmp;
-	} else if (strchr("cstal", **str) != NULL) { //если текущий символ начало функции
+	} else if (strchr("cstalm", **str) != NULL) { //если текущий символ начало функции
 		res = get_function(str);
 		if (res == '!') *err = 1; //некорректный ввод
 	} else if (**str == '(' || **str == ')') { //если текущий символ скобка ()
@@ -302,6 +332,8 @@ char get_character(char **str, int *err) {
 		} else {
 			res = get_function(str);
 		}
+	} else if (strchr("cstalm", **str) == NULL) {
+		*err = 1;
 	}
 	return res;
 }
@@ -347,7 +379,7 @@ char get_log_func(char **str) {
 		res = 'z'; //возвращаем z если в строке корректный ln()
 	} else if (strcmp("log(", buff_log) == 0) {
 		*str = *str + 3;
-		res = 'x'; //возвращаем x если в строке корректный log()
+		res = 'o'; //возвращаем x если в строке корректный log()
 	}
 	return res;
 }
