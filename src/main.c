@@ -11,6 +11,7 @@
 #define ERROR     	 1
 #define ERROR_CH    '!'
 #define VALID_CHARACTERS "1234567890.()+-*/^modcsintaqrtlgx"
+#define BINARY_OPERATORS "+-*/^"
 
 // typedef union Value
 // {
@@ -46,7 +47,7 @@ double add_number_to_str(char **pointer);
 char get_character(char **str, int *err);
 char get_function(char **str);
 int check_correct_string(char *str);
-void remove_spases(char *str, char **result);
+// void remove_spases(char *str, char **result);
 char get_triginometric_func(char **str);
 char get_inverse_triginometric_func(char **str);
 char get_sqrt_func(char **str);
@@ -59,12 +60,17 @@ void get_number(char **str, char *result);
 int get_priority(char c);
 
 int StackDeallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket);
+void WorkingWithClozedBacket(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error);
+double CalculatePolishNotation(char* polish_str);
+
+void CalculateValues(t_node_value* head_value ,char ch);
+void CalculateValueWithBinaryOperator(t_node_value* head_value ,char ch);
 
 int main(int argc, char const *argv[])
 {
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("%f\n", calculator("(1221+((2mod5)+(2+3))"));
+	printf("%f\n", calculator("1221+(log(5*sqrt(9))/(2+3))"));
 	//"1+cos(sin(5) + 1)"
 	// /2.-5*6-(sqrt(2mod5))
 
@@ -128,7 +134,6 @@ void* pop(void *head, int flag_head) {
 }
 
 double calculator(char *str) {
-	t_node_value* head_value = NULL;
 	char *buff = (char *)calloc(1000, sizeof(char));
 	char *polish_str = (char *)calloc(1000, sizeof(char));
 	int status = OK;
@@ -138,10 +143,58 @@ double calculator(char *str) {
 	if (status == OK) {
 		status = infix_to_polish(buff, polish_str);
 	}
+	printf("%s\n", polish_str);
 
+	CalculatePolishNotation(polish_str);
 
 	free(buff);
+	free(polish_str);
 	return status;
+}
+
+double CalculatePolishNotation(char* polish_str) {
+	t_node_value* head_value = NULL;
+	double result = 0.0;
+	double num = 0.0;
+	char sep[] = " ";
+	char* ptr = NULL;
+	ptr = strtok(polish_str, sep);
+	while (ptr != NULL)
+	{
+		if (isdigit(*ptr)) {
+			num = add_number_to_str(&ptr);
+			head_value = (t_node_value*)push((void*)head_value, (void*)&num, 0, NUMBER);
+		} else {
+
+		}
+		// printf("%s\n", ptr);
+		ptr = strtok(NULL, sep);
+
+	}
+	// while (head_value != NULL) {
+	// 	printf("%f\n", head_value->val);
+	// 	head_value = head_value->next;
+	// }
+	
+	free(ptr);
+	return result;
+}
+
+void CalculateValues(t_node_value* head_value ,char ch) {
+	if (strchr(BINARY_OPERATORS, ch) != NULL) {
+		CalculateValueWithBinaryOperator(head_value, ch);
+	}
+}
+
+void CalculateValueWithBinaryOperator(t_node_value* head_value ,char ch) {
+	switch (ch) {
+	case '+':
+		addition(head_value);
+		break;
+	
+	default:
+		break;
+	}
 }
 
 int StackDeallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket) {
@@ -156,6 +209,22 @@ int StackDeallocation(t_node_oper** head_oper, char** polish_str, int count_of_o
 		}
 	}
 	return error;
+}
+
+void WorkingWithClozedBacket(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error) {
+	if ((StackDeallocation(head_oper, &polish_str, *count_of_open_bracket) == ERROR) || head_oper == NULL) {
+		*error = ERROR;
+	} else {
+		count_of_open_bracket--;
+		*head_oper = pop((void *)*head_oper, OPERAND);
+		if (head_oper != NULL) { 
+			if (strchr("sctbnvqzo", (*head_oper)->c) != NULL) { //если после открытой скобки идет функция, то ее тоже помещаем в выходную строку
+				polish_str[strlen(polish_str)] = (*head_oper)->c;
+				polish_str[strlen(polish_str)] = ' ';
+				*head_oper = pop((void *)*head_oper, OPERAND);
+			}
+		}
+	}
 }
 
 int infix_to_polish(char *str, char *polish_str) {
@@ -174,22 +243,11 @@ int infix_to_polish(char *str, char *polish_str) {
 				count_of_open_bracket++;
 
 			if (*str == ')') {
-				if ((StackDeallocation(&head_oper, &polish_str, count_of_open_bracket) == ERROR) || head_oper == NULL) {
-					error = ERROR;
+				WorkingWithClozedBacket(&head_oper, polish_str, &count_of_open_bracket, &error);
+				if (error == ERROR) 
 					break;
-				} else {
-					count_of_open_bracket--;
-					head_oper = pop((void *)head_oper, OPERAND);
-					if (head_oper != NULL) { 
-						if (strchr("sctbnvqzo", head_oper->c) != NULL) { //если после открытой скобки идет функция, то ее тоже помещаем в выходную строку
-							polish_str[strlen(polish_str)] = head_oper->c;
-							polish_str[strlen(polish_str)] = ' ';
-							head_oper = pop((void *)head_oper, OPERAND);
-						}
-					}
-					str++;
-					continue;
-				}
+				str++;
+				continue;
 			}
 
 			if (head_oper == NULL || priority == -1) { // если стек пустой и символ открытая скобка
@@ -206,7 +264,7 @@ int infix_to_polish(char *str, char *polish_str) {
 			head_oper = (t_node_oper *)push((void *)head_oper, (void *)str, priority, 0);
 			str++;
 		}
-		printf("%s\n", polish_str);
+		// printf("%s\n", polish_str);
 	}
 	while (head_oper != NULL) {
 		if (head_oper->c == '(') {
@@ -217,7 +275,7 @@ int infix_to_polish(char *str, char *polish_str) {
 		polish_str[strlen(polish_str)] = ' ';
 		head_oper = pop((void *)head_oper, OPERAND);
 	}
-	printf("%s\n", polish_str);
+	// printf("%s\n", polish_str);
 	return error;
 }
 
@@ -328,7 +386,7 @@ char get_character(char **str, int *err) {
 	} else if (**str == 'm') { //если текущий символ 'm'(если это mod)
 		if (*(*str-1) != ')' && !isdigit(*(*str-1)) && *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
 			*err = 1;
-			printf("%c\n", *(*str-1));
+			// printf("%c\n", *(*str-1));
 		} else {
 			res = get_function(str);
 		}
