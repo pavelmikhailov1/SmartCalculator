@@ -17,7 +17,7 @@ int infix_to_polish(char *str, char *polish_str) {
 				count_of_open_bracket++;
 
 			if (*str == ')') {
-				WorkingWithClozedBacket(&head_oper, polish_str, &count_of_open_bracket, &error);
+				working_with_clozed_backet(&head_oper, polish_str, &count_of_open_bracket, &error);
 				if (error == ERROR) 
 					break;
 				str++;
@@ -40,19 +40,35 @@ int infix_to_polish(char *str, char *polish_str) {
 			// printf("%c\n", head_oper->c);
 			// printf("%c\n", *str);
 		}
-		// printf("%s\n", polish_str);
+		printf("%s\n", polish_str);
 	}
-	while (head_oper != NULL) {
-		if (head_oper->c == '(') {
-			error = ERROR;
-			break;
-		}
-		polish_str[strlen(polish_str)] = head_oper->c;
-		polish_str[strlen(polish_str)] = ' ';
-		head_oper = pop((void *)head_oper, OPERAND);
+	// while (head_oper != NULL) {
+	// 	if (head_oper->c == '(') {
+	// 		error = ERROR;
+	// 		break;
+	// 	}
+	// 	polish_str[strlen(polish_str)] = head_oper->c;
+	// 	polish_str[strlen(polish_str)] = ' ';
+	// 	head_oper = pop((void *)head_oper, OPERAND);
+	// }
+	add_operators_to_polish_string(&head_oper, &polish_str, &error);
+	if (error == ERROR) {
+		free_stack((void*)head_oper, OPERAND);
 	}
 	// printf("%s\n", polish_str);
 	return error;
+}
+
+void add_operators_to_polish_string(t_node_oper** head_oper, char** polish_str, int* error) {
+	while (*head_oper != NULL) {
+		if ((*head_oper)->c == '(') {
+			*error = ERROR;
+			break;
+		}
+		(*polish_str)[strlen(*polish_str)] = (*head_oper)->c;
+		(*polish_str)[strlen(*polish_str)] = ' ';
+		*head_oper = pop((void *)*head_oper, OPERAND);
+	}
 }
 
 int get_priority(char c) {
@@ -65,8 +81,8 @@ int get_priority(char c) {
 	return priority;
 }
 
-void WorkingWithClozedBacket(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error) {
-	if ((StackDeallocation(head_oper, &polish_str, *count_of_open_bracket) == ERROR) || *head_oper == NULL) {
+void working_with_clozed_backet(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error) {
+	if ((stack_deallocation(head_oper, &polish_str, *count_of_open_bracket) == ERROR) || *head_oper == NULL) {
 		*error = ERROR;
 	} else {
 		(*count_of_open_bracket)--;
@@ -81,7 +97,7 @@ void WorkingWithClozedBacket(t_node_oper** head_oper, char* polish_str, int* cou
 	}
 }
 
-int StackDeallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket) {
+int stack_deallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket) {
 	int error = OK;
 	if (count_of_open_bracket == 0) {
 		error = ERROR;

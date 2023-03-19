@@ -1,14 +1,12 @@
 #include "calc.h"
 
 int parser(char *str, char *result) {
-	// char *str_buf = (char *)calloc(1000, sizeof(char));
 	char *str_buf = NULL;
 	str_buf = strdup(str);
 	char *p = str_buf;
 	int error = OK;
 	int num_flag_err = 0;
 	int char_flag_err = 0;
-	// remove_spases(str, &str_buf);
 	printf("%s\n", str_buf);
 	if (*str_buf == '+' || *str_buf == '-') { //если строка начинается с унарного + или -
 		result[0] = '0';
@@ -17,7 +15,6 @@ int parser(char *str, char *result) {
 		if (error == ERROR) break;
 		if (strchr(VALID_CHARACTERS, *str_buf) == NULL) { //проверка каждого символа на валидность
 			error = ERROR;
-			printf("aboba\n");
 			break;
 		}
 		if (isdigit(*str_buf) || *str_buf == '.') { //если символ - цифра
@@ -91,6 +88,8 @@ char get_character(char **str, int *err) {
 		}
 	} else if (strchr("cstalm", **str) == NULL) {
 		*err = 1;
+	} else if (**str == 'x') {
+
 	}
 	return res;
 }

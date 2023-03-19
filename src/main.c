@@ -24,18 +24,15 @@
 // 		p++;
 // 	}
 // }
-double CalculatePolishNotation(char* polish_str);
-int CalculateValues(t_node_value** head_value ,char ch);
-int DefinitionOperatorAndCalculate(t_node_value** head_value ,char ch);
-int DefinitionFunctionAndCalculate(t_node_value** head_value ,char ch);
-double GetValueAndDeleteNode(t_node_value** head_value);
-// void Addition(t_node_value* head_value);
+
 
 int main(int argc, char const *argv[])
 {
+	double result = 0.0;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("result %f\n", calculator("2.-5*6-(sqrt(2mod5))"));
+	printf("result %d\n", calculator("2.-5*6-sqrt(5)", &result, 0));
+	printf("value %f", result);
 	//"1+cos(sin(5) + 1)"
 	// /2.-5*6-(sqrt(2mod5))
 
@@ -48,66 +45,68 @@ int main(int argc, char const *argv[])
 	return 0;
 }
 
-double calculator(char *str) {
-	char *buff = (char *)calloc(1000, sizeof(char));
-	char *polish_str = (char *)calloc(1000, sizeof(char));
-	int status = OK;
-	printf("%s\n", buff);
-	status = parser(str, buff);
+int calculator(char *str, double* result, int x) {
+	char *buff = (char *)calloc(4096, sizeof(char));
+	char *polish_str = (char *)calloc(4096, sizeof(char));
+	int error = OK;
+	error = parser(str, buff);
 	
-	if (status == OK) {
-		status = infix_to_polish(buff, polish_str);
+	if (error == OK) {
+		error = infix_to_polish(buff, polish_str);
+		if (error == OK) {
+			error = calculate_polish_notation(polish_str, result);
+		}
 	}
-	printf("%s\n", polish_str);
-
-	CalculatePolishNotation(polish_str);
-
+	printf("aboba %s\n", polish_str);
 	free(buff);
 	free(polish_str);
-	return status;
+	return error;
 }
 
-double CalculatePolishNotation(char* polish_str) {
+int calculate_polish_notation(char* polish_str, double* result) {
 	t_node_value* head_value = NULL;
-	double result = 0.0;
 	double num = 0.0;
 	char sep[] = " ";
 	char* ptr = NULL;
+	int error = OK;
 	ptr = strtok(polish_str, sep);
-	while (ptr != NULL)
-	{
+
+	while (ptr != NULL) {
 		if (isdigit(*ptr)) {
 			// printf("%s\n", ptr);
 			num = add_number_to_str(&ptr);
 			head_value = (t_node_value*)push((void*)head_value, (void*)&num, 0, NUMBER);
 		} else {
-			CalculateValues(&head_value, *ptr);
+			error = calculate_values(&head_value, *ptr);
+		}
+		if (error == ERROR) {
+			free_stack((void*)head_value, NUMBER);
+			break;
 		}
 		ptr = strtok(NULL, sep);
-
 	}
-	printf("%f\n", head_value->val);
-	// while (head_value != NULL) {
-	// 	printf("%f\n", head_value->val);
-	// 	head_value = head_value->next;
-	// }
-	
-	// free(ptr);
-	return result;
+
+	if (error == OK) {
+		*result = head_value->val;
+		free(head_value);
+	}
+	return error;
 }
 
-int CalculateValues(t_node_value** head_value ,char ch) {
+int calculate_values(t_node_value** head_value ,char ch) {
 	int error = OK;
 	if (strchr(BINARY_OPERATORS, ch) != NULL) {
-		error = DefinitionOperatorAndCalculate(head_value, ch);
+		error = definition_operator_and_calculate(head_value, ch);
 	} else if (strchr(FUNCTIONS, ch) != NULL) {
-		error = DefinitionFunctionAndCalculate(head_value, ch);
+		error = definition_function_and_calculate(head_value, ch);
 	}
+	return error;
 }
 
-int DefinitionFunctionAndCalculate(t_node_value** head_value ,char ch) {
-	double value = GetValueAndDeleteNode(head_value);
+int definition_function_and_calculate(t_node_value** head_value ,char ch) {
+	double value = get_value_and_delete_node(head_value);
 	double result = 0.0;
+	int error = OK;
 	switch(ch) {
 	case 's':
 		result = sin(value);
@@ -137,16 +136,19 @@ int DefinitionFunctionAndCalculate(t_node_value** head_value ,char ch) {
 		result = log10(value);
 		break;
 	}
-	*head_value = (t_node_value*)push((void*)*head_value, (void*)&result, 0, NUMBER);
-	return OK;
+	if (result != result) {
+		error = ERROR;
+	} else {
+		*head_value = (t_node_value*)push((void*)*head_value, (void*)&result, 0, NUMBER);
+	}
+	return error;
 }
 
-int DefinitionOperatorAndCalculate(t_node_value** head_value ,char ch) {
-	double value1 = GetValueAndDeleteNode(head_value); //берем первое число из стека
-	double value2 = GetValueAndDeleteNode(head_value); //берем второе число из стека
+int definition_operator_and_calculate(t_node_value** head_value ,char ch) {
+	double value1 = get_value_and_delete_node(head_value); //берем первое число из стека
+	double value2 = get_value_and_delete_node(head_value); //берем второе число из стека
 	double result = 0.0;
 	if (value1 == 0.0 && (ch == '/' || ch == 'm')) return ERROR; //обработка ошибки деления на 0
-	// char* (*func[5]) (t_node_value*) = {Addition, };
 	switch (ch) {
 	case '+':
 		result = value2 + value1;
@@ -171,7 +173,7 @@ int DefinitionOperatorAndCalculate(t_node_value** head_value ,char ch) {
 	return OK;
 }
 
-double GetValueAndDeleteNode(t_node_value** head_value) {
+double get_value_and_delete_node(t_node_value** head_value) {
 	double value = (*head_value)->val;
 	// printf("aboba%f\n", value);
 	*head_value = (t_node_value*)pop((void*)*head_value, NUMBER);

@@ -34,3 +34,19 @@ double peek(void** head) {
 void* allocate(int flag) {
 	return flag ? calloc(32, 1) : calloc(16, 1);
 }
+
+void free_stack(void* head, int flag) {
+	void* buff = NULL;
+	while (head != NULL)
+	{
+		if (flag == OPERAND) {
+			buff = ((t_node_oper*)head);
+			head = ((t_node_oper*)head)->next;
+			free(buff);
+		} else {
+			buff = ((t_node_value*)head);
+			head = ((t_node_value*)head)->next;
+			free(buff);
+		}
+	}
+}

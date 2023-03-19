@@ -18,21 +18,21 @@
 #define BINARY_OPERATORS "+-*/^m"
 #define FUNCTIONS "sctbnvqzo"
 
-typedef struct Stack_oper // передаю 0
+typedef struct Stack_oper // флаг 0
 {
 	char c;
 	int priority;
 	struct Stack_oper *next;
 } t_node_oper;
 
-typedef struct Stack_value // передаю 1
+typedef struct Stack_value // флаг 1
 {
 	double val;
 	struct Stack_value *next;
 } t_node_value;
 
 
-double calculator(char *str);
+int calculator(char *str, double* result, int x);
 
 //functions for parser
 int parser(char *str, char *result);
@@ -51,12 +51,21 @@ double add_number_to_str(char **pointer);
 void* allocate(int flag_head);
 void* push(void *head, void* c, int priority, int flag_head);
 void* pop(void *head, int flag_head);
+void free_stack(void* head, int flag);
 double peek(void** head);
 
 //functions for convert to polish notation
 int infix_to_polish(char *str, char *polish_str);
 int get_priority(char c);
-int StackDeallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket);
-void WorkingWithClozedBacket(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error);
+int stack_deallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket);
+void working_with_clozed_backet(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error);
+void add_operators_to_polish_string(t_node_oper** head_oper, char** polish_str, int* error);
+
+//functions for calculate
+int calculate_polish_notation(char* polish_str, double* result);
+int calculate_values(t_node_value** head_value ,char ch);
+int definition_operator_and_calculate(t_node_value** head_value ,char ch);
+int definition_function_and_calculate(t_node_value** head_value ,char ch);
+double get_value_and_delete_node(t_node_value** head_value);
 
 #endif //SRC_CALC_H
