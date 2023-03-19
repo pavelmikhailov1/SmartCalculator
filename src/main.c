@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
 	double result = 0.0;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("result %d\n", calculator("2.-5*6-sqrt(5)", &result, 0));
+	printf("result %d\n", calculator("2.-5*6-(sqrt(x))", &result, 1234.222));
 	printf("value %f", result);
 	//"1+cos(sin(5) + 1)"
 	// /2.-5*6-(sqrt(2mod5))
@@ -45,19 +45,18 @@ int main(int argc, char const *argv[])
 	return 0;
 }
 
-int calculator(char *str, double* result, int x) {
+int calculator(char *str, double* result, double x) {
 	char *buff = (char *)calloc(4096, sizeof(char));
 	char *polish_str = (char *)calloc(4096, sizeof(char));
 	int error = OK;
 	error = parser(str, buff);
 	
 	if (error == OK) {
-		error = infix_to_polish(buff, polish_str);
+		error = infix_to_polish(buff, polish_str, x);
 		if (error == OK) {
 			error = calculate_polish_notation(polish_str, result);
 		}
 	}
-	printf("aboba %s\n", polish_str);
 	free(buff);
 	free(polish_str);
 	return error;

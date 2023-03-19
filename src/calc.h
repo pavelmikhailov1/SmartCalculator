@@ -32,7 +32,7 @@ typedef struct Stack_value // флаг 1
 } t_node_value;
 
 
-int calculator(char *str, double* result, int x);
+int calculator(char *str, double* result, double x);
 
 //functions for parser
 int parser(char *str, char *result);
@@ -55,11 +55,12 @@ void free_stack(void* head, int flag);
 double peek(void** head);
 
 //functions for convert to polish notation
-int infix_to_polish(char *str, char *polish_str);
+int infix_to_polish(char *str, char *polish_str, double x);
 int get_priority(char c);
 int stack_deallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket);
 void working_with_clozed_backet(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error);
 void add_operators_to_polish_string(t_node_oper** head_oper, char** polish_str, int* error);
+void get_value_x(char** str, char** polish_str, double x);
 
 //functions for calculate
 int calculate_polish_notation(char* polish_str, double* result);

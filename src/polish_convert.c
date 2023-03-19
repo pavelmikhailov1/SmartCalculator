@@ -1,21 +1,22 @@
 #include "calc.h"
 
-int infix_to_polish(char *str, char *polish_str) {
+int infix_to_polish(char *str, char *polish_str, double x) {
 	t_node_oper* head_oper = NULL;
 	int error = OK;
 	int flag = 0;
 	int count_of_open_bracket = 0;
 	while (*str)
 	{
-		// printf("!!\n");
+		if (*str == 'x') {
+			get_value_x(&str, &polish_str, x);
+			continue;
+		}
 		if (isdigit(*str)) {
 			get_number(&str, polish_str);
 			polish_str[strlen(polish_str)] = ' ';
 		} else {
 			int priority = get_priority(*str);
-			if (*str == '(')
-				count_of_open_bracket++;
-
+			if (*str == '(') count_of_open_bracket++;
 			if (*str == ')') {
 				working_with_clozed_backet(&head_oper, polish_str, &count_of_open_bracket, &error);
 				if (error == ERROR) 
@@ -37,10 +38,8 @@ int infix_to_polish(char *str, char *polish_str) {
 			}
 			head_oper = (t_node_oper *)push((void *)head_oper, (void *)str, priority, OPERAND);
 			str++;
-			// printf("%c\n", head_oper->c);
-			// printf("%c\n", *str);
 		}
-		printf("%s\n", polish_str);
+		// printf("%s\n", polish_str);
 	}
 	// while (head_oper != NULL) {
 	// 	if (head_oper->c == '(') {
@@ -55,7 +54,7 @@ int infix_to_polish(char *str, char *polish_str) {
 	if (error == ERROR) {
 		free_stack((void*)head_oper, OPERAND);
 	}
-	// printf("%s\n", polish_str);
+	printf("%s\n", polish_str);
 	return error;
 }
 
@@ -109,4 +108,12 @@ int stack_deallocation(t_node_oper** head_oper, char** polish_str, int count_of_
 		}
 	}
 	return error;
+}
+
+void get_value_x(char** str, char** polish_str, double x) {
+	char buff[32];
+	sprintf(buff, "%f", x);
+	strcat(*polish_str, buff);
+	(*polish_str)[strlen(*polish_str)] = ' ';
+	(*str)++;
 }

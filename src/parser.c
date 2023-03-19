@@ -60,7 +60,11 @@ int check_correct_string(char *str) { //обработка возможных о
 			status = ERROR;
 		} else if (strchr("+-*/^", *ptr) != NULL && (*(ptr+1) == ')' || *(ptr+1) == '\0')) {
 			status = ERROR;
+		} else if (*ptr == 'x' && (strchr("+-*/^)", *(ptr+1)) == NULL || strchr("+-*/^(", *(ptr-1)) == NULL)) {
+			status = ERROR;
 		}
+		//  && ((*(ptr-1)) != '(' || *(ptr-1) != ')')
+		// (isdigit(*(ptr+1)) || isdigit(*(ptr-1)))
 		ptr++;
 	}
 	return status;
@@ -68,7 +72,7 @@ int check_correct_string(char *str) { //обработка возможных о
 
 char get_character(char **str, int *err) {
 	char res = 0;
-	if (strchr("+-*/^", **str) != NULL) { //если текущий символ оператор +-*/^
+	if (strchr("+-*/^x", **str) != NULL) { //если текущий символ оператор +-*/^x
 		char tmp = **str;
 		(*str)++;
 		return tmp;
@@ -82,14 +86,11 @@ char get_character(char **str, int *err) {
 	} else if (**str == 'm') { //если текущий символ 'm'(если это mod)
 		if (*(*str-1) != ')' && !isdigit(*(*str-1)) && *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
 			*err = 1;
-			// printf("%c\n", *(*str-1));
 		} else {
 			res = get_function(str);
 		}
 	} else if (strchr("cstalm", **str) == NULL) {
 		*err = 1;
-	} else if (**str == 'x') {
-
 	}
 	return res;
 }
