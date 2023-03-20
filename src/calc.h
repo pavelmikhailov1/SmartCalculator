@@ -9,14 +9,15 @@
 #include <math.h>
 
 
-#define OPERAND   	 0
-#define NUMBER 	  	 1
-#define OK     	 	 0
-#define ERROR     	 1
-#define ERROR_CH    '!'
-#define VALID_CHARACTERS "1234567890.()+-*/^modcsintaqrtlgx"
-#define BINARY_OPERATORS "+-*/^m"
-#define FUNCTIONS "sctbnvqzo"
+#define OPERAND   	 		 0
+#define NUMBER 	  	 		 1
+#define OK     	 	 		 0
+#define ERROR     	 		 1
+#define ERROR_CAlCULATION    2
+#define ERROR_CH    		'!'
+#define VALID_CHARACTERS 	"1234567890.()+-*/^modcsintaqrtlgx"
+#define BINARY_OPERATORS 	"+-*/^m"
+#define FUNCTIONS 			"sctbnvqzo"
 
 typedef struct Stack_oper // флаг 0
 {
@@ -64,9 +65,9 @@ void get_value_x(char** str, char** polish_str, double x);
 
 //functions for calculate
 int calculate_polish_notation(char* polish_str, double* result);
-int calculate_values(t_node_value** head_value ,char ch);
-int definition_operator_and_calculate(t_node_value** head_value ,char ch);
-int definition_function_and_calculate(t_node_value** head_value ,char ch);
+int calculate_values(t_node_value** head_value, char ch);
+int definition_operator_and_calculate(t_node_value** head_value, char ch);
+int definition_function_and_calculate(t_node_value** head_value, char ch);
 double get_value_and_delete_node(t_node_value** head_value);
 
 #endif //SRC_CALC_H

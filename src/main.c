@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
 	double result = 0.0;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("result %d\n", calculator("2.-5*6-(sqrt(x))", &result, 1234.222));
+	printf("result %d\n", calculator("2*2mod3", &result, 1));
 	printf("value %f", result);
 	//"1+cos(sin(5) + 1)"
 	// /2.-5*6-(sqrt(2mod5))
@@ -44,6 +44,10 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
+
+// void print_error_message(int error) {
+
+// }
 
 int calculator(char *str, double* result, double x) {
 	char *buff = (char *)calloc(4096, sizeof(char));
@@ -72,13 +76,12 @@ int calculate_polish_notation(char* polish_str, double* result) {
 
 	while (ptr != NULL) {
 		if (isdigit(*ptr)) {
-			// printf("%s\n", ptr);
 			num = add_number_to_str(&ptr);
 			head_value = (t_node_value*)push((void*)head_value, (void*)&num, 0, NUMBER);
 		} else {
 			error = calculate_values(&head_value, *ptr);
 		}
-		if (error == ERROR) {
+		if (error == ERROR_CAlCULATION) {
 			free_stack((void*)head_value, NUMBER);
 			break;
 		}
@@ -136,7 +139,7 @@ int definition_function_and_calculate(t_node_value** head_value ,char ch) {
 		break;
 	}
 	if (result != result) {
-		error = ERROR;
+		error = ERROR_CAlCULATION;
 	} else {
 		*head_value = (t_node_value*)push((void*)*head_value, (void*)&result, 0, NUMBER);
 	}
@@ -147,7 +150,7 @@ int definition_operator_and_calculate(t_node_value** head_value ,char ch) {
 	double value1 = get_value_and_delete_node(head_value); //берем первое число из стека
 	double value2 = get_value_and_delete_node(head_value); //берем второе число из стека
 	double result = 0.0;
-	if (value1 == 0.0 && (ch == '/' || ch == 'm')) return ERROR; //обработка ошибки деления на 0
+	if (value1 == 0.0 && (ch == '/' || ch == 'm')) return ERROR_CAlCULATION; //обработка ошибки деления на 0
 	switch (ch) {
 	case '+':
 		result = value2 + value1;
