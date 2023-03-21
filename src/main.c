@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
 	double result = 0.0;
 	t_node_value* head_value = NULL;
 	t_node_oper* head_oper = NULL;
-	printf("result %d\n", calculator("2*2mod3", &result, 1));
+	printf("result %d\n", calculator("2--2", &result, 1));
 	printf("value %f", result);
 	//"1+cos(sin(5) + 1)"
 	// /2.-5*6-(sqrt(2mod5))

@@ -19,6 +19,7 @@ set(PROJECT_SOURCES
         calculator.cpp
         calculator.h
         calculator.ui
+        ../main.c
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
