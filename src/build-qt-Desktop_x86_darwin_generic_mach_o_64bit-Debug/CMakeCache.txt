@@ -266,6 +266,9 @@ Qt6_DIR:PATH=/usr/local/lib/cmake/Qt6
 //Path to a library.
 WrapOpenGL_AGL:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/AGL.framework
 
+//Path to a library.
+libcalc:FILEPATH=/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/libcalc.a
+
 //Value Computed by CMake
 qt_BINARY_DIR:STATIC=/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/build-qt-Desktop_x86_darwin_generic_mach_o_64bit-Debug
 

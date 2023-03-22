@@ -5526,6 +5526,18 @@
 			"value" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/AGL.framework"
 		},
 		{
+			"name" : "libcalc",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/libcalc.a"
+		},
+		{
 			"name" : "qt_BINARY_DIR",
 			"properties" : 
 			[

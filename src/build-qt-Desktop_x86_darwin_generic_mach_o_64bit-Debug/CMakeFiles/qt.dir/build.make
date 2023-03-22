@@ -125,6 +125,7 @@ qt.app/Contents/MacOS/qt: CMakeFiles/qt.dir/main.cpp.o
 qt.app/Contents/MacOS/qt: CMakeFiles/qt.dir/calculator.cpp.o
 qt.app/Contents/MacOS/qt: CMakeFiles/qt.dir/build.make
 qt.app/Contents/MacOS/qt: /usr/local/lib/QtWidgets.framework/Versions/A/QtWidgets
+qt.app/Contents/MacOS/qt: /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/libcalc.a
 qt.app/Contents/MacOS/qt: /usr/local/lib/QtGui.framework/Versions/A/QtGui
 qt.app/Contents/MacOS/qt: /usr/local/lib/QtCore.framework/Versions/A/QtCore
 qt.app/Contents/MacOS/qt: CMakeFiles/qt.dir/link.txt

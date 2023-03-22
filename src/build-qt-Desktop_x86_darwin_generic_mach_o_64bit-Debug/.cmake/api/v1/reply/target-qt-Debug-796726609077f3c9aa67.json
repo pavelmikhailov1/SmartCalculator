@@ -44,7 +44,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 26,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
@@ -68,7 +68,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 48,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
@@ -79,33 +85,33 @@
 			},
 			{
 				"file" : 4,
-				"parent" : 6
+				"parent" : 7
 			},
 			{
 				"command" : 7,
 				"file" : 4,
 				"line" : 177,
-				"parent" : 7
+				"parent" : 8
 			},
 			{
 				"file" : 3,
-				"parent" : 8
+				"parent" : 9
 			},
 			{
 				"command" : 6,
 				"file" : 3,
 				"line" : 50,
-				"parent" : 9
+				"parent" : 10
 			},
 			{
 				"file" : 2,
-				"parent" : 10
+				"parent" : 11
 			},
 			{
 				"command" : 5,
 				"file" : 2,
 				"line" : 57,
-				"parent" : 11
+				"parent" : 12
 			},
 			{
 				"command" : 4,
@@ -117,81 +123,81 @@
 				"command" : 6,
 				"file" : 3,
 				"line" : 40,
-				"parent" : 9
+				"parent" : 10
 			},
 			{
 				"file" : 9,
-				"parent" : 14
+				"parent" : 15
 			},
 			{
 				"command" : 9,
 				"file" : 9,
 				"line" : 91,
-				"parent" : 15
+				"parent" : 16
 			},
 			{
 				"command" : 8,
 				"file" : 8,
 				"line" : 14,
-				"parent" : 16
-			},
-			{
-				"command" : 7,
-				"file" : 7,
-				"line" : 47,
 				"parent" : 17
 			},
 			{
-				"file" : 6,
+				"command" : 7,
+				"file" : 7,
+				"line" : 47,
 				"parent" : 18
+			},
+			{
+				"file" : 6,
+				"parent" : 19
 			},
 			{
 				"command" : 6,
 				"file" : 6,
 				"line" : 50,
-				"parent" : 19
+				"parent" : 20
 			},
 			{
 				"file" : 5,
-				"parent" : 20
+				"parent" : 21
 			},
 			{
 				"command" : 5,
 				"file" : 5,
 				"line" : 57,
-				"parent" : 21
+				"parent" : 22
 			},
 			{
 				"command" : 8,
 				"file" : 8,
 				"line" : 14,
-				"parent" : 16
+				"parent" : 17
 			},
 			{
 				"command" : 7,
 				"file" : 7,
 				"line" : 47,
-				"parent" : 23
+				"parent" : 24
 			},
 			{
 				"file" : 11,
-				"parent" : 24
+				"parent" : 25
 			},
 			{
 				"command" : 6,
 				"file" : 11,
 				"line" : 50,
-				"parent" : 25
+				"parent" : 26
 			},
 			{
 				"file" : 10,
-				"parent" : 26
+				"parent" : 27
 			},
 			{
 				"command" : 5,
 				"file" : 10,
 				"line" : 57,
-				"parent" : 27
+				"parent" : 28
 			}
 		]
 	},
@@ -204,7 +210,7 @@
 					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"fragment" : "-fPIC"
 				},
 				{
@@ -214,7 +220,7 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"define" : "QT_CORE_LIB"
 				},
 				{
@@ -239,22 +245,22 @@
 					"path" : "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/build-qt-Desktop_x86_darwin_generic_mach_o_64bit-Debug/qt_autogen/include"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "/usr/local/lib/QtCore.framework"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "/usr/local/lib/QtCore.framework/Headers"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "/usr/local/share/qt/mkspecs/macx-clang"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "/usr/local/include"
 				},
@@ -284,8 +290,8 @@
 			{
 				"backtraces" : 
 				[
-					13,
-					13
+					14,
+					14
 				],
 				"standard" : "17"
 			},
@@ -327,22 +333,27 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 12,
-				"fragment" : "/usr/local/lib/QtGui.framework/Versions/A/QtGui",
+				"backtrace" : 6,
+				"fragment" : "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/libcalc.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 13,
+				"fragment" : "/usr/local/lib/QtGui.framework/Versions/A/QtGui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
 				"fragment" : "/usr/local/lib/QtCore.framework/Versions/A/QtCore",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 22,
+				"backtrace" : 23,
 				"fragment" : "-framework DiskArbitration",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 22,
+				"backtrace" : 23,
 				"fragment" : "-framework IOKit",
 				"role" : "libraries"
 			},
@@ -363,17 +374,17 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 28,
+				"backtrace" : 29,
 				"fragment" : "-framework AppKit",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 28,
+				"backtrace" : 29,
 				"fragment" : "-framework ImageIO",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 28,
+				"backtrace" : 29,
 				"fragment" : "-framework Metal",
 				"role" : "libraries"
 			}
@@ -395,8 +406,7 @@
 			[
 				0,
 				1,
-				2,
-				5
+				2
 			]
 		},
 		{
@@ -404,7 +414,7 @@
 			"sourceIndexes" : 
 			[
 				3,
-				6
+				5
 			]
 		},
 		{
@@ -445,11 +455,6 @@
 			"backtrace" : 4,
 			"path" : "calculator.ui",
 			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/main.c",
-			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,

@@ -4,7 +4,10 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QDialog>
-#include "../calc.h"
+
+extern "C" {
+    #include "../calc.h"
+}
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Calculator; }
@@ -27,7 +30,7 @@ private slots:
     void on_Button_0_clicked();
     void on_Button_tochka_clicked();
     void on_Button_AC_clicked();
-    int on_Button_equal_clicked();
+    void on_Button_equal_clicked();
     void on_Button_x_clicked();
 };
 #endif // CALCULATOR_H

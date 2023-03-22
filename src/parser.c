@@ -26,8 +26,14 @@ int parser(char *str, char *result) {
 		} else { //если символ - символ
 			if (*str_buf == '(' && (*(str_buf+1) == '+' || *(str_buf+1) == '-') 
 								&& (isdigit(*(str_buf+2)) || strchr("sctbnvqzo", *(str_buf+2)) != NULL)) { //если скобка а за ней унарный оператор(обработка краевой ситуации)
-				strcat(result, "(0");
-				str_buf++;
+				strcat(result, "((0");
+				result[strlen(result)] = *(str_buf+1);
+				str_buf += 2;
+				char aboba[50];
+				sprintf(aboba, "%f", strtod(str_buf, &str_buf));
+				strcat(result, aboba);
+				result[strlen(result)] = ')';
+				// result[strlen(result)] = ')';
 				continue;
 			}
 			result[strlen(result)] = get_character(&str_buf, &char_flag_err); //помещаем символ в результирующую строку

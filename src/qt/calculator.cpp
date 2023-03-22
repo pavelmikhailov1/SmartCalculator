@@ -1,5 +1,6 @@
 #include "calculator.h"
 #include "./ui_calculator.h"
+#include <iostream>
 
 Calculator::Calculator(QWidget *parent)
     : QMainWindow(parent)
@@ -40,12 +41,12 @@ void Calculator::add_numbers_and_operators()
     }
 }
 
-int Calculator::on_Button_equal_clicked()
+void Calculator::on_Button_equal_clicked()
 {
     if (ui->line_value_x->text().isEmpty()) {
         if (ui->Result_label->text().contains('x')) {
             QMessageBox::warning(this, "Заголовок", "Введите значение x");
-            return 1;
+//            return 1;
         }
     }
 
@@ -58,7 +59,11 @@ int Calculator::on_Button_equal_clicked()
 //    char* x = toDouble(buff1.data());
     char* expression = buff2.data();
     calculator(expression, &result, xx);
-    return 0;
+    QString res = QString::number(result);
+    ui->Result_label->setText(res);
+    std::cout << result << "\n";
+
+//    return 0;
 }
 
 

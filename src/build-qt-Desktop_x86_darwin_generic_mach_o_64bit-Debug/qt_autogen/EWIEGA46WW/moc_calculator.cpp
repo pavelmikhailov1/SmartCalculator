@@ -75,7 +75,7 @@ static const uint qt_meta_data_Calculator[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Int,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -92,12 +92,12 @@ void Calculator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 2: _t->on_Button_0_clicked(); break;
         case 3: _t->on_Button_tochka_clicked(); break;
         case 4: _t->on_Button_AC_clicked(); break;
-        case 5: { int _r = _t->on_Button_equal_clicked();
-            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 5: _t->on_Button_equal_clicked(); break;
         case 6: _t->on_Button_x_clicked(); break;
         default: ;
         }
     }
+    (void)_a;
 }
 
 const QMetaObject Calculator::staticMetaObject = { {
@@ -108,7 +108,7 @@ const QMetaObject Calculator::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_Calculator_t
 , QtPrivate::TypeAndForceComplete<Calculator, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,

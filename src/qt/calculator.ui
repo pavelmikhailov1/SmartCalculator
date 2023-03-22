@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1189</width>
-    <height>659</height>
+    <width>1371</width>
+    <height>979</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="Result_label">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>90</y>
+      <x>380</x>
+      <y>100</y>
       <width>260</width>
       <height>100</height>
      </rect>
@@ -40,8 +40,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_7">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>255</y>
+      <x>380</x>
+      <y>265</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -56,8 +56,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_8">
     <property name="geometry">
      <rect>
-      <x>195</x>
-      <y>255</y>
+      <x>445</x>
+      <y>265</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -72,8 +72,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_div">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>190</y>
+      <x>575</x>
+      <y>200</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -88,8 +88,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_9">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>255</y>
+      <x>510</x>
+      <y>265</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -104,8 +104,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_mul">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>255</y>
+      <x>575</x>
+      <y>265</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -123,8 +123,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_5">
     <property name="geometry">
      <rect>
-      <x>195</x>
-      <y>320</y>
+      <x>445</x>
+      <y>330</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -139,8 +139,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_4">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>320</y>
+      <x>380</x>
+      <y>330</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -155,8 +155,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_6">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>320</y>
+      <x>510</x>
+      <y>330</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -171,8 +171,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_plus">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>385</y>
+      <x>575</x>
+      <y>395</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -188,8 +188,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_2">
     <property name="geometry">
      <rect>
-      <x>195</x>
-      <y>385</y>
+      <x>445</x>
+      <y>395</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -204,8 +204,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_3">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>385</y>
+      <x>510</x>
+      <y>395</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -220,8 +220,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_1">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>385</y>
+      <x>380</x>
+      <y>395</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -239,8 +239,8 @@ border: 1px solid black;</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>450</y>
+      <x>575</x>
+      <y>460</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -277,8 +277,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_tochka">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>450</y>
+      <x>510</x>
+      <y>460</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -293,8 +293,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_0">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>450</y>
+      <x>380</x>
+      <y>460</y>
       <width>130</width>
       <height>65</height>
      </rect>
@@ -309,8 +309,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_minus">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>320</y>
+      <x>575</x>
+      <y>330</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -325,8 +325,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_Open_Backet">
     <property name="geometry">
      <rect>
-      <x>195</x>
-      <y>190</y>
+      <x>445</x>
+      <y>200</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -341,8 +341,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_AC">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>190</y>
+      <x>380</x>
+      <y>200</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -357,8 +357,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_Clozed_Backet">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>190</y>
+      <x>510</x>
+      <y>200</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -373,8 +373,8 @@ border: 1px solid black;</string>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>120</y>
+      <x>870</x>
+      <y>160</y>
       <width>111</width>
       <height>32</height>
      </rect>
@@ -386,8 +386,8 @@ border: 1px solid black;</string>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>120</y>
+      <x>720</x>
+      <y>80</y>
       <width>201</width>
       <height>23</height>
      </rect>
@@ -412,8 +412,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_x">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>290</y>
+      <x>1070</x>
+      <y>130</y>
       <width>91</width>
       <height>91</height>
      </rect>
@@ -424,6 +424,217 @@ border: 1px solid black;</string>
     <property name="text">
      <string>x</string>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>190</y>
+      <width>240</width>
+      <height>260</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>GroupBox</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>120</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>sqrt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>125</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>mod</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>125</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>log</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>asin</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>125</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ln</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>180</y>
+       <width>120</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>x</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>15</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>sin</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>15</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>tan</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>70</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>atan</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>acos</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>15</y>
+       <width>80</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>cos</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
