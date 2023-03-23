@@ -322,9 +322,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtCore/qlocale.h \
   /usr/local/include/QtCore/qvariant.h \
   /usr/local/include/QtGui/qguiapplication_platform.h \
-  /usr/local/include/QtWidgets/QGroupBox \
-  /usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h \
-  /usr/local/include/QtWidgets/qframe.h \
   /usr/local/include/QtWidgets/QHBoxLayout \
   /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /usr/local/include/QtWidgets/qlayout.h \
@@ -333,6 +330,7 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtWidgets/qgridlayout.h \
   /usr/local/include/QtWidgets/QLabel \
   /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/include/QtWidgets/qframe.h \
   /usr/local/include/QtGui/qpicture.h \
   /usr/local/include/QtCore/qiodevice.h \
   /usr/local/include/QtGui/qtextdocument.h \
@@ -1064,6 +1062,8 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_intmax_t.h:
@@ -1124,17 +1124,11 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
 
 /usr/local/include/QtCore/qiodevice.h:
 
+/usr/local/include/QtWidgets/qframe.h:
+
 /usr/local/include/QtWidgets/qgridlayout.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h:
-
-/usr/local/include/QtWidgets/qframe.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/libkern/_OSByteOrder.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h:
 
 /usr/local/include/QtGui/qguiapplication_platform.h:
 
@@ -1408,10 +1402,6 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sched.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__nullptr:
-
-/usr/local/include/QtWidgets/QGroupBox:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/libkern/i386/_OSByteOrder.h:
 
 /usr/local/include/QtCore/qbasicatomic.h:
@@ -1506,6 +1496,12 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdexcept:
 
+/usr/local/include/QtCore/qiodevicebase.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__functional_base:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/initializer_list:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h:
@@ -1527,6 +1523,8 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ratio:
 
 /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/libkern/_OSByteOrder.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_endian.h:
 
@@ -1667,12 +1665,6 @@ qt_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_off_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_uintmax_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h:
-
-/usr/local/include/QtCore/qiodevicebase.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__functional_base:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_wctype.h:
 
@@ -1835,6 +1827,8 @@ qt_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_useconds_t.h:
 
 /usr/local/include/QtWidgets/qtwidgets-config.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__nullptr:
 
 /usr/local/include/QtCore/qsystemdetection.h:
 
