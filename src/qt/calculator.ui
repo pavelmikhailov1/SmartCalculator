@@ -296,7 +296,7 @@ border: 1px solid black;</string>
      <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     </property>
     <property name="text">
-     <string>.</string>
+     <string>,</string>
     </property>
    </widget>
    <widget class="QToolButton" name="Button_0">

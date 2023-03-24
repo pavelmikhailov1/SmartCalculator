@@ -190,6 +190,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt.dir/build.make CMakeFiles/qt.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+qcustomplot.o: qcustomplot.cpp.o
+.PHONY : qcustomplot.o
+
+# target to build an object file
+qcustomplot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt.dir/build.make CMakeFiles/qt.dir/qcustomplot.cpp.o
+.PHONY : qcustomplot.cpp.o
+
+qcustomplot.i: qcustomplot.cpp.i
+.PHONY : qcustomplot.i
+
+# target to preprocess a source file
+qcustomplot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt.dir/build.make CMakeFiles/qt.dir/qcustomplot.cpp.i
+.PHONY : qcustomplot.cpp.i
+
+qcustomplot.s: qcustomplot.cpp.s
+.PHONY : qcustomplot.s
+
+# target to generate assembly for a file
+qcustomplot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt.dir/build.make CMakeFiles/qt.dir/qcustomplot.cpp.s
+.PHONY : qcustomplot.cpp.s
+
 qt_autogen/mocs_compilation.o: qt_autogen/mocs_compilation.cpp.o
 .PHONY : qt_autogen/mocs_compilation.o
 
@@ -230,6 +254,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... qcustomplot.o"
+	@echo "... qcustomplot.i"
+	@echo "... qcustomplot.s"
 	@echo "... qt_autogen/mocs_compilation.o"
 	@echo "... qt_autogen/mocs_compilation.i"
 	@echo "... qt_autogen/mocs_compilation.s"

@@ -1,4 +1,0 @@
-/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/test/CMakeFiles/qt.dir
-/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/test/CMakeFiles/edit_cache.dir
-/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/test/CMakeFiles/rebuild_cache.dir
-/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/test/CMakeFiles/qt_autogen.dir

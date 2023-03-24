@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QDialog>
+//#include "qcustomplot.h"
 
 extern "C" {
     #include "../calc.h"

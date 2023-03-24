@@ -1,6 +1,7 @@
 #include "calculator.h"
 #include "./ui_calculator.h"
 #include <iostream>
+// #include "qcustomplot.h"
 
 Calculator::Calculator(QWidget *parent)
     : QMainWindow(parent)
@@ -73,23 +74,22 @@ void Calculator::add_numbers_and_operators()
 
 void Calculator::on_Button_equal_clicked()
 {
-    QString expression_buff = ui->Result_label->text();
     if (ui->line_value_x->text().isEmpty() && ui->Result_label->text().contains('x')) {
         QMessageBox::warning(this, "Не корректный ввод", "Введите значение x");
-
     } else {
-
+        QString expression_buff = ui->Result_label->text();
         QString x_value = ui->line_value_x->text();
-    //    QByteArray buff1 = x_value.toUtf8();
         QByteArray buff2 = expression_buff.toUtf8();
-        double xx = x_value.toDouble();
+
+        double x = x_value.toDouble();
         double result = 0.0;
-    //    char* x = toDouble(buff1.data());
         char* expression = buff2.data();
-        calculator(expression, &result, xx);
-        QString res = QString::number(result);
+
+        calculator(expression, &result, x);
+        QString res = QString::number(result, 'f', 7);
         ui->Result_label->setText(res);
-        std::cout << result << "\n";
+        // QByteArray buff3 = res.toUtf8();
+        // std::cout << buff3.data() << "\n";
     }
 }
 
@@ -106,7 +106,7 @@ void Calculator::on_Button_0_clicked()
 void Calculator::on_Button_tochka_clicked()
 {
 //    if (!ui->Result_label->text().contains('.'))
-        ui->Result_label->setText(ui->Result_label->text() + ".");
+        ui->Result_label->setText(ui->Result_label->text() + ",");
 }
 
 void Calculator::on_Button_AC_clicked()
@@ -137,22 +137,6 @@ void Calculator::on_Button_exit_clicked()
 {
     close();
 }
-
-
-//void Calculator::on_Button_sin_clicked()
-//{
-//    QString buff = ui->Result_label->text();
-//    if (ui->Result_label->text().length() == 1 && buff[ui->Result_label->text().length()-1] == '0') {
-//         ui->Result_label->setText("sin(");
-//    } else {
-//        if (buff[buff.length()-1].isDigit()) {
-//            ui->Result_label->setText(buff + "*sin(");
-//        } else {
-//            ui->Result_label->setText(buff + "sin(");
-//        }
-//    }
-//}
-
 
 void Calculator::on_Button_mod_clicked()
 {

@@ -12,7 +12,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets PrintSupport)
+# Widgets PrintSupport, libcalc дописал
 find_library(
     libcalc
     NAMES libcalc calc
@@ -25,7 +26,8 @@ set(PROJECT_SOURCES
         calculator.cpp
         calculator.h
         calculator.ui
-      
+        qcustomplot.h
+        qcustomplot.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -52,6 +54,8 @@ else()
 endif()
 
 target_link_libraries(qt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+#добавил тагрет линк принт сапорт
+target_link_libraries(qt PRIVATE Qt${QT_VERSION_MAJOR}::PrintSupport)
 target_link_libraries(qt PRIVATE ${libcalc})
 
 set_target_properties(qt PROPERTIES

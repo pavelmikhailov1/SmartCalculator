@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/calculator.cpp" "CMakeFiles/qt.dir/calculator.cpp.o" "gcc" "CMakeFiles/qt.dir/calculator.cpp.o.d"
   "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/main.cpp" "CMakeFiles/qt.dir/main.cpp.o" "gcc" "CMakeFiles/qt.dir/main.cpp.o.d"
+  "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/qcustomplot.cpp" "CMakeFiles/qt.dir/qcustomplot.cpp.o" "gcc" "CMakeFiles/qt.dir/qcustomplot.cpp.o.d"
   "/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/build-qt-Desktop_x86_darwin_generic_mach_o_64bit-Debug/qt_autogen/mocs_compilation.cpp" "CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o.d"
   )
 

@@ -26,24 +26,25 @@
 // }
 
 
-int main(int argc, char const *argv[])
-{
-	double result = 0.0;
-	t_node_value* head_value = NULL;
-	t_node_oper* head_oper = NULL;
-	printf("result %d\n", calculator("5-x*2*(sin(cos(tan(-3+5)*sqrt(5+2^3))))", &result, -5));
-	printf("value %f", result);
-	//"1+cos(sin(5) + 1)"
-	// /2.-5*6-(sqrt(2mod5))
+// int main(int argc, char const *argv[])
+// {
+// 	double result = 0.0;
+// 	t_node_value* head_value = NULL;
+// 	t_node_oper* head_oper = NULL;
+// 	printf("result %d\n", calculator("x-0.5+0.5", &result, -5));
+// 	printf("value %f", result);
+// 	//5-x*2*(sin(cos(tan(-3+5)*sqrt(5+2^3))))
+// 	//"1+cos(sin(5) + 1)"
+// 	// /2.-5*6-(sqrt(2mod5))
 
-	// while (head_value != NULL) 
-	// {
-		// printf("%d\n", head_value->val);
-	// 	head_value = head_value->previos;
-	// }
+// 	// while (head_value != NULL)
+// 	// {
+// 		// printf("%d\n", head_value->val);
+// 	// 	head_value = head_value->previos;
+// 	// }
 	
-	return 0;
-}
+// 	return 0;
+// }
 
 void print_error_message(int error) {
 
@@ -92,6 +93,7 @@ int calculate_polish_notation(char* polish_str, double* result) {
 		*result = head_value->val;
 		free(head_value);
 	}
+	printf("result c: %f\n", *result);
 	return error;
 }
 

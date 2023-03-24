@@ -54,7 +54,7 @@ int infix_to_polish(char *str, char *polish_str, double x) {
 	if (error == ERROR) {
 		free_stack((void*)head_oper, OPERAND);
 	}
-	printf("%s\n", polish_str);
+	printf("after polish: %s\n", polish_str);
 	return error;
 }
 
