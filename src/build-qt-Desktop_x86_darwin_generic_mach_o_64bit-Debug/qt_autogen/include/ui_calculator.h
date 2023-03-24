@@ -18,6 +18,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
+#include "qcustomplot.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -61,6 +62,7 @@ public:
     QToolButton *Button_tan;
     QToolButton *Button_log;
     QToolButton *Button_acos;
+    QCustomPlot *widget;
 
     void setupUi(QMainWindow *Calculator)
     {
@@ -247,6 +249,9 @@ public:
         Button_acos->setObjectName(QString::fromUtf8("Button_acos"));
         Button_acos->setGeometry(QRect(310, 320, 80, 65));
         Button_acos->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
+        widget = new QCustomPlot(centralwidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(960, 540, 331, 211));
         Calculator->setCentralWidget(centralwidget);
 
         retranslateUi(Calculator);

@@ -297,6 +297,59 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtWidgets/qdialog.h
  /usr/local/lib/QtWidgets.framework/Headers/QDialog
  /usr/local/lib/QtWidgets.framework/Headers/qdialog.h
+ /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/calc.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdbool.h
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdbool.h
+ /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/build-qt-Desktop_x86_darwin_generic_mach_o_64bit-Debug/qt_autogen/include/ui_calculator.h
+ /usr/local/include/QtCore/QVariant
+ /usr/local/lib/QtCore.framework/Headers/qvariant.h
+ /usr/local/include/QtCore/qmap.h
+ /usr/local/include/QtCore/qshareddata_impl.h
+ /usr/local/include/QtCore/qhash.h
+ /usr/local/include/QtCore/qdebug.h
+ /usr/local/include/QtCore/qtextstream.h
+ /usr/local/include/QtCore/qstringconverter.h
+ /usr/local/include/QtCore/qset.h
+ /usr/local/include/QtCore/qcontiguouscache.h
+ /usr/local/include/QtWidgets/QApplication
+ /usr/local/lib/QtWidgets.framework/Headers/qapplication.h
+ /usr/local/include/QtCore/qcoreapplication.h
+ /usr/local/include/QtCore/qcoreevent.h
+ /usr/local/include/QtCore/qeventloop.h
+ /usr/local/include/QtCore/qnativeinterface.h
+ /usr/local/include/QtCore/qcoreapplication_platform.h
+ /usr/local/include/QtGui/qguiapplication.h
+ /usr/local/include/QtGui/qinputmethod.h
+ /usr/local/include/QtCore/qlocale.h
+ /usr/local/include/QtCore/qvariant.h
+ /usr/local/include/QtGui/qguiapplication_platform.h
+ /usr/local/include/QtWidgets/QHBoxLayout
+ /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h
+ /usr/local/include/QtWidgets/qlayout.h
+ /usr/local/include/QtWidgets/qlayoutitem.h
+ /usr/local/include/QtWidgets/qboxlayout.h
+ /usr/local/include/QtWidgets/qgridlayout.h
+ /usr/local/include/QtWidgets/QLabel
+ /usr/local/lib/QtWidgets.framework/Headers/qlabel.h
+ /usr/local/include/QtWidgets/qframe.h
+ /usr/local/include/QtGui/qpicture.h
+ /usr/local/include/QtCore/qiodevice.h
+ /usr/local/include/QtGui/qtextdocument.h
+ /usr/local/include/QtCore/qurl.h
+ /usr/local/include/QtWidgets/QLineEdit
+ /usr/local/lib/QtWidgets.framework/Headers/qlineedit.h
+ /usr/local/include/QtGui/qtextcursor.h
+ /usr/local/include/QtGui/qtextformat.h
+ /usr/local/include/QtGui/qpen.h
+ /usr/local/include/QtGui/qtextoption.h
+ /usr/local/include/QtWidgets/QMainWindow
+ /usr/local/include/QtWidgets/QPushButton
+ /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
+ /usr/local/include/QtWidgets/qabstractbutton.h
+ /usr/local/include/QtWidgets/QToolButton
+ /usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h
+ /usr/local/include/QtWidgets/QWidget
+ /usr/local/lib/QtWidgets.framework/Headers/qwidget.h
  /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/qcustomplot.h
  /usr/local/include/QtCore/QObject
  /usr/local/lib/QtCore.framework/Headers/qobject.h
@@ -309,25 +362,11 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtCore/qbasictimer.h
  /usr/local/include/QtGui/QPainter
  /usr/local/lib/QtGui.framework/Headers/qpainter.h
- /usr/local/include/QtGui/qtextoption.h
- /usr/local/include/QtGui/qpen.h
  /usr/local/include/QtGui/QPainterPath
  /usr/local/lib/QtGui.framework/Headers/qpainterpath.h
  /usr/local/include/QtGui/QPaintEvent
  /usr/local/lib/QtGui.framework/Headers/qevent.h
- /usr/local/include/QtCore/qcoreevent.h
- /usr/local/include/QtCore/qiodevice.h
  /usr/local/include/QtCore/qpointer.h
- /usr/local/include/QtCore/qurl.h
- /usr/local/include/QtCore/qvariant.h
- /usr/local/include/QtCore/qmap.h
- /usr/local/include/QtCore/qshareddata_impl.h
- /usr/local/include/QtCore/qhash.h
- /usr/local/include/QtCore/qdebug.h
- /usr/local/include/QtCore/qtextstream.h
- /usr/local/include/QtCore/qstringconverter.h
- /usr/local/include/QtCore/qset.h
- /usr/local/include/QtCore/qcontiguouscache.h
  /usr/local/include/QtGui/qeventpoint.h
  /usr/local/include/QtGui/qvector2d.h
  /usr/local/include/QtGui/qvectornd.h
@@ -343,7 +382,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtCore/QSizeF
  /usr/local/include/QtGui/QTransform
  /usr/local/lib/QtGui.framework/Headers/qtransform.h
- /usr/local/include/QtCore/qnativeinterface.h
  /usr/local/include/QtGui/QMouseEvent
  /usr/local/include/QtGui/QWheelEvent
  /usr/local/include/QtGui/QPixmap
@@ -355,7 +393,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtCore/QDateTime
  /usr/local/lib/QtCore.framework/Headers/qdatetime.h
  /usr/local/include/QtCore/qcalendar.h
- /usr/local/include/QtCore/qlocale.h
  /usr/local/include/QtCore/QMultiMap
  /usr/local/lib/QtCore.framework/Headers/qmap.h
  /usr/local/include/QtCore/QFlags
@@ -371,8 +408,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtCore.framework/Headers/qmath.h
  /usr/local/lib/QtCore.framework/Headers/QtNumeric
  /usr/local/lib/QtCore.framework/Headers/qnumeric.h
- /usr/local/include/QtWidgets/QWidget
- /usr/local/lib/QtWidgets.framework/Headers/qwidget.h
  /usr/local/include/QtPrintSupport/QtPrintSupport
  /usr/local/include/QtPrintSupport/QtPrintSupportDepends
  /usr/local/include/QtCore/QtCore
@@ -380,7 +415,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtCore.framework/Headers/qglobal.h
  /usr/local/lib/QtCore.framework/Headers/qabstractanimation.h
  /usr/local/lib/QtCore.framework/Headers/qabstracteventdispatcher.h
- /usr/local/include/QtCore/qeventloop.h
  /usr/local/lib/QtCore.framework/Headers/qabstractitemmodel.h
  /usr/local/lib/QtCore.framework/Headers/qabstractnativeeventfilter.h
  /usr/local/lib/QtCore.framework/Headers/qabstractproxymodel.h
@@ -424,8 +458,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtCore.framework/Headers/qcollator.h
  /usr/local/lib/QtCore.framework/Headers/qcommandlineoption.h
  /usr/local/lib/QtCore.framework/Headers/qcommandlineparser.h
- /usr/local/include/QtCore/qcoreapplication.h
- /usr/local/include/QtCore/qcoreapplication_platform.h
  /usr/local/include/QtCore/qcommandlineoption.h
  /usr/local/lib/QtCore.framework/Headers/qcompare.h
  /usr/local/lib/QtCore.framework/Headers/qcompilerdetection.h
@@ -725,7 +757,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtCore.framework/Headers/qurlquery.h
  /usr/local/lib/QtCore.framework/Headers/qutf8stringview.h
  /usr/local/lib/QtCore.framework/Headers/quuid.h
- /usr/local/lib/QtCore.framework/Headers/qvariant.h
  /usr/local/lib/QtCore.framework/Headers/qvariantanimation.h
  /usr/local/lib/QtCore.framework/Headers/qvarlengtharray.h
  /usr/local/lib/QtCore.framework/Headers/qversionnumber.h
@@ -745,9 +776,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtGui/qglyphrun.h
  /usr/local/include/QtGui/qrawfont.h
  /usr/local/include/QtGui/qfontdatabase.h
- /usr/local/include/QtGui/qtextcursor.h
- /usr/local/include/QtGui/qtextformat.h
- /usr/local/include/QtGui/qtextdocument.h
  /usr/local/lib/QtGui.framework/Headers/qaccessible.h
  /usr/local/lib/QtGui.framework/Headers/qaccessiblebridge.h
  /usr/local/include/QtCore/qfactoryinterface.h
@@ -784,9 +812,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtGui.framework/Headers/qgenericpluginfactory.h
  /usr/local/lib/QtGui.framework/Headers/qglyphrun.h
  /usr/local/lib/QtGui.framework/Headers/qguiapplication.h
- /usr/local/include/QtGui/qinputmethod.h
- /usr/local/include/QtGui/qguiapplication_platform.h
- /usr/local/include/QtGui/qguiapplication.h
  /usr/local/lib/QtGui.framework/Headers/qicon.h
  /usr/local/lib/QtGui.framework/Headers/qiconengine.h
  /usr/local/lib/QtGui.framework/Headers/qiconengineplugin.h
@@ -900,7 +925,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtWidgets/qstyle.h
  /usr/local/include/QtWidgets/qtabbar.h
  /usr/local/include/QtWidgets/qrubberband.h
- /usr/local/include/QtWidgets/qframe.h
  /usr/local/lib/QtWidgets.framework/Headers/qabstractitemview.h
  /usr/local/include/QtWidgets/qabstractscrollarea.h
  /usr/local/include/QtCore/qitemselectionmodel.h
@@ -914,16 +938,9 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtGui/QAction
  /usr/local/lib/QtWidgets.framework/Headers/qactiongroup.h
  /usr/local/include/QtGui/QActionGroup
- /usr/local/lib/QtWidgets.framework/Headers/qapplication.h
- /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h
- /usr/local/include/QtWidgets/qlayout.h
- /usr/local/include/QtWidgets/qlayoutitem.h
- /usr/local/include/QtWidgets/qboxlayout.h
- /usr/local/include/QtWidgets/qgridlayout.h
  /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h
  /usr/local/lib/QtWidgets.framework/Headers/qcalendarwidget.h
  /usr/local/lib/QtWidgets.framework/Headers/qcheckbox.h
- /usr/local/include/QtWidgets/qabstractbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qcolordialog.h
  /usr/local/lib/QtWidgets.framework/Headers/qcolormap.h
  /usr/local/lib/QtWidgets.framework/Headers/qcolumnview.h
@@ -987,11 +1004,8 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtWidgets.framework/Headers/qitemeditorfactory.h
  /usr/local/include/QtCore/qmetaobject.h
  /usr/local/lib/QtWidgets.framework/Headers/qkeysequenceedit.h
- /usr/local/lib/QtWidgets.framework/Headers/qlabel.h
- /usr/local/include/QtGui/qpicture.h
  /usr/local/lib/QtWidgets.framework/Headers/qlayoutitem.h
  /usr/local/lib/QtWidgets.framework/Headers/qlcdnumber.h
- /usr/local/lib/QtWidgets.framework/Headers/qlineedit.h
  /usr/local/lib/QtWidgets.framework/Headers/qlistview.h
  /usr/local/lib/QtWidgets.framework/Headers/qlistwidget.h
  /usr/local/include/QtWidgets/qlistview.h
@@ -1007,7 +1021,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtWidgets.framework/Headers/qprogressdialog.h
  /usr/local/lib/QtWidgets.framework/Headers/qproxystyle.h
  /usr/local/include/QtWidgets/QCommonStyle
- /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qradiobutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qrubberband.h
  /usr/local/lib/QtWidgets.framework/Headers/qscrollarea.h
@@ -1017,7 +1030,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtWidgets/QScrollerProperties
  /usr/local/lib/QtWidgets.framework/Headers/qscrollerproperties.h
  /usr/local/include/QtCore/QMetaType
- /usr/local/include/QtCore/QVariant
  /usr/local/lib/QtWidgets.framework/Headers/qshortcut.h
  /usr/local/include/QtGui/QShortcut
  /usr/local/lib/QtWidgets.framework/Headers/qsizegrip.h
@@ -1045,7 +1057,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtWidgets.framework/Headers/qtextedit.h
  /usr/local/lib/QtWidgets.framework/Headers/qtoolbar.h
  /usr/local/lib/QtWidgets.framework/Headers/qtoolbox.h
- /usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qtooltip.h
  /usr/local/lib/QtWidgets.framework/Headers/qtreeview.h
  /usr/local/lib/QtWidgets.framework/Headers/qtreewidget.h
@@ -1078,9 +1089,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtPrintSupport.framework/Headers/qtprintsupportversion.h
  /usr/local/include/QtCore/QElapsedTimer
  /usr/local/include/QtCore/QTimeZone
- /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/calc.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdbool.h
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdbool.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
 
 CMakeFiles/qt.dir/main.cpp.o
