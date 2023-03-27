@@ -16,6 +16,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 #include "qcustomplot.h"
@@ -63,6 +64,14 @@ public:
     QToolButton *Button_log;
     QToolButton *Button_acos;
     QCustomPlot *widget;
+    QPushButton *Button_create_grapf;
+    QPushButton *Button_clear_graph;
+    QSpinBox *Ox;
+    QSpinBox *Oy;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLabel *label_2;
+    QToolButton *Button_pow;
 
     void setupUi(QMainWindow *Calculator)
     {
@@ -73,7 +82,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         Result_label = new QLabel(centralwidget);
         Result_label->setObjectName(QString::fromUtf8("Result_label"));
-        Result_label->setGeometry(QRect(229, 155, 521, 100));
+        Result_label->setGeometry(QRect(59, 195, 521, 100));
         QFont font;
         font.setFamilies({QString::fromUtf8(".AppleSystemUIFont")});
         font.setPointSize(22);
@@ -89,60 +98,60 @@ public:
         Result_label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         Button_7 = new QToolButton(centralwidget);
         Button_7->setObjectName(QString::fromUtf8("Button_7"));
-        Button_7->setGeometry(QRect(490, 320, 65, 65));
+        Button_7->setGeometry(QRect(320, 360, 65, 65));
         Button_7->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_8 = new QToolButton(centralwidget);
         Button_8->setObjectName(QString::fromUtf8("Button_8"));
-        Button_8->setGeometry(QRect(555, 320, 65, 65));
+        Button_8->setGeometry(QRect(385, 360, 65, 65));
         Button_8->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_div = new QToolButton(centralwidget);
         Button_div->setObjectName(QString::fromUtf8("Button_div"));
-        Button_div->setGeometry(QRect(685, 255, 65, 65));
+        Button_div->setGeometry(QRect(515, 295, 65, 65));
         Button_div->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_9 = new QToolButton(centralwidget);
         Button_9->setObjectName(QString::fromUtf8("Button_9"));
-        Button_9->setGeometry(QRect(620, 320, 65, 65));
+        Button_9->setGeometry(QRect(450, 360, 65, 65));
         Button_9->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_mul = new QToolButton(centralwidget);
         Button_mul->setObjectName(QString::fromUtf8("Button_mul"));
-        Button_mul->setGeometry(QRect(685, 320, 65, 65));
+        Button_mul->setGeometry(QRect(515, 360, 65, 65));
         Button_mul->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";\n"
 "border: 2px solid white;\n"
 "background-color: rgb(255, 122, 82);\n"
 ""));
         Button_5 = new QToolButton(centralwidget);
         Button_5->setObjectName(QString::fromUtf8("Button_5"));
-        Button_5->setGeometry(QRect(555, 385, 65, 65));
+        Button_5->setGeometry(QRect(385, 425, 65, 65));
         Button_5->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_4 = new QToolButton(centralwidget);
         Button_4->setObjectName(QString::fromUtf8("Button_4"));
-        Button_4->setGeometry(QRect(490, 385, 65, 65));
+        Button_4->setGeometry(QRect(320, 425, 65, 65));
         Button_4->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_6 = new QToolButton(centralwidget);
         Button_6->setObjectName(QString::fromUtf8("Button_6"));
-        Button_6->setGeometry(QRect(620, 385, 65, 65));
+        Button_6->setGeometry(QRect(450, 425, 65, 65));
         Button_6->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_plus = new QToolButton(centralwidget);
         Button_plus->setObjectName(QString::fromUtf8("Button_plus"));
-        Button_plus->setGeometry(QRect(685, 450, 65, 65));
+        Button_plus->setGeometry(QRect(515, 490, 65, 65));
         Button_plus->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";\n"
 "border: 1px solid black;"));
         Button_2 = new QToolButton(centralwidget);
         Button_2->setObjectName(QString::fromUtf8("Button_2"));
-        Button_2->setGeometry(QRect(555, 450, 65, 65));
+        Button_2->setGeometry(QRect(385, 490, 65, 65));
         Button_2->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_3 = new QToolButton(centralwidget);
         Button_3->setObjectName(QString::fromUtf8("Button_3"));
-        Button_3->setGeometry(QRect(620, 450, 65, 65));
+        Button_3->setGeometry(QRect(450, 490, 65, 65));
         Button_3->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_1 = new QToolButton(centralwidget);
         Button_1->setObjectName(QString::fromUtf8("Button_1"));
-        Button_1->setGeometry(QRect(490, 450, 65, 65));
+        Button_1->setGeometry(QRect(320, 490, 65, 65));
         Button_1->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_equal = new QToolButton(centralwidget);
         Button_equal->setObjectName(QString::fromUtf8("Button_equal"));
         Button_equal->setEnabled(true);
-        Button_equal->setGeometry(QRect(685, 515, 65, 65));
+        Button_equal->setGeometry(QRect(515, 555, 65, 65));
         QFont font1;
         font1.setFamilies({QString::fromUtf8(".AppleSystemUIFont")});
         font1.setPointSize(18);
@@ -164,34 +173,34 @@ public:
 ""));
         Button_tochka = new QToolButton(centralwidget);
         Button_tochka->setObjectName(QString::fromUtf8("Button_tochka"));
-        Button_tochka->setGeometry(QRect(620, 515, 65, 65));
+        Button_tochka->setGeometry(QRect(450, 555, 65, 65));
         Button_tochka->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_0 = new QToolButton(centralwidget);
         Button_0->setObjectName(QString::fromUtf8("Button_0"));
-        Button_0->setGeometry(QRect(490, 515, 130, 65));
+        Button_0->setGeometry(QRect(320, 555, 130, 65));
         Button_0->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_minus = new QToolButton(centralwidget);
         Button_minus->setObjectName(QString::fromUtf8("Button_minus"));
-        Button_minus->setGeometry(QRect(685, 385, 65, 65));
+        Button_minus->setGeometry(QRect(515, 425, 65, 65));
         Button_minus->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_Open_Backet = new QToolButton(centralwidget);
         Button_Open_Backet->setObjectName(QString::fromUtf8("Button_Open_Backet"));
-        Button_Open_Backet->setGeometry(QRect(555, 255, 65, 65));
+        Button_Open_Backet->setGeometry(QRect(385, 295, 65, 65));
         Button_Open_Backet->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_AC = new QToolButton(centralwidget);
         Button_AC->setObjectName(QString::fromUtf8("Button_AC"));
-        Button_AC->setGeometry(QRect(490, 255, 65, 65));
+        Button_AC->setGeometry(QRect(320, 295, 65, 65));
         Button_AC->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_Clozed_Backet = new QToolButton(centralwidget);
         Button_Clozed_Backet->setObjectName(QString::fromUtf8("Button_Clozed_Backet"));
-        Button_Clozed_Backet->setGeometry(QRect(620, 255, 65, 65));
+        Button_Clozed_Backet->setGeometry(QRect(450, 295, 65, 65));
         Button_Clozed_Backet->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_exit = new QPushButton(centralwidget);
         Button_exit->setObjectName(QString::fromUtf8("Button_exit"));
-        Button_exit->setGeometry(QRect(870, 160, 111, 32));
+        Button_exit->setGeometry(QRect(50, 130, 111, 32));
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(230, 520, 241, 61));
+        layoutWidget->setGeometry(QRect(60, 560, 241, 61));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -207,51 +216,80 @@ public:
 
         Button_mod = new QToolButton(centralwidget);
         Button_mod->setObjectName(QString::fromUtf8("Button_mod"));
-        Button_mod->setGeometry(QRect(230, 450, 120, 65));
+        Button_mod->setGeometry(QRect(60, 490, 80, 65));
         Button_mod->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_atan = new QToolButton(centralwidget);
         Button_atan->setObjectName(QString::fromUtf8("Button_atan"));
-        Button_atan->setGeometry(QRect(390, 320, 80, 65));
+        Button_atan->setGeometry(QRect(220, 360, 80, 65));
         Button_atan->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_asin = new QToolButton(centralwidget);
         Button_asin->setObjectName(QString::fromUtf8("Button_asin"));
-        Button_asin->setGeometry(QRect(230, 320, 80, 65));
+        Button_asin->setGeometry(QRect(60, 360, 80, 65));
         Button_asin->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_x = new QToolButton(centralwidget);
         Button_x->setObjectName(QString::fromUtf8("Button_x"));
-        Button_x->setGeometry(QRect(350, 450, 120, 65));
+        Button_x->setGeometry(QRect(220, 490, 80, 65));
         Button_x->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_sqrt = new QToolButton(centralwidget);
         Button_sqrt->setObjectName(QString::fromUtf8("Button_sqrt"));
-        Button_sqrt->setGeometry(QRect(390, 385, 80, 65));
+        Button_sqrt->setGeometry(QRect(220, 425, 80, 65));
         Button_sqrt->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_sin = new QToolButton(centralwidget);
         Button_sin->setObjectName(QString::fromUtf8("Button_sin"));
-        Button_sin->setGeometry(QRect(230, 255, 80, 65));
+        Button_sin->setGeometry(QRect(60, 295, 80, 65));
         Button_sin->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_cos = new QToolButton(centralwidget);
         Button_cos->setObjectName(QString::fromUtf8("Button_cos"));
-        Button_cos->setGeometry(QRect(310, 255, 80, 65));
+        Button_cos->setGeometry(QRect(140, 295, 80, 65));
         Button_cos->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_ln = new QToolButton(centralwidget);
         Button_ln->setObjectName(QString::fromUtf8("Button_ln"));
-        Button_ln->setGeometry(QRect(230, 385, 80, 65));
+        Button_ln->setGeometry(QRect(60, 425, 80, 65));
         Button_ln->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_tan = new QToolButton(centralwidget);
         Button_tan->setObjectName(QString::fromUtf8("Button_tan"));
-        Button_tan->setGeometry(QRect(390, 255, 80, 65));
+        Button_tan->setGeometry(QRect(220, 295, 80, 65));
         Button_tan->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_log = new QToolButton(centralwidget);
         Button_log->setObjectName(QString::fromUtf8("Button_log"));
-        Button_log->setGeometry(QRect(310, 385, 80, 65));
+        Button_log->setGeometry(QRect(140, 425, 80, 65));
         Button_log->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_acos = new QToolButton(centralwidget);
         Button_acos->setObjectName(QString::fromUtf8("Button_acos"));
-        Button_acos->setGeometry(QRect(310, 320, 80, 65));
+        Button_acos->setGeometry(QRect(140, 360, 80, 65));
         Button_acos->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         widget = new QCustomPlot(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(960, 540, 331, 211));
+        widget->setGeometry(QRect(710, 310, 431, 301));
+        Button_create_grapf = new QPushButton(centralwidget);
+        Button_create_grapf->setObjectName(QString::fromUtf8("Button_create_grapf"));
+        Button_create_grapf->setGeometry(QRect(750, 230, 151, 51));
+        Button_clear_graph = new QPushButton(centralwidget);
+        Button_clear_graph->setObjectName(QString::fromUtf8("Button_clear_graph"));
+        Button_clear_graph->setGeometry(QRect(930, 230, 151, 51));
+        Ox = new QSpinBox(centralwidget);
+        Ox->setObjectName(QString::fromUtf8("Ox"));
+        Ox->setGeometry(QRect(750, 710, 221, 41));
+        Ox->setMinimum(1);
+        Ox->setMaximum(100000);
+        Oy = new QSpinBox(centralwidget);
+        Oy->setObjectName(QString::fromUtf8("Oy"));
+        Oy->setGeometry(QRect(750, 750, 221, 41));
+        Oy->setMinimum(1);
+        Oy->setMaximum(100000);
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(710, 760, 21, 16));
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(710, 720, 21, 16));
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(710, 660, 281, 31));
+        Button_pow = new QToolButton(centralwidget);
+        Button_pow->setObjectName(QString::fromUtf8("Button_pow"));
+        Button_pow->setGeometry(QRect(140, 490, 80, 65));
+        Button_pow->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Calculator->setCentralWidget(centralwidget);
 
         retranslateUi(Calculator);
@@ -296,6 +334,12 @@ public:
         Button_tan->setText(QCoreApplication::translate("Calculator", "tan", nullptr));
         Button_log->setText(QCoreApplication::translate("Calculator", "log", nullptr));
         Button_acos->setText(QCoreApplication::translate("Calculator", "acos", nullptr));
+        Button_create_grapf->setText(QCoreApplication::translate("Calculator", "\320\236\321\202\321\200\320\270\321\201\320\276\320\262\320\260\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272", nullptr));
+        Button_clear_graph->setText(QCoreApplication::translate("Calculator", "\320\236\321\202\321\207\320\270\321\201\321\202\320\270\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272", nullptr));
+        label_3->setText(QCoreApplication::translate("Calculator", "Oy:", nullptr));
+        label_4->setText(QCoreApplication::translate("Calculator", "Ox:", nullptr));
+        label_2->setText(QCoreApplication::translate("Calculator", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \321\200\320\260\320\267\320\274\320\265\321\200\321\213 \320\272\320\276\320\276\321\200\320\264\320\270\320\275\320\260\321\202\320\275\320\276\320\271 \320\277\320\273\320\276\321\201\320\272\320\276\321\201\321\202\320\270:", nullptr));
+        Button_pow->setText(QCoreApplication::translate("Calculator", "pow", nullptr));
     } // retranslateUi
 
 };

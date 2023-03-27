@@ -2,12 +2,6 @@
 
 int parser(char *str, char *result) {
 	char *str_buf = NULL;
-	// for (int i = 0; i < strlen(str); i++) {
-	// 	if (str[i] == '.') {
-	// 		str[i] = ',';
-	// 	}
-	// }
-	
 	str_buf = strdup(str);
 	char *p = str_buf;
 	int error = OK;
@@ -209,16 +203,5 @@ char get_triginometric_func(char **str) {
  }
 
 double add_number_to_str(char **pointer) {
-	printf("aboba %s\n", *pointer);
-	// char *buff = *pointer;
-	
-	// double num = 0.;
-	// strtoll(buff, &buff, 10);
-	// if (*buff == '.' || *buff == 'e' || *buff == 'E') {
-	// 	num = strtod(*pointer, pointer);
-	// } else {
-	// 	num = (double)strtoll(*pointer, pointer, 10);
-	// }
-	// return num;
 	return strtod(*pointer, pointer);
 }

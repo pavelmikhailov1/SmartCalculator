@@ -1,6 +1,5 @@
 #include "calculator.h"
 #include "./ui_calculator.h"
-#include <iostream>
 // #include "qcustomplot.h"
 
 Calculator::Calculator(QWidget *parent)
@@ -161,5 +160,66 @@ void Calculator::on_Button_Open_Backet_clicked()
             ui->Result_label->setText(ui->Result_label->text() + "(");
         }
     }
+}
+
+
+void Calculator::on_Button_clear_graph_clicked()
+{
+    ui->Button_create_grapf->setDefault(true);
+}
+
+
+void Calculator::on_Button_create_grapf_clicked()
+{
+    double x_start = -ui->Ox->value();
+    double x_finish = ui->Ox->value();
+    double step = x_finish / 500;
+    QVector<double>x(0), y(0); //массивы для x и y
+
+    double res = 0.0;
+    QString expression_buff = ui->Result_label->text();
+    QByteArray buff = expression_buff.toUtf8();
+    char* str = buff.data();
+
+
+    for (double value_x = x_start; x_finish - value_x > 0.0; value_x += step) {
+        if (calculator(str, &res, value_x) == OK) {
+            x.push_back(value_x);
+            y.push_back(res);
+        } else {
+            //ВЫДАТЬ СООБЩЕНИЕ ОБ ОШИБКЕ
+        }
+        //ПРОВЕРИТЬ УТЕЧКИ БУФЕРОВ
+    }
+
+    ui->widget->clearGraphs();//Если нужно, но очищаем все графики
+
+    ui->widget->addGraph();   //Добавляем один график в widget
+
+    ui->widget->graph(0)->setData(x, y);   //Говорим, что отрисовать нужно график по нашим двум массивам x и y
+
+    //Подписываем оси Ox и Oy
+    ui->widget->xAxis->setLabel("x");
+    ui->widget->yAxis->setLabel("y");
+
+    //Установим область, которая будет показываться на графике
+    ui->widget->xAxis->setRange(x_start, x_finish); //Для оси Ox
+
+    //Для показа границ по оси Oy сложнее, так как надо по правильному
+    //вычислить минимальное и максимальное значение в векторах
+    double minY = y[0], maxY = y[0];
+    for (int i = 1; i < x.count(); i++) {
+      if (y[i] < minY) minY = y[i];
+      if (y[i] > maxY) maxY = y[i];
+    }
+
+    ui->widget->yAxis->setRange(minY, maxY);//Для оси Oy
+    ui->widget->replot();//И перерисуем график на нашем widget
+}
+
+
+void Calculator::on_Button_pow_clicked()
+{
+    ui->Result_label->setText(ui->Result_label->text() + "^");
 }
 

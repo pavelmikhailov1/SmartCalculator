@@ -17,8 +17,8 @@
    <widget class="QLabel" name="Result_label">
     <property name="geometry">
      <rect>
-      <x>229</x>
-      <y>155</y>
+      <x>59</x>
+      <y>195</y>
       <width>521</width>
       <height>100</height>
      </rect>
@@ -49,8 +49,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_7">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>320</y>
+      <x>320</x>
+      <y>360</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -65,8 +65,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_8">
     <property name="geometry">
      <rect>
-      <x>555</x>
-      <y>320</y>
+      <x>385</x>
+      <y>360</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -81,8 +81,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_div">
     <property name="geometry">
      <rect>
-      <x>685</x>
-      <y>255</y>
+      <x>515</x>
+      <y>295</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -97,8 +97,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_9">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>320</y>
+      <x>450</x>
+      <y>360</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -113,8 +113,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_mul">
     <property name="geometry">
      <rect>
-      <x>685</x>
-      <y>320</y>
+      <x>515</x>
+      <y>360</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -132,8 +132,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_5">
     <property name="geometry">
      <rect>
-      <x>555</x>
-      <y>385</y>
+      <x>385</x>
+      <y>425</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -148,8 +148,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_4">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>385</y>
+      <x>320</x>
+      <y>425</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -164,8 +164,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_6">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>385</y>
+      <x>450</x>
+      <y>425</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -180,8 +180,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_plus">
     <property name="geometry">
      <rect>
-      <x>685</x>
-      <y>450</y>
+      <x>515</x>
+      <y>490</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -197,8 +197,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_2">
     <property name="geometry">
      <rect>
-      <x>555</x>
-      <y>450</y>
+      <x>385</x>
+      <y>490</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -213,8 +213,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_3">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>450</y>
+      <x>450</x>
+      <y>490</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -229,8 +229,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_1">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>450</y>
+      <x>320</x>
+      <y>490</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -248,8 +248,8 @@ border: 1px solid black;</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>685</x>
-      <y>515</y>
+      <x>515</x>
+      <y>555</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -286,8 +286,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_tochka">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>515</y>
+      <x>450</x>
+      <y>555</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -302,8 +302,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_0">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>515</y>
+      <x>320</x>
+      <y>555</y>
       <width>130</width>
       <height>65</height>
      </rect>
@@ -318,8 +318,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_minus">
     <property name="geometry">
      <rect>
-      <x>685</x>
-      <y>385</y>
+      <x>515</x>
+      <y>425</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -334,8 +334,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_Open_Backet">
     <property name="geometry">
      <rect>
-      <x>555</x>
-      <y>255</y>
+      <x>385</x>
+      <y>295</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -350,8 +350,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_AC">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>255</y>
+      <x>320</x>
+      <y>295</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -366,8 +366,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_Clozed_Backet">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>255</y>
+      <x>450</x>
+      <y>295</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -382,8 +382,8 @@ border: 1px solid black;</string>
    <widget class="QPushButton" name="Button_exit">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>160</y>
+      <x>50</x>
+      <y>130</y>
       <width>111</width>
       <height>32</height>
      </rect>
@@ -395,8 +395,8 @@ border: 1px solid black;</string>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>520</y>
+      <x>60</x>
+      <y>560</y>
       <width>241</width>
       <height>61</height>
      </rect>
@@ -421,9 +421,9 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_mod">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>450</y>
-      <width>120</width>
+      <x>60</x>
+      <y>490</y>
+      <width>80</width>
       <height>65</height>
      </rect>
     </property>
@@ -437,8 +437,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_atan">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>320</y>
+      <x>220</x>
+      <y>360</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -453,8 +453,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_asin">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>320</y>
+      <x>60</x>
+      <y>360</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -469,9 +469,9 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_x">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>450</y>
-      <width>120</width>
+      <x>220</x>
+      <y>490</y>
+      <width>80</width>
       <height>65</height>
      </rect>
     </property>
@@ -485,8 +485,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_sqrt">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>385</y>
+      <x>220</x>
+      <y>425</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -501,8 +501,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_sin">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>255</y>
+      <x>60</x>
+      <y>295</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -517,8 +517,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_cos">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>255</y>
+      <x>140</x>
+      <y>295</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -533,8 +533,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_ln">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>385</y>
+      <x>60</x>
+      <y>425</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -549,8 +549,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_tan">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>255</y>
+      <x>220</x>
+      <y>295</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -565,8 +565,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_log">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>385</y>
+      <x>140</x>
+      <y>425</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -581,8 +581,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_acos">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>320</y>
+      <x>140</x>
+      <y>360</y>
       <width>80</width>
       <height>65</height>
      </rect>
@@ -597,11 +597,124 @@ border: 1px solid black;</string>
    <widget class="QCustomPlot" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>960</x>
-      <y>540</y>
-      <width>331</width>
-      <height>211</height>
+      <x>710</x>
+      <y>310</y>
+      <width>431</width>
+      <height>301</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_create_grapf">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>230</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отрисовать график</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_clear_graph">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>230</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отчистить график</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Ox">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>710</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Oy">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>750</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>760</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Oy:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>720</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ox:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>660</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Введите размеры координатной плоскости:</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="Button_pow">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>490</y>
+      <width>80</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+    </property>
+    <property name="text">
+     <string>pow</string>
     </property>
    </widget>
   </widget>

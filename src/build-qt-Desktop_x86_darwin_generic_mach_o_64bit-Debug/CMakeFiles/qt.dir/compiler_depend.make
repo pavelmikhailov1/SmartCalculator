@@ -296,6 +296,68 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtWidgets/qdialog.h \
   /usr/local/lib/QtWidgets.framework/Headers/QDialog \
   /usr/local/lib/QtWidgets.framework/Headers/qdialog.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QLayout \
+  /usr/local/lib/QtWidgets.framework/Headers/qlayout.h \
+  /usr/local/include/QtWidgets/qlayoutitem.h \
+  /usr/local/include/QtWidgets/qboxlayout.h \
+  /usr/local/include/QtWidgets/qlayout.h \
+  /usr/local/include/QtWidgets/qgridlayout.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/__wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_short.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_gid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_key_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/calc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdbool.h \
@@ -324,10 +386,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtGui/qguiapplication_platform.h \
   /usr/local/include/QtWidgets/QHBoxLayout \
   /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /usr/local/include/QtWidgets/qlayout.h \
-  /usr/local/include/QtWidgets/qlayoutitem.h \
-  /usr/local/include/QtWidgets/qboxlayout.h \
-  /usr/local/include/QtWidgets/qgridlayout.h \
   /usr/local/include/QtWidgets/QLabel \
   /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
   /usr/local/include/QtWidgets/qframe.h \
@@ -345,6 +403,11 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtWidgets/QPushButton \
   /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /usr/local/include/QtWidgets/qabstractbutton.h \
+  /usr/local/include/QtWidgets/QSpinBox \
+  /usr/local/lib/QtWidgets.framework/Headers/qspinbox.h \
+  /usr/local/include/QtWidgets/qabstractspinbox.h \
+  /usr/local/include/QtGui/qvalidator.h \
+  /usr/local/include/QtCore/qregularexpression.h \
   /usr/local/include/QtWidgets/QToolButton \
   /usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h \
   /usr/local/include/QtWidgets/QWidget \
@@ -386,7 +449,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtGui/QPixmap \
   /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
   /usr/local/include/QtCore/QVector \
-  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   /usr/local/include/QtCore/QString \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/include/QtCore/QDateTime \
@@ -441,7 +503,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtCore/qcborvalue.h \
   /usr/local/include/QtCore/qdatetime.h \
   /usr/local/include/QtCore/qcborcommon.h \
-  /usr/local/include/QtCore/qregularexpression.h \
   /usr/local/include/QtCore/quuid.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/compare \
   /usr/local/lib/QtCore.framework/Headers/qcborcommon.h \
@@ -476,60 +537,7 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stack \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/system_error \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cerrno \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__locale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/mutex \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/locale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_locale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_xlocale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_ctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/__wctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdio.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_string.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_time.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ios \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/streambuf \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_short.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_gid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_addr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_port_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_key_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_useconds_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_clr.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_zero.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_copy.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_nl_item.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iomanip \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /usr/local/include/QtCore/qfileinfo.h \
   /usr/local/lib/QtCore.framework/Headers/qdiriterator.h \
   /usr/local/include/QtCore/qdir.h \
@@ -917,8 +925,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
   /usr/local/include/QtWidgets/qstyleoption.h \
-  /usr/local/include/QtWidgets/qabstractspinbox.h \
-  /usr/local/include/QtGui/qvalidator.h \
   /usr/local/include/QtWidgets/qslider.h \
   /usr/local/include/QtWidgets/qabstractslider.h \
   /usr/local/include/QtWidgets/qstyle.h \
@@ -967,7 +973,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/lib/QtWidgets.framework/Headers/qfontdialog.h \
   /usr/local/lib/QtWidgets.framework/Headers/qformlayout.h \
   /usr/local/include/QtWidgets/QLayout \
-  /usr/local/lib/QtWidgets.framework/Headers/qlayout.h \
   /usr/local/lib/QtWidgets.framework/Headers/qframe.h \
   /usr/local/lib/QtWidgets.framework/Headers/qgesture.h \
   /usr/local/lib/QtWidgets.framework/Headers/qgesturerecognizer.h \
@@ -1034,7 +1039,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/lib/QtWidgets.framework/Headers/qsizegrip.h \
   /usr/local/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /usr/local/lib/QtWidgets.framework/Headers/qslider.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qspinbox.h \
   /usr/local/lib/QtWidgets.framework/Headers/qsplashscreen.h \
   /usr/local/lib/QtWidgets.framework/Headers/qsplitter.h \
   /usr/local/lib/QtWidgets.framework/Headers/qstackedlayout.h \
@@ -1087,8 +1091,7 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/lib/QtPrintSupport.framework/Headers/qprintpreviewwidget.h \
   /usr/local/lib/QtPrintSupport.framework/Headers/qtprintsupportversion.h \
   /usr/local/include/QtCore/QElapsedTimer \
-  /usr/local/include/QtCore/QTimeZone \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
+  /usr/local/include/QtCore/QTimeZone
 
 CMakeFiles/qt.dir/main.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/main.cpp \
   /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/calculator.h \
@@ -1385,6 +1388,68 @@ CMakeFiles/qt.dir/main.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/q
   /usr/local/include/QtWidgets/qdialog.h \
   /usr/local/lib/QtWidgets.framework/Headers/QDialog \
   /usr/local/lib/QtWidgets.framework/Headers/qdialog.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QLayout \
+  /usr/local/lib/QtWidgets.framework/Headers/qlayout.h \
+  /usr/local/include/QtWidgets/qlayoutitem.h \
+  /usr/local/include/QtWidgets/qboxlayout.h \
+  /usr/local/include/QtWidgets/qlayout.h \
+  /usr/local/include/QtWidgets/qgridlayout.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/__wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_short.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_gid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_key_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/calc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdbool.h \
@@ -2778,6 +2843,68 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
   /usr/local/include/QtWidgets/qdialog.h \
   /usr/local/lib/QtWidgets.framework/Headers/QDialog \
   /usr/local/lib/QtWidgets.framework/Headers/qdialog.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QLayout \
+  /usr/local/lib/QtWidgets.framework/Headers/qlayout.h \
+  /usr/local/include/QtWidgets/qlayoutitem.h \
+  /usr/local/include/QtWidgets/qboxlayout.h \
+  /usr/local/include/QtWidgets/qlayout.h \
+  /usr/local/include/QtWidgets/qgridlayout.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/__wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_short.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_gid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_key_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/calc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdbool.h \
@@ -2834,7 +2961,6 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
   /usr/local/include/QtGui/QPixmap \
   /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
   /usr/local/include/QtCore/QVector \
-  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   /usr/local/include/QtCore/QString \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/include/QtCore/QDateTime \
@@ -2930,60 +3056,7 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stack \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/system_error \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cerrno \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__locale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/mutex \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/locale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_locale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_xlocale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_ctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/__wctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdio.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_string.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_time.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ios \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/streambuf \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_short.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_gid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_addr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_port_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_key_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_useconds_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_clr.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_zero.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_copy.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_nl_item.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iomanip \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /usr/local/include/QtCore/qfileinfo.h \
   /usr/local/lib/QtCore.framework/Headers/qdiriterator.h \
   /usr/local/include/QtCore/qdir.h \
@@ -3401,10 +3474,6 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
   /usr/local/include/QtGui/QActionGroup \
   /usr/local/lib/QtWidgets.framework/Headers/qapplication.h \
   /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /usr/local/include/QtWidgets/qlayout.h \
-  /usr/local/include/QtWidgets/qlayoutitem.h \
-  /usr/local/include/QtWidgets/qboxlayout.h \
-  /usr/local/include/QtWidgets/qgridlayout.h \
   /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h \
   /usr/local/lib/QtWidgets.framework/Headers/qcalendarwidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/qcheckbox.h \
@@ -3436,7 +3505,6 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
   /usr/local/lib/QtWidgets.framework/Headers/qfontdialog.h \
   /usr/local/lib/QtWidgets.framework/Headers/qformlayout.h \
   /usr/local/include/QtWidgets/QLayout \
-  /usr/local/lib/QtWidgets.framework/Headers/qlayout.h \
   /usr/local/lib/QtWidgets.framework/Headers/qframe.h \
   /usr/local/lib/QtWidgets.framework/Headers/qgesture.h \
   /usr/local/lib/QtWidgets.framework/Headers/qgesturerecognizer.h \
@@ -3570,8 +3638,6 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
 
 qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream:
-
 /usr/local/include/QtCore/QElapsedTimer:
 
 /usr/local/include/QtCore/QPair:
@@ -3617,8 +3683,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 /usr/local/lib/QtWidgets.framework/Headers/qstylefactory.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qstackedlayout.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qspinbox.h:
 
 /usr/local/include/QtCore/QMetaType:
 
@@ -3700,8 +3764,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtWidgets.framework/Headers/qframe.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/qlayout.h:
-
 /usr/local/lib/QtWidgets.framework/Headers/qfontdialog.h:
 
 /usr/local/include/QtWidgets/qcombobox.h:
@@ -3763,10 +3825,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 /usr/local/lib/QtWidgets.framework/Headers/qabstractitemview.h:
 
 /usr/local/include/QtWidgets/qslider.h:
-
-/usr/local/include/QtGui/qvalidator.h:
-
-/usr/local/include/QtWidgets/qabstractspinbox.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qcolordialog.h:
 
@@ -3948,21 +4006,29 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtGui.framework/Headers/qdesktopservices.h:
 
-/usr/local/include/QtCore/QEvent:
+/usr/local/lib/QtWidgets.framework/Headers/QApplication:
 
-/usr/local/include/QtGui/qcolortransform.h:
+/usr/local/lib/QtGui.framework/Headers/qcursor.h:
 
-/usr/local/include/QtCore/qfloat16.h:
-
-/usr/local/lib/QtGui.framework/Headers/qcolorspace.h:
+/usr/local/lib/QtGui.framework/Headers/qcolortransform.h:
 
 /usr/local/lib/QtGui.framework/Headers/qcolor.h:
+
+/usr/local/lib/QtGui.framework/Headers/qclipboard.h:
+
+/usr/local/include/QtPrintSupport/qabstractprintdialog.h:
+
+/usr/local/lib/QtGui.framework/Headers/qbrush.h:
 
 /usr/local/include/QtCore/qobject.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_timeval.h:
 
 /usr/local/include/QtGui/qsurface.h:
+
+/usr/local/include/QtGui/qcolortransform.h:
+
+/usr/local/include/QtCore/QEvent:
 
 /usr/local/include/QtCore/QDebug:
 
@@ -4234,8 +4300,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/include/QtCore/qlibrary.h:
 
-/usr/local/lib/QtGui.framework/Headers/qclipboard.h:
-
 /usr/local/include/QtCore/qjsonobject.h:
 
 /usr/local/lib/QtCore.framework/Headers/qsharedpointer.h:
@@ -4328,9 +4392,9 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/future:
 
-/usr/local/include/QtCore/qsharedpointer.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale.h:
+
+/usr/local/include/QtCore/qsharedpointer.h:
 
 /usr/local/include/QtCore/qthread.h:
 
@@ -4366,95 +4430,7 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/include/QtCore/qdir.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset:
-
-/usr/local/include/QtGui/qrgb.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iomanip:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/sgxintrin.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/uintrintrin.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qsplitter.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qabstractscrollarea.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino_t.h:
-
-/usr/local/lib/QtCore.framework/Headers/qfile.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_port_t.h:
-
-/usr/local/lib/QtGui.framework/Headers/qabstracttextdocumentlayout.h:
-
-/usr/local/include/QtGui/qrgba64.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/f16cintrin.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h:
-
-/usr/local/lib/QtCore.framework/Headers/qpluginloader.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_short.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vlvnniintrin.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread/qos.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/streambuf:
-
-/usr/local/lib/QtCore.framework/Headers/qhash.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wchar.h:
-
-/usr/local/lib/QtCore.framework/Headers/qiterable.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdio.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/ptwriteintrin.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/clwbintrin.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_locale.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/__wmmintrin_aes.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__split_buffer:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/mutex:
-
-/usr/local/include/QtCore/qcborstreamwriter.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_timespec.h:
-
-/usr/local/lib/QtCore.framework/Headers/qstringlist.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cerrno:
 
 /usr/local/lib/QtCore.framework/Headers/qfilesystemwatcher.h:
 
@@ -4506,6 +4482,14 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/serializeintrin.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale:
+
+/usr/local/include/QtCore/qcborstreamwriter.h:
+
+/usr/local/lib/QtGui.framework/Headers/qcolorspace.h:
+
+/usr/local/include/QtCore/qfloat16.h:
+
 /usr/local/include/QtCore/qcborstreamreader.h:
 
 /usr/local/lib/QtCore.framework/Headers/qcborstream.h:
@@ -4542,10 +4526,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qbasictimer.h:
 
-/usr/local/lib/QtCore.framework/Headers/qrunnable.h:
-
-/usr/local/lib/QtCore.framework/Headers/qassociativeiterable.h:
-
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/__wmmintrin_pclmul.h:
 
 /usr/local/lib/QtCore.framework/Headers/qarraydataops.h:
@@ -4563,10 +4543,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/locale.h:
 
 /usr/local/include/QtCore/qabstractanimation.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_xlocale.h:
-
-/usr/local/lib/QtCore.framework/Headers/qanimationgroup.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_ctype.h:
 
@@ -4612,8 +4588,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qnumeric.h:
 
-/usr/local/include/QtCore/qregularexpression.h:
-
 /usr/local/lib/QtCore.framework/Headers/qmargins.h:
 
 /usr/local/lib/QtGui.framework/Headers/qtextdocumentfragment.h:
@@ -4626,97 +4600,103 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qcache.h:
 
-/usr/local/lib/QtCore.framework/Headers/qdiriterator.h:
-
-/usr/local/include/QtGui/QActionGroup:
-
-/usr/local/include/QtCore/qflags.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_copy.h:
-
-/usr/local/lib/QtCore.framework/Headers/qstack.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/AvailabilityInternal.h:
 
 /usr/local/include/QtCore/QStack:
 
-/usr/local/include/QtCore/qlogging.h:
+/usr/local/lib/QtCore.framework/Headers/qdebug.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/errno.h:
+/usr/local/lib/QtCore.framework/Headers/qflags.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_wint_t.h:
+/usr/local/lib/QtGui.framework/Headers/qvector3d.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cwchar:
+/usr/local/include/QtCore/QFlags:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h:
+/usr/local/include/QtCore/qcalendar.h:
 
-/usr/local/lib/QtCore.framework/Headers/qmap.h:
+/usr/local/lib/QtCore.framework/Headers/qtimeline.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_dev_t.h:
+/usr/local/include/QtCore/QDateTime:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/math.h:
+/usr/local/lib/QtWidgets.framework/Headers/qprogressdialog.h:
 
-/usr/local/include/QtCore/qsize.h:
-
-/usr/local/lib/QtCore.framework/Headers/qstring.h:
+/usr/local/include/QtCore/QString:
 
 /usr/local/lib/QtGui.framework/Headers/qpixmap.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/immintrin.h:
+
+/usr/local/include/QtWidgets/QLayout:
+
+/usr/local/include/QtGui/qwindowdefs.h:
+
+/usr/local/include/QtGui/QWheelEvent:
+
+/usr/local/include/QtWidgets/qabstractbutton.h:
+
+/usr/local/lib/QtCore.framework/Headers/qdir.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_wctrans_t.h:
+
+/usr/local/lib/QtGui.framework/Headers/qtransform.h:
 
 /usr/local/lib/QtGui.framework/Headers/qaccessible.h:
 
 /usr/local/include/QtGui/QTransform:
 
-/usr/local/include/QtCore/QSizeF:
+/usr/local/include/QtCore/qitemselectionmodel.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_sigaltstack.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cmath:
 
-/usr/local/include/QtCore/qrect.h:
+/usr/local/lib/QtCore.framework/Headers/qlist.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h:
+/usr/local/include/QtCore/QList:
 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/rdseedintrin.h:
+/usr/local/include/QtGui/qinputdevice.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/wchar.h:
+/usr/local/include/QtCore/qarraydataops.h:
 
-/usr/local/include/QtCore/qobject_impl.h:
+/usr/local/include/QtGui/qpointingdevice.h:
 
-/usr/local/include/QtCore/QRect:
+/usr/local/include/QtCore/qanystringview.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/QApplication:
+/usr/local/include/QtGui/qvector2d.h:
 
-/usr/local/lib/QtGui.framework/Headers/qcursor.h:
+/usr/local/include/QtGui/qeventpoint.h:
 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vlbitalgintrin.h:
-
-/usr/local/include/QtCore/qcompare.h:
-
-/usr/local/include/QtCore/qglobalstatic.h:
-
-/usr/local/include/QtGui/qscreen.h:
+/usr/local/include/QtCore/qpointer.h:
 
 /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vp2intersectintrin.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_mach_port_t.h:
+/usr/local/lib/QtGui.framework/Headers/qtextdocument.h:
 
-/usr/local/include/QtGui/QPainterPath:
+/usr/local/lib/QtCore.framework/Headers/qvarlengtharray.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/chrono:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/__wctype.h:
 
-/usr/local/include/QtCore/qeventloop.h:
+/usr/local/lib/QtCore.framework/Headers/qstringliteral.h:
 
-/usr/local/include/QtWidgets/qstyle.h:
+/usr/local/include/QtGui/QPaintEvent:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/typeinfo:
+/usr/local/lib/QtGui.framework/Headers/qinputdevice.h:
 
-/usr/local/include/QtGui/QPainter:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque:
 
-/usr/local/lib/QtCore.framework/Headers/qbytearray.h:
+/usr/local/lib/QtGui.framework/Headers/qpainter.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_endian.h:
+/usr/local/lib/QtCore.framework/Headers/qtimer.h:
 
-/usr/local/include/QtCore/qbasictimer.h:
+/usr/local/lib/QtCore.framework/Headers/qmimetype.h:
+
+qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
+
+/usr/local/lib/QtWidgets.framework/Headers/qtextbrowser.h:
+
+/usr/local/lib/QtGui.framework/Headers/qopenglextrafunctions.h:
+
+/usr/local/include/QtCore/QSharedPointer:
 
 /usr/local/include/QtCore/qversionnumber.h:
 
@@ -4726,25 +4706,33 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qpointer.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/errno.h:
+/usr/local/include/QtCore/QPointer:
 
-/usr/local/lib/QtCore.framework/Headers/qlibraryinfo.h:
+/usr/local/lib/QtCore.framework/Headers/qobject.h:
 
-/usr/local/include/QtWidgets/qstyleoption.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/xsaveintrin.h:
 
-/usr/local/include/QtWidgets/QPushButton:
+/usr/local/include/QtCore/qthreadpool.h:
 
-/usr/local/include/QtCore/QObject:
+/usr/local/lib/QtCore.framework/Headers/qcbormap.h:
 
-/usr/local/lib/QtGui.framework/Headers/qtextdocumentwriter.h:
+/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/qcustomplot.h:
 
-/usr/local/lib/QtGui.framework/Headers/qpen.h:
+/usr/local/lib/QtWidgets.framework/Headers/qwidget.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdlib.h:
+/usr/local/include/QtCore/qregularexpression.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
+/usr/local/include/QtGui/qvalidator.h:
 
-/usr/local/include/QtWidgets/QWidget:
+/usr/local/include/QtWidgets/qabstractspinbox.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qspinbox.h:
+
+/usr/local/lib/QtCore.framework/Headers/qrunnable.h:
+
+/usr/local/lib/QtCore.framework/Headers/qassociativeiterable.h:
+
+/usr/local/include/QtWidgets/QSpinBox:
 
 /usr/local/lib/QtCore.framework/Headers/qsequentialanimationgroup.h:
 
@@ -4752,27 +4740,23 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qrefcount.h:
 
-/usr/local/lib/QtCore.framework/Headers/qdir.h:
-
-/usr/local/include/QtWidgets/qabstractbutton.h:
-
-/usr/local/include/QtWidgets/QMainWindow:
-
-/usr/local/include/QtGui/qaccessible.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__memory/utilities.h:
-
-/usr/local/include/QtCore/qnativeinterface.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qgraphicslinearlayout.h:
-
-/usr/local/include/QtCore/qglobal.h:
-
-/usr/local/lib/QtCore.framework/Headers/qsize.h:
-
 /usr/local/lib/QtCore.framework/Headers/qregularexpression.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/errno.h:
+
+/usr/local/lib/QtCore.framework/Headers/qlibraryinfo.h:
+
+/usr/local/include/QtCore/QObject:
+
+/usr/local/include/QtWidgets/qstyleoption.h:
+
+/usr/local/include/QtWidgets/QPushButton:
+
+/usr/local/include/QtGui/qaccessible.h:
+
+/usr/local/include/QtWidgets/QMainWindow:
 
 /usr/local/include/QtGui/qtextoption.h:
 
@@ -4780,31 +4764,9 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/include/QtGui/qtextcursor.h:
 
-/usr/local/include/QtCore/QPointer:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
 /usr/local/include/QtGui/qtextdocument.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_symbol_aliasing.h:
-
-/usr/local/lib/QtGui.framework/Headers/qvector3d.h:
-
-/usr/local/include/QtCore/QFlags:
-
-/usr/local/lib/QtCore.framework/Headers/qsortfilterproxymodel.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qstyle.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
-
-/usr/local/lib/QtCore.framework/Headers/qvector.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int8_t.h:
-
-/usr/local/include/QtCore/qiodevice.h:
-
-/usr/local/lib/QtCore.framework/Headers/qdebug.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512pfintrin.h:
 
@@ -4814,13 +4776,19 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/include/QtWidgets/qframe.h:
 
-/usr/local/include/QtGui/qeventpoint.h:
-
-/usr/local/lib/QtCore.framework/Headers/qobjectcleanuphandler.h:
-
 /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h:
 
 /usr/local/include/QtGui/qinputmethod.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qgraphicslinearlayout.h:
+
+/usr/local/include/QtCore/qglobal.h:
+
+/usr/local/lib/QtCore.framework/Headers/qsize.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__memory/utilities.h:
+
+/usr/local/include/QtCore/qnativeinterface.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vpopcntdqvlintrin.h:
 
@@ -4831,10 +4799,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 /usr/local/include/QtCore/qvariant.h:
 
 /usr/local/include/QtCore/qcoreapplication.h:
-
-/usr/local/include/QtCore/qversiontagging.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qapplication.h:
 
 /usr/local/lib/QtCore.framework/Headers/qsignalmapper.h:
 
@@ -4850,17 +4814,145 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdbool.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset:
+
+/usr/local/lib/QtCore.framework/Headers/qdiriterator.h:
+
+/usr/local/lib/QtCore.framework/Headers/qstack.h:
+
+/usr/local/include/QtGui/QActionGroup:
+
+/usr/local/include/QtCore/qflags.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_copy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h:
+
+/usr/local/lib/QtGui.framework/Headers/qgenericmatrix.h:
+
+/usr/local/include/QtCore/qelapsedtimer.h:
+
+/usr/local/include/QtCore/qlocale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h:
+
+/usr/local/lib/QtCore.framework/Headers/qfile.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_in_port_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_uint32_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc:
+
+/usr/local/lib/QtCore.framework/Headers/qmap.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/new:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_gid_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_ctermid.h:
+
+/usr/local/lib/QtGui.framework/Headers/qactiongroup.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/f16cintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_char.h:
+
+/usr/local/include/QtCore/qmetaobject.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_intmax_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wctype.h:
+
+/usr/local/lib/QtCore.framework/Headers/qxmlstream.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread/sched.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_time.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vnniintrin.h:
+
+/usr/local/lib/QtCore.framework/Headers/qcborvalue.h:
+
+/usr/local/include/QtGui/qicon.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_string.h:
+
+/usr/local/include/QtCore/QMargins:
+
+/usr/local/include/QtCore/QRect:
+
+/usr/local/include/QtCore/qobject_impl.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/optional:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/__wctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread/qos.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/streambuf:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_id_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/clwbintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/ptwriteintrin.h:
+
+/usr/local/include/QtCore/QSize:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/mutex:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512dqintrin.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/QMainWindow:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle:
+
+/usr/local/lib/QtCore.framework/Headers/qobjectcleanuphandler.h:
+
+/usr/local/include/QtCore/qversiontagging.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qapplication.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/QLayout:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int8_t.h:
+
+/usr/local/include/QtCore/qiodevice.h:
+
+/usr/local/lib/QtCore.framework/Headers/qsortfilterproxymodel.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qstyle.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
+
+/usr/local/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/lib/QtCore.framework/Headers/QVector:
+
 /usr/local/lib/QtGui.framework/Headers/qvector2d.h:
 
 /usr/local/include/QtGui/qsurfaceformat.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/QDialog:
 
-/usr/local/lib/QtWidgets.framework/Headers/qprogressdialog.h:
-
-/usr/local/include/QtCore/QString:
+/usr/local/include/QtCore/QSizeF:
 
 /usr/local/include/QtGui/qkeysequence.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vlvnniintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h:
 
 /usr/local/lib/QtCore.framework/Headers/qbindingstorage.h:
 
@@ -4870,19 +4962,15 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/include/QtWidgets/qsizepolicy.h:
 
+/usr/local/lib/QtCore.framework/Headers/qanimationgroup.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_xlocale.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/appleapiopts.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cctype:
 
 /usr/local/include/QtGui/qfontinfo.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/xsaveintrin.h:
-
-/usr/local/include/QtCore/qthreadpool.h:
-
-/usr/local/lib/QtCore.framework/Headers/qcbormap.h:
-
-/Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/qcustomplot.h:
 
 /usr/local/include/QtGui/qfont.h:
 
@@ -4912,8 +5000,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qreadwritelock.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h:
-
 /usr/local/include/QtCore/qatomic_cxx11.h:
 
 /usr/local/lib/QtCore.framework/Headers/qalgorithms.h:
@@ -4925,6 +5011,8 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avxvnniintrin.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/mach/machine/_structs.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h:
 
 /usr/local/include/QtGui/qpolygon.h:
 
@@ -4950,11 +5038,9 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/include/QtCore/QTimer:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_wctrans_t.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ostream:
 
-/usr/local/lib/QtGui.framework/Headers/qtransform.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qwidget.h:
+/usr/local/include/QtGui/qrgb.h:
 
 /usr/local/include/QtWidgets/qpushbutton.h:
 
@@ -4996,11 +5082,33 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/include/QtCore/qvarlengtharray.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
+
+/usr/local/include/QtGui/qguiapplication.h:
+
+/usr/local/include/QtCore/qstringmatcher.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bit_reference:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_ctype.h:
+
 /usr/local/include/QtCore/qbytearraylist.h:
+
+/usr/local/lib/QtCore.framework/Headers/qpluginloader.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_short.h:
 
 /usr/local/include/QtCore/qiterator.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/shaintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/sgxintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/uintrintrin.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qsplitter.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h:
 
 /usr/local/include/QtCore/qfileinfo.h:
 
@@ -5009,6 +5117,10 @@ qt_autogen/mocs_compilation.cpp:
 /usr/local/lib/QtCore.framework/Headers/qconcatenatetablesproxymodel.h:
 
 /usr/local/include/QtCore/qlist.h:
+
+/usr/local/lib/QtCore.framework/Headers/qiterable.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdio.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/x86gprintrin.h:
 
@@ -5019,6 +5131,12 @@ qt_autogen/mocs_compilation.cpp:
 /usr/local/lib/QtCore.framework/Headers/qset.h:
 
 /usr/local/include/QtCore/qstringliteral.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_timespec.h:
+
+/usr/local/lib/QtCore.framework/Headers/qstringlist.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cerrno:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/wctype.h:
 
@@ -5046,19 +5164,13 @@ qt_autogen/mocs_compilation.cpp:
 
 /usr/local/include/QtCore/qhash.h:
 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512dqintrin.h:
+/usr/local/lib/QtWidgets.framework/Headers/qabstractscrollarea.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/QMainWindow:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino_t.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qtreeview.h:
 
 /usr/local/lib/QtCore.framework/Headers/qutf8stringview.h:
-
-/usr/local/include/QtGui/qpointingdevice.h:
-
-/usr/local/include/QtCore/qarraydataops.h:
 
 /usr/local/include/QtWidgets/qtreeview.h:
 
@@ -5066,19 +5178,19 @@ qt_autogen/mocs_compilation.cpp:
 
 /usr/local/include/QtCore/qarraydatapointer.h:
 
-/usr/local/include/QtCore/QList:
-
 /usr/local/include/QtCore/qfile.h:
 
 /usr/local/include/QtCore/QMultiMap:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__split_buffer:
 
 /usr/local/lib/QtPrintSupport.framework/Headers/qprinterinfo.h:
 
 /usr/local/lib/QtCore.framework/Headers/qstandardpaths.h:
 
 /usr/local/include/QtCore/qpair.h:
-
-/usr/local/lib/QtCore.framework/Headers/qflags.h:
 
 /usr/local/lib/QtGui.framework/Headers/qfontinfo.h:
 
@@ -5102,25 +5214,21 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/hresetintrin.h:
 
+/usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_inttypes.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/types.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h:
-
 /usr/local/include/QtCore/qstringview.h:
 
-/usr/local/include/QtCore/QSize:
+/usr/local/lib/QtGui.framework/Headers/qabstracttextdocumentlayout.h:
+
+/usr/local/include/QtGui/qrgba64.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h:
 
 /usr/local/include/QtCore/qstring.h:
-
-/usr/local/lib/QtGui.framework/Headers/qrgbafloat.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512erintrin.h:
-
-/usr/local/lib/QtCore.framework/Headers/qcontainerfwd.h:
-
-/usr/local/include/QtGui/QPixmap:
 
 /usr/local/lib/QtCore.framework/Headers/qcompilerdetection.h:
 
@@ -5132,9 +5240,21 @@ qt_autogen/mocs_compilation.cpp:
 
 /usr/local/include/QtCore/qtmetamacros.h:
 
+/usr/local/lib/QtCore.framework/Headers/qstring.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_dev_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/math.h:
+
+/usr/local/include/QtCore/qsize.h:
+
 /usr/local/include/QtGui/qwindow.h:
 
 /usr/local/include/QtWidgets/qwidget.h:
+
+/usr/local/include/QtGui/qscreen.h:
+
+/usr/local/include/QtCore/qglobalstatic.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ucontext.h:
 
@@ -5162,6 +5282,10 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bit:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/errno.h:
+
+/usr/local/include/QtCore/qlogging.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/machine/_mcontext.h:
 
 /usr/local/lib/QtCore.framework/Headers/qtranslator.h:
@@ -5177,12 +5301,6 @@ qt_autogen/mocs_compilation.cpp:
 /usr/local/lib/QtGui.framework/Headers/qsurfaceformat.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/variant:
-
-/usr/local/lib/QtGui.framework/Headers/qinputdevice.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque:
-
-/usr/local/lib/QtGui.framework/Headers/qpainter.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread/pthread_impl.h:
 
@@ -5207,14 +5325,6 @@ qt_autogen/mocs_compilation.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/qos.h:
 
 /usr/local/lib/QtCore.framework/Headers/qcoreapplication.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vnniintrin.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_string.h:
-
-/usr/local/lib/QtCore.framework/Headers/qcborvalue.h:
-
-/usr/local/include/QtGui/qicon.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_t.h:
 
@@ -5254,6 +5364,16 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
+/usr/local/include/QtWidgets/QWidget:
+
+/usr/local/lib/QtGui.framework/Headers/qtextdocumentwriter.h:
+
+/usr/local/lib/QtGui.framework/Headers/qpen.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdlib.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int8_t.h:
 
 /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/calc.h:
@@ -5277,10 +5397,6 @@ qt_autogen/mocs_compilation.cpp:
 /usr/local/include/QtCore/qscopeguard.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stddef.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_uint32_t.h:
 
 /usr/local/lib/QtCore.framework/Headers/qeventloop.h:
 
@@ -5314,15 +5430,15 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/limits:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_gid_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/new:
+/usr/local/lib/QtWidgets.framework/Headers/qlayout.h:
 
 /usr/local/include/QtCore/qalgorithms.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__undef_macros:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cwchar:
 
-/usr/local/include/QtCore/qcalendar.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_wint_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__undef_macros:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/machine/limits.h:
 
@@ -5332,15 +5448,37 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/memory:
 
-/usr/local/include/QtCore/qitemselectionmodel.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cmath:
-
-/usr/local/lib/QtCore.framework/Headers/qlist.h:
-
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdarg.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdexcept:
+
+/usr/local/lib/QtGui.framework/Headers/qrgbafloat.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512erintrin.h:
+
+/usr/local/lib/QtCore.framework/Headers/qcontainerfwd.h:
+
+/usr/local/include/QtGui/QPixmap:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/waitpkgintrin.h:
+
+/usr/local/lib/QtCore.framework/Headers/qfileselector.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int64_t.h:
+
+/usr/local/include/QtCore/qiodevicebase.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__functional_base:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/vpclmulqdqintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h:
+
+/usr/local/lib/QtCore.framework/Headers/qlocale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/initializer_list:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h:
 
 /usr/local/include/QtCore/qcompilerdetection.h:
 
@@ -5352,9 +5490,15 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ctime:
 
-/usr/local/include/QtGui/qvector2d.h:
+/usr/local/include/QtGui/QPainter:
 
-/usr/local/include/QtCore/qanystringview.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/chrono:
+
+/usr/local/include/QtCore/qeventloop.h:
+
+/usr/local/include/QtWidgets/qstyle.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/typeinfo:
 
 /usr/local/lib/QtCore.framework/Headers/qvariantanimation.h:
 
@@ -5370,13 +5514,15 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/libkern/_OSByteOrder.h:
 
+/usr/local/lib/QtCore.framework/Headers/qbytearray.h:
+
+/usr/local/include/QtCore/qbasictimer.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_endian.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/limits.h:
-
-/usr/local/lib/QtCore.framework/Headers/qlocale.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_stdlib.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/initializer_list:
 
 /usr/local/include/QtCore/qscopedpointer.h:
 
@@ -5402,27 +5548,9 @@ qt_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qstringalgorithms.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_isset.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/vpclmulqdqintrin.h:
-
 /usr/local/lib/QtGui.framework/Headers/qfontdatabase.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_intptr_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/__wctype.h:
-
-/usr/local/include/QtCore/QMargins:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/optional:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bit_reference:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_ctype.h:
-
-/usr/local/include/QtGui/qguiapplication.h:
-
-/usr/local/include/QtCore/qstringmatcher.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string_view:
 
@@ -5430,17 +5558,7 @@ qt_autogen/include/ui_calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_rune_t.h:
 
-/usr/local/lib/QtGui.framework/Headers/qcolortransform.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/immintrin.h:
-
-/usr/local/include/QtWidgets/QLayout:
-
-/usr/local/include/QtGui/qwindowdefs.h:
-
-/usr/local/include/QtGui/QWheelEvent:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int32_t.h:
 
@@ -5455,6 +5573,10 @@ qt_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int64_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iterator:
+
+/usr/local/include/QtWidgets/QApplication:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_sigset_t.h:
 
@@ -5476,8 +5598,6 @@ qt_autogen/include/ui_calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/ctype.h:
 
-/usr/local/lib/QtCore.framework/Headers/qobject.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_wctype_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl3.h:
@@ -5485,14 +5605,6 @@ qt_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/machine/_types.h:
 
 /usr/local/include/QtCore/qstringlist.h:
-
-/usr/local/lib/QtGui.framework/Headers/qtextdocument.h:
-
-/usr/local/lib/QtCore.framework/Headers/qstringliteral.h:
-
-/usr/local/lib/QtCore.framework/Headers/qvarlengtharray.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/__wctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_uintptr_t.h:
 
@@ -5508,6 +5620,10 @@ qt_autogen/include/ui_calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/i386/types.h:
 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vlbitalgintrin.h:
+
+/usr/local/include/QtCore/qcompare.h:
+
 /usr/local/include/QtGui/QMouseEvent:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_time_t.h:
@@ -5522,14 +5638,6 @@ qt_autogen/include/ui_calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/machine/signal.h:
 
-/usr/local/include/QtCore/qiodevicebase.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int64_t.h:
-
-/usr/local/lib/QtCore.framework/Headers/qtimeline.h:
-
-/usr/local/include/QtCore/QDateTime:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/time.h:
 
 /usr/local/include/QtCore/qsystemdetection.h:
@@ -5539,12 +5647,6 @@ qt_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/signal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_clock_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wctype.h:
-
-/usr/local/include/QtCore/qmetaobject.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_intmax_t.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qmenubar.h:
 
@@ -5556,13 +5658,13 @@ qt_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qdialog.h:
 
+/usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/rdseedintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/wchar.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int32_t.h:
-
-/usr/local/lib/QtGui.framework/Headers/qactiongroup.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_ctermid.h:
 
 /usr/local/lib/QtCore.framework/Headers/qfactoryinterface.h:
 
@@ -5571,20 +5673,6 @@ qt_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_off_t.h:
 
 /usr/local/lib/QtCore.framework/Headers/qabstractitemmodel.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h:
-
-/usr/local/lib/QtGui.framework/Headers/qgenericmatrix.h:
-
-/usr/local/include/QtCore/qelapsedtimer.h:
-
-/usr/local/include/QtCore/qlocale.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/waitpkgintrin.h:
-
-/usr/local/lib/QtCore.framework/Headers/qfileselector.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__functional_base:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/cldemoteintrin.h:
 
@@ -5606,6 +5694,8 @@ qt_autogen/include/ui_calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cstddef:
 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/__wmmintrin_aes.h:
+
 /usr/local/lib/QtPrintSupport.framework/Headers/qprinter.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/i386/_types.h:
@@ -5614,15 +5704,7 @@ qt_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qbytearrayalgorithms.h:
 
-/usr/local/lib/QtCore.framework/Headers/qmimetype.h:
-
-qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
-
-/usr/local/lib/QtWidgets.framework/Headers/qtextbrowser.h:
-
-/usr/local/lib/QtGui.framework/Headers/qopenglextrafunctions.h:
-
-/usr/local/include/QtCore/QSharedPointer:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_symbol_aliasing.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qkeysequenceedit.h:
 
@@ -5630,15 +5712,9 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread.h:
 
-/usr/local/include/QtGui/QPaintEvent:
-
 /usr/local/include/QtCore/qset.h:
 
 /usr/local/lib/QtCore.framework/Headers/qtypeinfo.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/locale.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_id_t.h:
 
 /usr/local/lib/QtCore.framework/Headers/qstringview.h:
 
@@ -5652,23 +5728,23 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_stdio.h:
 
-/usr/local/lib/QtCore.framework/Headers/qxmlstream.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_time.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread/sched.h:
-
-/usr/local/include/QtGui/qinputdevice.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_rsize_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_null.h:
+
+/usr/local/include/QtCore/qrect.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_sigaltstack.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
 /usr/local/include/QtGui/qpen.h:
 
 /usr/local/include/QtCore/qcontiguouscache.h:
+
+/usr/local/lib/QtCore.framework/Headers/qhash.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_wchar.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdint.h:
 
@@ -5681,10 +5757,6 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/mmintrin.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__debug:
-
-/usr/local/include/QtPrintSupport/qabstractprintdialog.h:
-
-/usr/local/lib/QtGui.framework/Headers/qbrush.h:
 
 /usr/local/include/QtCore/qfiledevice.h:
 
@@ -5712,8 +5784,6 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/string.h:
 
-/usr/local/lib/QtCore.framework/Headers/qtimer.h:
-
 /usr/local/lib/QtGui.framework/Headers/qpagesize.h:
 
 /usr/local/include/QtCore/qpropertyprivate.h:
@@ -5728,8 +5798,6 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
 
-/usr/local/include/QtCore/qpointer.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/AvailabilityMacros.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__string:
@@ -5740,9 +5808,15 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_va_list.h:
 
-/usr/local/include/QtWidgets/QApplication:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_locale.h:
+
+/usr/local/include/QtGui/QPainterPath:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_mach_port_t.h:
 
 /usr/local/include/QtGui/qtguiglobal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream:
 
 /usr/local/include/QtWidgets/qabstractscrollarea.h:
 
