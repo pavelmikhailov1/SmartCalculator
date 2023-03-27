@@ -2,6 +2,7 @@
 
 int parser(char *str, char *result) {
 	char *str_buf = NULL;
+	dot_replacement(str);
 	str_buf = strdup(str);
 	char *p = str_buf;
 	int error = OK;
@@ -12,17 +13,17 @@ int parser(char *str, char *result) {
 		result[0] = '0';
 	}
 	while (*str_buf) {
-		if (error == ERROR) break;
+		if (error == INCORRECT_EXPRESSION) break;
 		if (strchr(VALID_CHARACTERS, *str_buf) == NULL) { //проверка каждого символа на валидность
-			error = ERROR;
+			error = INCORRECT_EXPRESSION;
 			break;
 		}
 		if (isdigit(*str_buf) || *str_buf == '.') { //если символ - цифра
-			if (num_flag_err == ERROR) {
-				error = ERROR;
+			if (num_flag_err == INCORRECT_EXPRESSION) {
+				error = INCORRECT_EXPRESSION;
 			}
 			get_number(&str_buf, result); // помещаем число в результирующую строку
-			num_flag_err = ERROR;
+			num_flag_err = INCORRECT_EXPRESSION;
 		} else { //если символ - символ
 			if (*str_buf == '(' && (*(str_buf+1) == '+' || *(str_buf+1) == '-') 
 								&& (isdigit(*(str_buf+2)) || strchr("sctbnvqzo", *(str_buf+2)) != NULL)) { //если скобка а за ней унарный оператор(обработка краевой ситуации)
@@ -33,41 +34,40 @@ int parser(char *str, char *result) {
 				sprintf(aboba, "%f", strtod(str_buf, &str_buf));
 				strcat(result, aboba);
 				result[strlen(result)] = ')';
-				// result[strlen(result)] = ')';
 				continue;
 			}
 			result[strlen(result)] = get_character(&str_buf, &char_flag_err); //помещаем символ в результирующую строку
-			if (char_flag_err == ERROR) {
-				error = ERROR;
+			if (char_flag_err == INCORRECT_EXPRESSION) {
+				error = INCORRECT_EXPRESSION;
 			}
 			num_flag_err = OK;
 		}
 	}
 	if (!error) {
-		if (check_correct_string(result) == ERROR) {
-			error = ERROR;
+		if (check_correct_string(result) == INCORRECT_EXPRESSION) {
+			error = INCORRECT_EXPRESSION;
 		}
 	}
 	printf("after parser: %s\n", result);
 	free(p);
-	return error ? ERROR : OK;
+	return error ? INCORRECT_EXPRESSION : OK;
 }
 
 int check_correct_string(char *str) { //обработка возможных ошибок в строке после парсинга
 	int status = OK;
 	char *ptr = str;
 	while (*ptr) {
-		if (status == ERROR) break;
+		if (status == INCORRECT_EXPRESSION) break;
 		if ((strchr("+-*/^", *ptr) != NULL) && (strchr("+-*/^", *(ptr+1)) != NULL)) { //если в строке идут подряд два оператора
-			status = ERROR;
+			status = INCORRECT_EXPRESSION;
 		} else if (*ptr == ')' && (strchr("+-*/^)", *(ptr+1)) == NULL && *(ptr+1) != '\0')) { //после скобки должен быть оператор или конец строки
-			status = ERROR;
+			status = INCORRECT_EXPRESSION;
 		} else if (*ptr == 'm' && (!isdigit(*(ptr+1)) && *(ptr+1) != '(') && (!isdigit(*(ptr-1)) && *(ptr-1) != '(')) { //между функцией мод обязанны быть два числа или скобки
-			status = ERROR;
+			status = INCORRECT_EXPRESSION;
 		} else if (strchr("+-*/^", *ptr) != NULL && (*(ptr+1) == ')' || *(ptr+1) == '\0')) {
-			status = ERROR;
+			status = INCORRECT_EXPRESSION;
 		} else if (*ptr == 'x' && (strchr("+-*/^)", *(ptr+1)) == NULL || strchr("+-*/^(", *(ptr-1)) == NULL)) {
-			status = ERROR;
+			status = INCORRECT_EXPRESSION;
 		}
 		//  && ((*(ptr-1)) != '(' || *(ptr-1) != ')')
 		// (isdigit(*(ptr+1)) || isdigit(*(ptr-1)))
@@ -204,4 +204,14 @@ char get_triginometric_func(char **str) {
 
 double add_number_to_str(char **pointer) {
 	return strtod(*pointer, pointer);
+}
+
+void dot_replacement(char* str) {
+	int i = 0;
+	while (str[i] != '\0') {
+		if (str[i] == '.') {
+			str[i] = ',';
+		}
+		i++;
+	}
 }

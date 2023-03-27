@@ -19,7 +19,7 @@ int infix_to_polish(char *str, char *polish_str, double x) {
 			if (*str == '(') count_of_open_bracket++;
 			if (*str == ')') {
 				working_with_clozed_backet(&head_oper, polish_str, &count_of_open_bracket, &error);
-				if (error == ERROR) 
+				if (error == INCORRECT_EXPRESSION) 
 					break;
 				str++;
 				continue;
@@ -51,7 +51,7 @@ int infix_to_polish(char *str, char *polish_str, double x) {
 	// 	head_oper = pop((void *)head_oper, OPERAND);
 	// }
 	add_operators_to_polish_string(&head_oper, &polish_str, &error);
-	if (error == ERROR) {
+	if (error == INCORRECT_EXPRESSION) {
 		free_stack((void*)head_oper, OPERAND);
 	}
 	printf("after polish: %s\n", polish_str);
@@ -61,7 +61,7 @@ int infix_to_polish(char *str, char *polish_str, double x) {
 void add_operators_to_polish_string(t_node_oper** head_oper, char** polish_str, int* error) {
 	while (*head_oper != NULL) {
 		if ((*head_oper)->c == '(') {
-			*error = ERROR;
+			*error = INCORRECT_EXPRESSION;
 			break;
 		}
 		(*polish_str)[strlen(*polish_str)] = (*head_oper)->c;
@@ -81,8 +81,8 @@ int get_priority(char c) {
 }
 
 void working_with_clozed_backet(t_node_oper** head_oper, char* polish_str, int* count_of_open_bracket, int *error) {
-	if ((stack_deallocation(head_oper, &polish_str, *count_of_open_bracket) == ERROR) || *head_oper == NULL) {
-		*error = ERROR;
+	if ((stack_deallocation(head_oper, &polish_str, *count_of_open_bracket) == INCORRECT_EXPRESSION) || *head_oper == NULL) {
+		*error = INCORRECT_EXPRESSION;
 	} else {
 		(*count_of_open_bracket)--;
 		*head_oper = pop((void *)*head_oper, OPERAND);
@@ -99,7 +99,7 @@ void working_with_clozed_backet(t_node_oper** head_oper, char* polish_str, int* 
 int stack_deallocation(t_node_oper** head_oper, char** polish_str, int count_of_open_bracket) {
 	int error = OK;
 	if (count_of_open_bracket == 0) {
-		error = ERROR;
+		error = INCORRECT_EXPRESSION;
 	} else {
 		while((*head_oper)->c != '(' && head_oper != NULL) {
 			(*polish_str)[strlen(*polish_str)] = (*head_oper)->c;

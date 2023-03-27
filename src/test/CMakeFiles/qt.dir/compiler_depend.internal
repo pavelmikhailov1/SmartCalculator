@@ -382,11 +382,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtGui.framework/Headers/qinputmethod.h
  /usr/local/lib/QtCore.framework/Headers/qlocale.h
  /usr/local/lib/QtGui.framework/Headers/qguiapplication_platform.h
- /usr/local/lib/QtWidgets.framework/Headers/QDoubleSpinBox
- /usr/local/lib/QtWidgets.framework/Headers/qspinbox.h
- /usr/local/lib/QtWidgets.framework/Headers/qabstractspinbox.h
- /usr/local/lib/QtGui.framework/Headers/qvalidator.h
- /usr/local/lib/QtCore.framework/Headers/qregularexpression.h
  /usr/local/lib/QtWidgets.framework/Headers/QHBoxLayout
  /usr/local/lib/QtWidgets.framework/Headers/QLabel
  /usr/local/lib/QtWidgets.framework/Headers/qlabel.h
@@ -405,6 +400,10 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/QSpinBox
+ /usr/local/lib/QtWidgets.framework/Headers/qspinbox.h
+ /usr/local/lib/QtWidgets.framework/Headers/qabstractspinbox.h
+ /usr/local/lib/QtGui.framework/Headers/qvalidator.h
+ /usr/local/lib/QtCore.framework/Headers/qregularexpression.h
  /usr/local/lib/QtWidgets.framework/Headers/QToolButton
  /usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/QWidget

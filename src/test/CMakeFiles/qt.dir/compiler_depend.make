@@ -381,11 +381,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/lib/QtGui.framework/Headers/qinputmethod.h \
   /usr/local/lib/QtCore.framework/Headers/qlocale.h \
   /usr/local/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QDoubleSpinBox \
-  /usr/local/lib/QtWidgets.framework/Headers/qspinbox.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
-  /usr/local/lib/QtGui.framework/Headers/qvalidator.h \
-  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
   /usr/local/lib/QtWidgets.framework/Headers/QHBoxLayout \
   /usr/local/lib/QtWidgets.framework/Headers/QLabel \
   /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
@@ -404,6 +399,10 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/QSpinBox \
+  /usr/local/lib/QtWidgets.framework/Headers/qspinbox.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
+  /usr/local/lib/QtGui.framework/Headers/qvalidator.h \
+  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
   /usr/local/lib/QtWidgets.framework/Headers/QToolButton \
   /usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/QWidget \
@@ -3352,6 +3351,10 @@ CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o: qt_autogen/mocs_compilation
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vpopcntdqintrin.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_zero.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qitemdelegate.h:
+
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512cdintrin.h:
 
 /usr/local/lib/QtGui.framework/Headers/QAction:
@@ -3682,21 +3685,23 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /usr/local/lib/QtWidgets.framework/Headers/QToolButton:
 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/pmmintrin.h:
+
+/usr/local/lib/QtCore.framework/Headers/qregularexpression.h:
+
+/usr/local/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/lib/QtCore.framework/Headers/qtimer.h:
+
+/usr/local/lib/QtGui.framework/Headers/qvalidator.h:
+
 /usr/local/lib/QtWidgets.framework/Headers/QSpinBox:
 
-/usr/local/lib/QtCore.framework/Headers/qsavefile.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vbmi2intrin.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h:
+/usr/local/lib/QtWidgets.framework/Headers/QLineEdit:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/waitpkgintrin.h:
 
 /usr/local/lib/QtGui.framework/Headers/qtextoption.h:
-
-/usr/local/lib/QtGui.framework/Headers/qpen.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/QLineEdit:
 
 /usr/local/lib/QtGui.framework/Headers/qpicture.h:
 
@@ -3714,32 +3719,6 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /usr/local/lib/QtWidgets.framework/Headers/QHBoxLayout:
 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/pmmintrin.h:
-
-/usr/local/lib/QtCore.framework/Headers/qregularexpression.h:
-
-/usr/local/lib/QtCore.framework/Headers/qvector.h:
-
-/usr/local/lib/QtCore.framework/Headers/qtimer.h:
-
-/usr/local/lib/QtGui.framework/Headers/qvalidator.h:
-
-/usr/local/lib/QtGui.framework/Headers/qfontdatabase.h:
-
-/usr/local/lib/QtCore.framework/Headers/qiterable.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h:
-
-/usr/local/lib/QtCore.framework/Headers/qobjectdefs.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/i386/endian.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cwchar:
-
-/usr/local/lib/QtWidgets.framework/Headers/qspinbox.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/QDoubleSpinBox:
-
 /usr/local/lib/QtCore.framework/Headers/qobject.h:
 
 /usr/local/lib/QtGui.framework/Headers/qinputmethod.h:
@@ -3747,6 +3726,12 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 /usr/local/lib/QtGui.framework/Headers/qguiapplication.h:
 
 /usr/local/lib/QtCore.framework/Headers/qnativeinterface.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/QtWidgetsDepends:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ctime:
+
+/usr/local/lib/QtWidgets.framework/Headers/QPushButton:
 
 /usr/local/lib/QtCore.framework/Headers/qmetaobject.h:
 
@@ -3774,6 +3759,10 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/QVariant:
 
+/usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512vbmi2intrin.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_wctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdbool.h:
@@ -3795,10 +3784,6 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
 /usr/local/lib/QtCore.framework/Headers/qglobalstatic.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qitemdelegate.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_zero.h:
 
 /usr/local/lib/QtCore.framework/Headers/qabstractitemmodel.h:
 
@@ -4074,6 +4059,10 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cwctype:
 
+/usr/local/lib/QtWidgets.framework/Headers/qspinbox.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cwchar:
+
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/wbnoinvdintrin.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qlistwidget.h:
@@ -4105,6 +4094,8 @@ qt_autogen/mocs_compilation.cpp:
 /usr/local/lib/QtCore.framework/Headers/qjsonobject.h:
 
 /usr/local/lib/QtCore.framework/Headers/qbytearrayalgorithms.h:
+
+/usr/local/lib/QtGui.framework/Headers/qpen.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qscrollarea.h:
 
@@ -4165,10 +4156,6 @@ qt_autogen/mocs_compilation.cpp:
 /Users/lightnin/projects/C7_SmartCalc_v1.0-0/src/qt/main.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qsysinfo.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ctime:
-
-/usr/local/lib/QtWidgets.framework/Headers/QtWidgetsDepends:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_stdio.h:
 
@@ -4247,8 +4234,6 @@ qt_autogen/mocs_compilation.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_null.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/QPushButton:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/stdint.h:
 
@@ -4348,6 +4333,8 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_endian.h:
 
+/usr/local/lib/QtCore.framework/Headers/qsavefile.h:
+
 /usr/local/lib/QtGui.framework/Headers/qrgba64.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qtoolbox.h:
@@ -4375,6 +4362,16 @@ qt_autogen/mocs_compilation.cpp:
 /usr/local/lib/QtGui.framework/Headers/qtextobject.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/chrono:
+
+/usr/local/lib/QtGui.framework/Headers/qfontdatabase.h:
+
+/usr/local/lib/QtCore.framework/Headers/qiterable.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h:
+
+/usr/local/lib/QtCore.framework/Headers/qobjectdefs.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/i386/endian.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_t.h:
 

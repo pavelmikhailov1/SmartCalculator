@@ -25,6 +25,8 @@ public:
     Calculator(QWidget *parent = nullptr);
     ~Calculator();
 
+    QString get_error(int err);
+
 private:
     Ui::Calculator *ui;
 

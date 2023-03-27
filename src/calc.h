@@ -12,7 +12,7 @@
 #define OPERAND   	 		 0
 #define NUMBER 	  	 		 1
 #define OK     	 	 		 0
-#define ERROR     	 		 1
+#define INCORRECT_EXPRESSION 1
 #define ERROR_CAlCULATION    2
 #define ERROR_CH    		'!'
 #define VALID_CHARACTERS 	"1234567890.()+-*/^modcsintaqrtlgx"
@@ -47,6 +47,7 @@ char get_log_func(char **str);
 char get_mod_func(char **str);
 void get_number(char **str, char *result);
 double add_number_to_str(char **pointer);
+void dot_replacement(char* str);
 
 //functions for stack
 void* allocate(int flag_head);

@@ -18,7 +18,6 @@ Calculator::Calculator(QWidget *parent)
     connect(ui->Button_9, SIGNAL(clicked()), this, SLOT(add_numbers_and_operators()));
 
     connect(ui->Button_Clozed_Backet, SIGNAL(clicked()), this, SLOT(add_numbers_and_operators()));
-//    connect(ui->Button_Open_Backet, SIGNAL(clicked()), this, SLOT(add_numbers_and_operators()));
     connect(ui->Button_plus, SIGNAL(clicked()), this, SLOT(add_numbers_and_operators()));
     connect(ui->Button_minus, SIGNAL(clicked()), this, SLOT(add_numbers_and_operators()));
     connect(ui->Button_mul, SIGNAL(clicked()), this, SLOT(add_numbers_and_operators()));
@@ -32,13 +31,21 @@ Calculator::Calculator(QWidget *parent)
     connect(ui->Button_atan, SIGNAL(clicked()), this, SLOT(on_function_clicked()));
     connect(ui->Button_ln, SIGNAL(clicked()), this, SLOT(on_function_clicked()));
     connect(ui->Button_log, SIGNAL(clicked()), this, SLOT(on_function_clicked()));
-//    connect(ui->Button_mod, SIGNAL(clicked()), this, SLOT(on_function_clicked()));
     connect(ui->Button_sqrt, SIGNAL(clicked()), this, SLOT(on_function_clicked()));
 }
 
 Calculator::~Calculator()
 {
     delete ui;
+}
+
+QString Calculator::get_error(int err)
+{
+    if (err == 1) {
+       return "INCORRECT EXPRESSION";
+    } else {
+        return "ERROR CAlCULATION";
+    }
 }
 
 void Calculator::on_function_clicked()
@@ -74,7 +81,7 @@ void Calculator::add_numbers_and_operators()
 void Calculator::on_Button_equal_clicked()
 {
     if (ui->line_value_x->text().isEmpty() && ui->Result_label->text().contains('x')) {
-        QMessageBox::warning(this, "Не корректный ввод", "Введите значение x");
+        QMessageBox::warning(this, "Не корректный ввод", "Input value x");
     } else {
         QString expression_buff = ui->Result_label->text();
         QString x_value = ui->line_value_x->text();
@@ -83,16 +90,17 @@ void Calculator::on_Button_equal_clicked()
         double x = x_value.toDouble();
         double result = 0.0;
         char* expression = buff2.data();
+        int err = 0;
 
-        calculator(expression, &result, x);
-        QString res = QString::number(result, 'f', 7);
-        ui->Result_label->setText(res);
-        // QByteArray buff3 = res.toUtf8();
-        // std::cout << buff3.data() << "\n";
+        err = calculator(expression, &result, x);
+        if (err == 0) {
+            QString res = QString::number(result, 'f', 7);
+            ui->Result_label->setText(res);
+        } else {
+            ui->Result_label->setText(get_error(err));
+        }
     }
 }
-
-
 
 void Calculator::on_Button_0_clicked()
 {
@@ -104,8 +112,7 @@ void Calculator::on_Button_0_clicked()
 
 void Calculator::on_Button_tochka_clicked()
 {
-//    if (!ui->Result_label->text().contains('.'))
-        ui->Result_label->setText(ui->Result_label->text() + ",");
+        ui->Result_label->setText(ui->Result_label->text() + ".");
 }
 
 void Calculator::on_Button_AC_clicked()
@@ -165,12 +172,15 @@ void Calculator::on_Button_Open_Backet_clicked()
 
 void Calculator::on_Button_clear_graph_clicked()
 {
-    ui->Button_create_grapf->setDefault(true);
+    ui->widget->clearGraphs();
+    ui->widget->replot();
 }
 
 
 void Calculator::on_Button_create_grapf_clicked()
 {
+    int y_size = ui->Oy->value();
+    int err = 0;
     double x_start = -ui->Ox->value();
     double x_finish = ui->Ox->value();
     double step = x_finish / 500;
@@ -183,13 +193,15 @@ void Calculator::on_Button_create_grapf_clicked()
 
 
     for (double value_x = x_start; x_finish - value_x > 0.0; value_x += step) {
-        if (calculator(str, &res, value_x) == OK) {
+        err = calculator(str, &res, value_x);
+        if (err == OK) {
             x.push_back(value_x);
             y.push_back(res);
         } else {
             //ВЫДАТЬ СООБЩЕНИЕ ОБ ОШИБКЕ
+            ui->Result_label->setText(get_error(err));
+            return;
         }
-        //ПРОВЕРИТЬ УТЕЧКИ БУФЕРОВ
     }
 
     ui->widget->clearGraphs();//Если нужно, но очищаем все графики
@@ -204,16 +216,8 @@ void Calculator::on_Button_create_grapf_clicked()
 
     //Установим область, которая будет показываться на графике
     ui->widget->xAxis->setRange(x_start, x_finish); //Для оси Ox
+    ui->widget->yAxis->setRange(-y_size, y_size);//Для оси Oy
 
-    //Для показа границ по оси Oy сложнее, так как надо по правильному
-    //вычислить минимальное и максимальное значение в векторах
-    double minY = y[0], maxY = y[0];
-    for (int i = 1; i < x.count(); i++) {
-      if (y[i] < minY) minY = y[i];
-      if (y[i] > maxY) maxY = y[i];
-    }
-
-    ui->widget->yAxis->setRange(minY, maxY);//Для оси Oy
     ui->widget->replot();//И перерисуем график на нашем widget
 }
 
@@ -222,4 +226,5 @@ void Calculator::on_Button_pow_clicked()
 {
     ui->Result_label->setText(ui->Result_label->text() + "^");
 }
+
 
