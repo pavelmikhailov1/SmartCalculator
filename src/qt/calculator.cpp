@@ -42,9 +42,9 @@ Calculator::~Calculator()
 QString Calculator::get_error(int err)
 {
     if (err == 1) {
-       return "INCORRECT EXPRESSION";
+       return "Не корректное выражение.";
     } else {
-        return "ERROR CAlCULATION";
+        return "Ошибка калькуляции.";
     }
 }
 
@@ -80,10 +80,28 @@ void Calculator::add_numbers_and_operators()
 
 void Calculator::on_Button_equal_clicked()
 {
-    if (ui->line_value_x->text().isEmpty() && ui->Result_label->text().contains('x')) {
-        QMessageBox::warning(this, "Не корректный ввод", "Input value x");
+    QString buff;
+    buff = ui->Result_label->text();
+    if ((ui->Result_label->text().length() == 1 && buff[ui->Result_label->text().length()-1] == '0') &&
+            ui->Input_expression->text().isEmpty()) {
+        QMessageBox::warning(this, "Оба поля ввода пустые", "Поля для выражения пустые! Введите выражение.");
+        return;
+    } else if (ui->Result_label->text().length() > 1 && !ui->Input_expression->text().isEmpty()) {
+        QMessageBox::warning(this, "Оба поля ввода не пустые", "Вы не можете вводить выражение в оба поля ввода! Оставте выражение в одном из полей.");
+        return;
+    }
+
+    if (ui->line_value_x->text().isEmpty() && (ui->Result_label->text().contains('x') ||
+                                               ui->Input_expression->text().contains('x'))) {
+        QMessageBox::warning(this, "Не корректный ввод", "Введите значение x.");
     } else {
-        QString expression_buff = ui->Result_label->text();
+        QString expression_buff;
+        if (ui->Input_expression->text().isEmpty()) {
+            expression_buff = ui->Result_label->text();
+        } else {
+            expression_buff = ui->Input_expression->text();
+        }
+
         QString x_value = ui->line_value_x->text();
         QByteArray buff2 = expression_buff.toUtf8();
 
@@ -147,7 +165,7 @@ void Calculator::on_Button_exit_clicked()
 void Calculator::on_Button_mod_clicked()
 {
     QString buff = ui->Result_label->text();
-    if (buff[buff.length()-1].isDigit()) {
+    if (buff[buff.length()-1].isDigit() || buff[buff.length()-1] == 'x' || buff[buff.length()-1] == ')') {
         ui->Result_label->setText(ui->Result_label->text() + "mod");
     } else {
         QMessageBox::warning(this, "Не корректный ввод", "Введите делимое для функции mod.");
@@ -169,56 +187,69 @@ void Calculator::on_Button_Open_Backet_clicked()
     }
 }
 
-
 void Calculator::on_Button_clear_graph_clicked()
 {
     ui->widget->clearGraphs();
     ui->widget->replot();
 }
 
-
 void Calculator::on_Button_create_grapf_clicked()
 {
-    int y_size = ui->Oy->value();
-    int err = 0;
-    double x_start = -ui->Ox->value();
-    double x_finish = ui->Ox->value();
-    double step = x_finish / 500;
-    QVector<double>x(0), y(0); //массивы для x и y
-
-    double res = 0.0;
-    QString expression_buff = ui->Result_label->text();
-    QByteArray buff = expression_buff.toUtf8();
-    char* str = buff.data();
-
-
-    for (double value_x = x_start; x_finish - value_x > 0.0; value_x += step) {
-        err = calculator(str, &res, value_x);
-        if (err == OK) {
-            x.push_back(value_x);
-            y.push_back(res);
+    if (!ui->Result_label->text().contains('x') && !ui->Input_expression->text().contains('x')) {
+        QMessageBox::warning(this, "Не корректный ввод", "Для отрисовки графика введите x в строку с выражением.");
+    } else {
+        QString tmp = ui->Result_label->text();
+        if (tmp.length() > 1 && !ui->Input_expression->text().isEmpty()) {
+            QMessageBox::warning(this, "Оба поля ввода не пустые", "Для отрисовки графика оставьте выражение только в одном поле ввода.");
         } else {
-            //ВЫДАТЬ СООБЩЕНИЕ ОБ ОШИБКЕ
-            ui->Result_label->setText(get_error(err));
-            return;
+
+            int y_size = ui->Oy->value();
+            double x_start = -ui->Ox->value();
+            double x_finish = ui->Ox->value();
+            double step = x_finish / 500;
+            QVector<double>x(0), y(0); //массивы для x и y
+            QString expression_buff;
+
+            if (ui->Input_expression->text().isEmpty()) {
+                expression_buff = ui->Result_label->text();
+            } else {
+                expression_buff = ui->Input_expression->text();
+            }
+
+            double res = 0.0;
+//            QString expression_buff = ui->Result_label->text();
+            QByteArray buff = expression_buff.toUtf8();
+            char* str = buff.data();
+
+
+            for (double value_x = x_start; x_finish - value_x > 0.0; value_x += step) {
+                    calculator(str, &res, value_x);
+                //if (err == OK) {
+                    x.push_back(value_x);
+                    y.push_back(res);
+                //} else {
+                //    ui->Result_label->setText(get_error(err));
+                //    return;
+                //}
+            }
+
+            ui->widget->clearGraphs();//Если нужно, но очищаем все графики
+
+            ui->widget->addGraph();   //Добавляем один график в widget
+
+            ui->widget->graph(0)->setData(x, y);   //Говорим, что отрисовать нужно график по нашим двум массивам x и y
+
+            //Подписываем оси Ox и Oy
+            ui->widget->xAxis->setLabel("x");
+            ui->widget->yAxis->setLabel("y");
+
+            //Установим область, которая будет показываться на графике
+            ui->widget->xAxis->setRange(x_start, x_finish); //Для оси Ox
+            ui->widget->yAxis->setRange(-y_size, y_size);//Для оси Oy
+
+            ui->widget->replot();//И перерисуем график на нашем widget
         }
     }
-
-    ui->widget->clearGraphs();//Если нужно, но очищаем все графики
-
-    ui->widget->addGraph();   //Добавляем один график в widget
-
-    ui->widget->graph(0)->setData(x, y);   //Говорим, что отрисовать нужно график по нашим двум массивам x и y
-
-    //Подписываем оси Ox и Oy
-    ui->widget->xAxis->setLabel("x");
-    ui->widget->yAxis->setLabel("y");
-
-    //Установим область, которая будет показываться на графике
-    ui->widget->xAxis->setRange(x_start, x_finish); //Для оси Ox
-    ui->widget->yAxis->setRange(-y_size, y_size);//Для оси Oy
-
-    ui->widget->replot();//И перерисуем график на нашем widget
 }
 
 
@@ -227,4 +258,19 @@ void Calculator::on_Button_pow_clicked()
     ui->Result_label->setText(ui->Result_label->text() + "^");
 }
 
+
+
+void Calculator::on_Button_clear_clicked()
+{
+    ui->Input_expression->setText("");
+}
+
+
+
+void Calculator::on_Button_backspase_clicked()
+{
+    QString str = ui->Result_label->text();
+    str.chop(1);
+    ui->Result_label->setText(str);
+}
 

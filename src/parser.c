@@ -48,7 +48,7 @@ int parser(char *str, char *result) {
 			error = INCORRECT_EXPRESSION;
 		}
 	}
-	printf("after parser: %s\n", result);
+	printf("after parser: %s\nerror = %d\n", result, error);
 	free(p);
 	return error ? INCORRECT_EXPRESSION : OK;
 }
@@ -60,17 +60,17 @@ int check_correct_string(char *str) { //обработка возможных о
 		if (status == INCORRECT_EXPRESSION) break;
 		if ((strchr("+-*/^", *ptr) != NULL) && (strchr("+-*/^", *(ptr+1)) != NULL)) { //если в строке идут подряд два оператора
 			status = INCORRECT_EXPRESSION;
-		} else if (*ptr == ')' && (strchr("+-*/^)", *(ptr+1)) == NULL && *(ptr+1) != '\0')) { //после скобки должен быть оператор или конец строки
+		} else if (*ptr == ')' && (strchr("+-*/^)m", *(ptr+1)) == NULL && *(ptr+1) != '\0')) { //после скобки должен быть оператор или конец строки
 			status = INCORRECT_EXPRESSION;
-		} else if (*ptr == 'm' && (!isdigit(*(ptr+1)) && *(ptr+1) != '(') && (!isdigit(*(ptr-1)) && *(ptr-1) != '(')) { //между функцией мод обязанны быть два числа или скобки
+		} else if (*ptr == 'm' && (!isdigit(*(ptr+1)) || *(ptr+1) != '(' || *(ptr+1) != 'x') && (!isdigit(*(ptr-1)) && *(ptr-1) != ')' && *(ptr-1) != 'x')) { //между функцией мод обязанны быть два числа или скобки или x
 			status = INCORRECT_EXPRESSION;
 		} else if (strchr("+-*/^", *ptr) != NULL && (*(ptr+1) == ')' || *(ptr+1) == '\0')) {
 			status = INCORRECT_EXPRESSION;
-		} else if (*ptr == 'x' && (strchr("+-*/^)", *(ptr+1)) == NULL || strchr("+-*/^(", *(ptr-1)) == NULL)) {
+		} else if (*ptr == 'x' && (strchr("+-*/^)m\0", *(ptr+1)) == NULL || strchr("+-*/^(m", *(ptr-1)) == NULL)) {
 			status = INCORRECT_EXPRESSION;
-		}
-		//  && ((*(ptr-1)) != '(' || *(ptr-1) != ')')
-		// (isdigit(*(ptr+1)) || isdigit(*(ptr-1)))
+		} else if (*ptr == '(' && *(ptr+1) == ')') {
+			status = INCORRECT_EXPRESSION;
+		} 
 		ptr++;
 	}
 	return status;
@@ -89,12 +89,12 @@ char get_character(char **str, int *err) {
 		char tmp = **str;
 		(*str)++;
 		return tmp;
-	} else if (**str == 'm') { //если текущий символ 'm'(если это mod)
-		if (*(*str-1) != ')' && !isdigit(*(*str-1)) && *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
-			*err = 1;
-		} else {
-			res = get_function(str);
-		}
+	// } else if (**str == 'm') { //если текущий символ 'm'(если это mod)
+	// 	if (*(*str-1) != ')' && !isdigit(*(*str-1)) && *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
+	// 		*err = 1;
+	// 	} else {
+	// 		res = get_function(str);
+	// 	}}
 	} else if (strchr("cstalm", **str) == NULL) {
 		*err = 1;
 	}

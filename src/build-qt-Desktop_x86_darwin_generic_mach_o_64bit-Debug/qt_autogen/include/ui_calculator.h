@@ -72,6 +72,10 @@ public:
     QLabel *label_4;
     QLabel *label_2;
     QToolButton *Button_pow;
+    QLabel *label_5;
+    QLineEdit *Input_expression;
+    QPushButton *Button_clear;
+    QPushButton *Button_backspase;
 
     void setupUi(QMainWindow *Calculator)
     {
@@ -197,7 +201,7 @@ public:
         Button_Clozed_Backet->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         Button_exit = new QPushButton(centralwidget);
         Button_exit->setObjectName(QString::fromUtf8("Button_exit"));
-        Button_exit->setGeometry(QRect(440, 30, 111, 32));
+        Button_exit->setGeometry(QRect(1180, 20, 111, 32));
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
         layoutWidget->setGeometry(QRect(30, 440, 241, 61));
@@ -260,36 +264,48 @@ public:
         Button_acos->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
         widget = new QCustomPlot(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(610, 170, 361, 321));
+        widget->setGeometry(QRect(630, 90, 361, 321));
         Button_create_grapf = new QPushButton(centralwidget);
         Button_create_grapf->setObjectName(QString::fromUtf8("Button_create_grapf"));
-        Button_create_grapf->setGeometry(QRect(620, 80, 151, 51));
+        Button_create_grapf->setGeometry(QRect(640, 20, 151, 51));
         Button_clear_graph = new QPushButton(centralwidget);
         Button_clear_graph->setObjectName(QString::fromUtf8("Button_clear_graph"));
-        Button_clear_graph->setGeometry(QRect(800, 80, 151, 51));
+        Button_clear_graph->setGeometry(QRect(820, 20, 151, 51));
         Ox = new QSpinBox(centralwidget);
         Ox->setObjectName(QString::fromUtf8("Ox"));
-        Ox->setGeometry(QRect(1070, 120, 91, 41));
+        Ox->setGeometry(QRect(1070, 130, 91, 41));
         Ox->setMinimum(1);
         Ox->setMaximum(100000);
         Oy = new QSpinBox(centralwidget);
         Oy->setObjectName(QString::fromUtf8("Oy"));
-        Oy->setGeometry(QRect(1070, 160, 91, 41));
+        Oy->setGeometry(QRect(1070, 170, 91, 41));
         Oy->setMinimum(1);
         Oy->setMaximum(100000);
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(1030, 170, 21, 16));
+        label_3->setGeometry(QRect(1030, 180, 21, 16));
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(1030, 130, 21, 16));
+        label_4->setGeometry(QRect(1030, 140, 21, 16));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(1030, 70, 281, 31));
+        label_2->setGeometry(QRect(1030, 80, 281, 31));
         Button_pow = new QToolButton(centralwidget);
         Button_pow->setObjectName(QString::fromUtf8("Button_pow"));
         Button_pow->setGeometry(QRect(110, 370, 80, 65));
         Button_pow->setStyleSheet(QString::fromUtf8("font: 18pt \".AppleSystemUIFont\";"));
+        label_5 = new QLabel(centralwidget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(30, 10, 461, 16));
+        Input_expression = new QLineEdit(centralwidget);
+        Input_expression->setObjectName(QString::fromUtf8("Input_expression"));
+        Input_expression->setGeometry(QRect(30, 30, 520, 31));
+        Button_clear = new QPushButton(centralwidget);
+        Button_clear->setObjectName(QString::fromUtf8("Button_clear"));
+        Button_clear->setGeometry(QRect(550, 26, 41, 39));
+        Button_backspase = new QPushButton(centralwidget);
+        Button_backspase->setObjectName(QString::fromUtf8("Button_backspase"));
+        Button_backspase->setGeometry(QRect(550, 72, 41, 106));
         Calculator->setCentralWidget(centralwidget);
 
         retranslateUi(Calculator);
@@ -340,6 +356,9 @@ public:
         label_4->setText(QCoreApplication::translate("Calculator", "Ox:", nullptr));
         label_2->setText(QCoreApplication::translate("Calculator", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \321\200\320\260\320\267\320\274\320\265\321\200\321\213 \320\272\320\276\320\276\321\200\320\264\320\270\320\275\320\260\321\202\320\275\320\276\320\271 \320\277\320\273\320\276\321\201\320\272\320\276\321\201\321\202\320\270:", nullptr));
         Button_pow->setText(QCoreApplication::translate("Calculator", "pow", nullptr));
+        label_5->setText(QCoreApplication::translate("Calculator", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\262\321\213\321\200\320\260\320\266\320\265\320\275\320\270\320\265 \321\201 \320\272\320\273\320\260\320\262\320\270\320\260\321\202\321\203\321\200\321\213(\320\262\321\213\321\200\320\260\320\266\320\265\320\275\320\270\320\265 \320\264\320\276\320\273\320\266\320\275\320\276 \320\261\321\213\321\202\321\214 \320\272\320\276\321\200\321\200\320\265\320\272\321\202\320\275\320\276):", nullptr));
+        Button_clear->setText(QCoreApplication::translate("Calculator", "clear", nullptr));
+        Button_backspase->setText(QCoreApplication::translate("Calculator", "<", nullptr));
     } // retranslateUi
 
 };

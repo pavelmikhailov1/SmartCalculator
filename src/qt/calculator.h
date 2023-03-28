@@ -44,5 +44,7 @@ private slots:
     void on_Button_clear_graph_clicked();
     void on_Button_create_grapf_clicked();
     void on_Button_pow_clicked();
+    void on_Button_clear_clicked();
+    void on_Button_backspase_clicked();
 };
 #endif // CALCULATOR_H
