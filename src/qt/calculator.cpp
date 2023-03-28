@@ -258,14 +258,10 @@ void Calculator::on_Button_pow_clicked()
     ui->Result_label->setText(ui->Result_label->text() + "^");
 }
 
-
-
 void Calculator::on_Button_clear_clicked()
 {
     ui->Input_expression->setText("");
 }
-
-
 
 void Calculator::on_Button_backspase_clicked()
 {

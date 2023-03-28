@@ -87,15 +87,9 @@ int calculate_polish_notation(char* polish_str, double* result) {
 		}
 		ptr = strtok(NULL, sep);
 	}
-
-	// if (error == OK) {
 	*result = head_value->val;
 	free(head_value);
-	// }
 
-	// if (error == ERROR_CAlCULATION) {
-	// 	free_stack((void*)head_value, NUMBER);
-	// }
 	printf("result c: %f\n", *result);
 	return error;
 }

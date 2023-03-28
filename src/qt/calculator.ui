@@ -17,9 +17,9 @@
    <widget class="QLabel" name="Result_label">
     <property name="geometry">
      <rect>
-      <x>29</x>
+      <x>30</x>
       <y>75</y>
-      <width>521</width>
+      <width>517</width>
       <height>100</height>
      </rect>
     </property>
@@ -33,11 +33,13 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(255, 122, 82);
-font: 22pt &quot;.AppleSystemUIFont&quot;;
-border: 3px solid black;
-qproperty-aligment: 'AlignVCenter | AlignRight';</string>
+     <string notr="true">QLabel {
+	background-color: rgb(31, 30, 31);
+	border-style: solid;
+	border-color: gray;
+	border: 1px solid gray;
+}
+</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -50,7 +52,7 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>240</y>
+      <y>238</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -65,8 +67,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_8">
     <property name="geometry">
      <rect>
-      <x>355</x>
-      <y>240</y>
+      <x>354</x>
+      <y>238</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -81,14 +83,15 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_div">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>175</y>
+      <x>482</x>
+      <y>174</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>/</string>
@@ -97,8 +100,8 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_9">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>240</y>
+      <x>418</x>
+      <y>238</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -113,16 +116,16 @@ qproperty-aligment: 'AlignVCenter | AlignRight';</string>
    <widget class="QToolButton" name="Button_mul">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>240</y>
+      <x>482</x>
+      <y>238</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
-border: 2px solid white;
-background-color: rgb(255, 122, 82);
+border: 1px solid gray;
+
 </string>
     </property>
     <property name="text">
@@ -132,8 +135,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_5">
     <property name="geometry">
      <rect>
-      <x>355</x>
-      <y>305</y>
+      <x>354</x>
+      <y>302</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -149,7 +152,7 @@ background-color: rgb(255, 122, 82);
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>305</y>
+      <y>302</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -164,8 +167,8 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_6">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>305</y>
+      <x>418</x>
+      <y>302</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -180,15 +183,15 @@ background-color: rgb(255, 122, 82);
    <widget class="QToolButton" name="Button_plus">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>370</y>
+      <x>482</x>
+      <y>366</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
-border: 1px solid black;</string>
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>+</string>
@@ -197,8 +200,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_2">
     <property name="geometry">
      <rect>
-      <x>355</x>
-      <y>370</y>
+      <x>354</x>
+      <y>366</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -213,8 +216,8 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_3">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>370</y>
+      <x>418</x>
+      <y>366</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -230,7 +233,7 @@ border: 1px solid black;</string>
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>370</y>
+      <y>366</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -248,8 +251,8 @@ border: 1px solid black;</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>435</y>
+      <x>483</x>
+      <y>430</y>
       <width>65</width>
       <height>65</height>
      </rect>
@@ -270,13 +273,8 @@ border: 1px solid black;</string>
      <string notr="true">QToolButton { 
 	font: 18pt &quot;.AppleSystemUIFont&quot;;
 	border:	1px solid black;
-	border-color: red ;
+	border-color: yellow;
 }
- QLineEdit {
-     border-width: 1px;
-     border-style: solid;
-     border-radius: 4px;
- }
 </string>
     </property>
     <property name="text">
@@ -286,14 +284,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_tochka">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>435</y>
+      <x>418</x>
+      <y>430</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>.</string>
@@ -303,8 +302,8 @@ border: 1px solid black;</string>
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>435</y>
-      <width>130</width>
+      <y>430</y>
+      <width>129</width>
       <height>65</height>
      </rect>
     </property>
@@ -318,14 +317,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_minus">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>305</y>
+      <x>482</x>
+      <y>302</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>-</string>
@@ -334,14 +334,16 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_Open_Backet">
     <property name="geometry">
      <rect>
-      <x>355</x>
-      <y>175</y>
+      <x>354</x>
+      <y>174</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;
+</string>
     </property>
     <property name="text">
      <string>(</string>
@@ -351,13 +353,17 @@ border: 1px solid black;</string>
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>175</y>
+      <y>174</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">QToolButton { 
+	font: 18pt &quot;.AppleSystemUIFont&quot;;
+	border:	1px solid black;
+	border-color: yellow;
+}</string>
     </property>
     <property name="text">
      <string>AC</string>
@@ -366,14 +372,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_Clozed_Backet">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>175</y>
+      <x>418</x>
+      <y>174</y>
       <width>65</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>)</string>
@@ -398,7 +405,7 @@ border: 1px solid black;</string>
       <x>30</x>
       <y>440</y>
       <width>241</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -422,13 +429,14 @@ border: 1px solid black;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>370</y>
+      <y>366</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>mod</string>
@@ -437,14 +445,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_atan">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>240</y>
+      <x>188</x>
+      <y>238</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>atan</string>
@@ -454,13 +463,14 @@ border: 1px solid black;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>240</y>
+      <y>238</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>asin</string>
@@ -469,14 +479,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_x">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>370</y>
+      <x>188</x>
+      <y>366</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>x</string>
@@ -485,14 +496,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_sqrt">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>305</y>
+      <x>188</x>
+      <y>302</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>sqrt</string>
@@ -502,13 +514,14 @@ border: 1px solid black;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>175</y>
+      <y>174</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>sin</string>
@@ -517,14 +530,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_cos">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>175</y>
+      <x>109</x>
+      <y>174</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>cos</string>
@@ -534,13 +548,14 @@ border: 1px solid black;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>305</y>
+      <y>302</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>ln</string>
@@ -549,14 +564,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_tan">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>175</y>
+      <x>188</x>
+      <y>174</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>tan</string>
@@ -565,14 +581,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_log">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>305</y>
+      <x>109</x>
+      <y>302</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>log</string>
@@ -581,14 +598,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_acos">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>240</y>
+      <x>109</x>
+      <y>238</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>acos</string>
@@ -704,14 +722,15 @@ border: 1px solid black;</string>
    <widget class="QToolButton" name="Button_pow">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>370</y>
+      <x>109</x>
+      <y>366</y>
       <width>80</width>
       <height>65</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+border: 1px solid gray;</string>
     </property>
     <property name="text">
      <string>pow</string>
@@ -739,14 +758,21 @@ border: 1px solid black;</string>
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true"> QLineEdit {
+     border-width: 1px;
+     border-style: solid;
+     border-color: gray;
+ }</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="Button_clear">
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>26</y>
+      <y>25</y>
       <width>41</width>
-      <height>39</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -756,11 +782,14 @@ border: 1px solid black;</string>
    <widget class="QPushButton" name="Button_backspase">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>72</y>
-      <width>41</width>
-      <height>106</height>
+      <x>553</x>
+      <y>70</y>
+      <width>31</width>
+      <height>110</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-right-color: rgb(237, 255, 98);</string>
     </property>
     <property name="text">
      <string>&lt;</string>
