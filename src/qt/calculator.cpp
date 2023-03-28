@@ -84,16 +84,16 @@ void Calculator::on_Button_equal_clicked()
     buff = ui->Result_label->text();
     if ((ui->Result_label->text().length() == 1 && buff[ui->Result_label->text().length()-1] == '0') &&
             ui->Input_expression->text().isEmpty()) {
-        QMessageBox::warning(this, "Оба поля ввода пустые", "Поля для выражения пустые! Введите выражение.");
+        QMessageBox::warning(this, "Оба поля ввода пустые", "Поля для выражения пустые! Введите выражение");
         return;
     } else if (ui->Result_label->text().length() > 1 && !ui->Input_expression->text().isEmpty()) {
-        QMessageBox::warning(this, "Оба поля ввода не пустые", "Вы не можете вводить выражение в оба поля ввода! Оставте выражение в одном из полей.");
+        QMessageBox::warning(this, "Оба поля ввода не пустые", "Вы не можете вводить выражение в оба поля ввода! Оставте выражение в одном из полей");
         return;
     }
 
     if (ui->line_value_x->text().isEmpty() && (ui->Result_label->text().contains('x') ||
                                                ui->Input_expression->text().contains('x'))) {
-        QMessageBox::warning(this, "Не корректный ввод", "Введите значение x.");
+        QMessageBox::warning(this, "Не корректный ввод", "Введите значение x");
     } else {
         QString expression_buff;
         if (ui->Input_expression->text().isEmpty()) {
@@ -168,7 +168,7 @@ void Calculator::on_Button_mod_clicked()
     if (buff[buff.length()-1].isDigit() || buff[buff.length()-1] == 'x' || buff[buff.length()-1] == ')') {
         ui->Result_label->setText(ui->Result_label->text() + "mod");
     } else {
-        QMessageBox::warning(this, "Не корректный ввод", "Введите делимое для функции mod.");
+        QMessageBox::warning(this, "Не корректный ввод", "Введите делимое для функции mod");
     }
 }
 
@@ -196,11 +196,11 @@ void Calculator::on_Button_clear_graph_clicked()
 void Calculator::on_Button_create_grapf_clicked()
 {
     if (!ui->Result_label->text().contains('x') && !ui->Input_expression->text().contains('x')) {
-        QMessageBox::warning(this, "Не корректный ввод", "Для отрисовки графика введите x в строку с выражением.");
+        QMessageBox::warning(this, "Не корректный ввод", "Для отрисовки графика введите x в строку с выражением");
     } else {
         QString tmp = ui->Result_label->text();
         if (tmp.length() > 1 && !ui->Input_expression->text().isEmpty()) {
-            QMessageBox::warning(this, "Оба поля ввода не пустые", "Для отрисовки графика оставьте выражение только в одном поле ввода.");
+            QMessageBox::warning(this, "Оба поля ввода не пустые", "Для отрисовки графика оставьте выражение только в одном поле ввода");
         } else {
 
             int y_size = ui->Oy->value();

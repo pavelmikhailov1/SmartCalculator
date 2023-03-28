@@ -31,7 +31,7 @@
 // 	double result = 0.0;
 // 	t_node_value* head_value = NULL;
 // 	t_node_oper* head_oper = NULL;
-// 	printf("result %d\n", calculator("25/3*sqrt(5)", &result, 22));
+// 	printf("result %d\n", calculator("2mod-2", &result, 22));
 // 	printf("value %f\n", result);
 // 	//5-x*2*(sin(cos(tan(-3+5)*sqrt(5+2^3))))
 // 	//"1+cos(sin(5) + 1)"

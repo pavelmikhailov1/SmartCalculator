@@ -62,7 +62,7 @@ int check_correct_string(char *str) { //обработка возможных о
 			status = INCORRECT_EXPRESSION;
 		} else if (*ptr == ')' && (strchr("+-*/^)m", *(ptr+1)) == NULL && *(ptr+1) != '\0')) { //после скобки должен быть оператор или конец строки
 			status = INCORRECT_EXPRESSION;
-		} else if (*ptr == 'm' && (!isdigit(*(ptr+1)) || *(ptr+1) != '(' || *(ptr+1) != 'x') && (!isdigit(*(ptr-1)) && *(ptr-1) != ')' && *(ptr-1) != 'x')) { //между функцией мод обязанны быть два числа или скобки или x
+		} else if (*ptr == 'm' && (strchr("+-", *(ptr-1)) != NULL || strchr("+-", *(ptr+1)) != NULL)) { //между функцией мод обязанны быть два числа или скобки или x
 			status = INCORRECT_EXPRESSION;
 		} else if (strchr("+-*/^", *ptr) != NULL && (*(ptr+1) == ')' || *(ptr+1) == '\0')) {
 			status = INCORRECT_EXPRESSION;
@@ -70,7 +70,7 @@ int check_correct_string(char *str) { //обработка возможных о
 			status = INCORRECT_EXPRESSION;
 		} else if (*ptr == '(' && *(ptr+1) == ')') {
 			status = INCORRECT_EXPRESSION;
-		} 
+		}
 		ptr++;
 	}
 	return status;
@@ -89,12 +89,6 @@ char get_character(char **str, int *err) {
 		char tmp = **str;
 		(*str)++;
 		return tmp;
-	// } else if (**str == 'm') { //если текущий символ 'm'(если это mod)
-	// 	if (*(*str-1) != ')' && !isdigit(*(*str-1)) && *(*str-1) != 'x') { //если предыдущий символ не цифра или ')' то ошибка
-	// 		*err = 1;
-	// 	} else {
-	// 		res = get_function(str);
-	// 	}}
 	} else if (strchr("cstalm", **str) == NULL) {
 		*err = 1;
 	}
