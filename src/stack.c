@@ -27,9 +27,9 @@ void* pop(void *head, int flag_head) {
 	return (void *)head;
 }
 
-double peek(void** head) {
-	return ((t_node_value*)*head)->val;
-}
+// double peek(void** head) {
+// 	return ((t_node_value*)*head)->val;
+// }
 
 void* allocate(int flag) {
 	return flag ? calloc(32, 1) : calloc(16, 1);

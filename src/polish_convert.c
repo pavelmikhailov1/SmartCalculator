@@ -3,7 +3,6 @@
 int infix_to_polish(char *str, char *polish_str, double x) {
 	t_node_oper* head_oper = NULL;
 	int error = OK;
-	int flag = 0;
 	int count_of_open_bracket = 0;
 	while (*str)
 	{

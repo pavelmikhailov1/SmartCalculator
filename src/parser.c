@@ -1,8 +1,9 @@
 #include "calc.h"
 
 int parser(char *str, char *result) {
+	if (strchr("*/^", *str) != NULL) return INCORRECT_EXPRESSION;
 	char *str_buf = NULL;
-	dot_replacement(str);
+	dot_replacement(str); // меняем точки на запятые(для корректной работы через cmake)
 	str_buf = strdup(str);
 	char *p = str_buf;
 	int error = OK;
@@ -30,9 +31,9 @@ int parser(char *str, char *result) {
 				strcat(result, "((0");
 				result[strlen(result)] = *(str_buf+1);
 				str_buf += 2;
-				char aboba[50];
-				sprintf(aboba, "%f", strtod(str_buf, &str_buf));
-				strcat(result, aboba);
+				char tmp[50];
+				sprintf(tmp, "%f", strtod(str_buf, &str_buf));
+				strcat(result, tmp);
 				result[strlen(result)] = ')';
 				continue;
 			}
@@ -69,6 +70,8 @@ int check_correct_string(char *str) { //обработка возможных о
 		} else if (*ptr == 'x' && (strchr("+-*/^)m\0", *(ptr+1)) == NULL || strchr("+-*/^(m", *(ptr-1)) == NULL)) {
 			status = INCORRECT_EXPRESSION;
 		} else if (*ptr == '(' && *(ptr+1) == ')') {
+			status = INCORRECT_EXPRESSION;
+		} else if (isdigit(*ptr) && (strchr("sctbnvqzo(", *(ptr+1)) != NULL && *(ptr+1) != '\0')) {
 			status = INCORRECT_EXPRESSION;
 		}
 		ptr++;

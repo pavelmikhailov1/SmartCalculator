@@ -18,7 +18,6 @@ find_library(
     libcalc
     NAMES libcalc calc
     HINTS "${CMAKE_SOURCE_DIR}"
-     
 )
 
 set(PROJECT_SOURCES

@@ -1,6 +1,5 @@
 #include "calculator.h"
 #include "./ui_calculator.h"
-// #include "qcustomplot.h"
 
 Calculator::Calculator(QWidget *parent)
     : QMainWindow(parent)
@@ -42,9 +41,9 @@ Calculator::~Calculator()
 QString Calculator::get_error(int err)
 {
     if (err == 1) {
-       return "Не корректное выражение.";
+        return "Не корректное выражение";
     } else {
-        return "Ошибка калькуляции.";
+        return "Ошибка калькуляции";
     }
 }
 
@@ -156,7 +155,6 @@ void Calculator::on_Button_x_clicked()
     }
 }
 
-
 void Calculator::on_Button_exit_clicked()
 {
     close();
@@ -171,7 +169,6 @@ void Calculator::on_Button_mod_clicked()
         QMessageBox::warning(this, "Не корректный ввод", "Введите делимое для функции mod");
     }
 }
-
 
 void Calculator::on_Button_Open_Backet_clicked()
 {
@@ -195,9 +192,9 @@ void Calculator::on_Button_clear_graph_clicked()
 
 void Calculator::on_Button_create_grapf_clicked()
 {
-    if (!ui->Result_label->text().contains('x') && !ui->Input_expression->text().contains('x')) {
-        QMessageBox::warning(this, "Не корректный ввод", "Для отрисовки графика введите x в строку с выражением");
-    } else {
+    if (!ui->Result_label->text().contains('x') && !ui->Input_expression->text().contains('x')) {     
+        QMessageBox::warning(this, "Не корректный ввод", "Для отрисовки графика введите x в строку с выражением");  
+    } else {     
         QString tmp = ui->Result_label->text();
         if (tmp.length() > 1 && !ui->Input_expression->text().isEmpty()) {
             QMessageBox::warning(this, "Оба поля ввода не пустые", "Для отрисовки графика оставьте выражение только в одном поле ввода");
@@ -217,23 +214,16 @@ void Calculator::on_Button_create_grapf_clicked()
             }
 
             double res = 0.0;
-//            QString expression_buff = ui->Result_label->text();
             QByteArray buff = expression_buff.toUtf8();
             char* str = buff.data();
 
-
             for (double value_x = x_start; x_finish - value_x > 0.0; value_x += step) {
-                    calculator(str, &res, value_x);
-                //if (err == OK) {
-                    x.push_back(value_x);
-                    y.push_back(res);
-                //} else {
-                //    ui->Result_label->setText(get_error(err));
-                //    return;
-                //}
+                calculator(str, &res, value_x);
+                x.push_back(value_x);
+                y.push_back(res);
             }
 
-            ui->widget->clearGraphs();//Если нужно, но очищаем все графики
+            ui->widget->clearGraphs();//Очищаем все графики
 
             ui->widget->addGraph();   //Добавляем один график в widget
 

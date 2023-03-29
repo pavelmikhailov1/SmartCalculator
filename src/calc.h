@@ -14,6 +14,7 @@
 #define OK     	 	 		 0
 #define INCORRECT_EXPRESSION 1
 #define ERROR_CAlCULATION    2
+#define EPS                  10e-9
 #define ERROR_CH    		'!'
 #define VALID_CHARACTERS 	"1234567890.()+-*/^modcsintaqrtlgx"
 #define BINARY_OPERATORS 	"+-*/^m"
@@ -54,7 +55,7 @@ void* allocate(int flag_head);
 void* push(void *head, void* c, int priority, int flag_head);
 void* pop(void *head, int flag_head);
 void free_stack(void* head, int flag);
-double peek(void** head);
+// double peek(void** head);
 
 //functions for convert to polish notation
 int infix_to_polish(char *str, char *polish_str, double x);

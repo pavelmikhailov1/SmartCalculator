@@ -7,7 +7,6 @@
 #include <QVector>
 #include <QLayout>
 #include <iostream>
-//#include "qcustomplot.h"
 
 extern "C" {
     #include "../calc.h"
@@ -24,7 +23,6 @@ class Calculator : public QMainWindow
 public:
     Calculator(QWidget *parent = nullptr);
     ~Calculator();
-
     QString get_error(int err);
 
 private:
