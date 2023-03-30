@@ -1,4 +1,7 @@
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=c11
+SOURSES = calculate.c parser.c polish_convert.c stack.c
+OBJECTS = $(SOURSES:.c=.o)
+LIB = calc.a
 UNAME = $(shell uname -s)
 FLAGS = 
 
@@ -8,7 +11,7 @@ else
 	FLAGS += -lcheck -lm
 endif
 
-all: calc.a
+all: gcov_report
 
 cmake: calc.a
 	cmake qt -B test
@@ -16,11 +19,11 @@ cmake: calc.a
 	open test/qt.app
 
 test: calc.a tests.c
-	gcc $(CFLAGS) ./qt/libcalc.a tests.c -o testcalc $(FLAGS)
+	gcc tests.c $(CFLAGS) ./qt/libcalc.a -o testcalc $(FLAGS)
 	./testcalc
 
-calc.a: calculate.o parser.o polish_convert.o stack.o
-	ar rc calc.a calculate.o parser.o polish_convert.o stack.o
+calc.a: $(OBJECTS)
+	ar rc calc.a $(OBJECTS)
 	ranlib calc.a
 	mv calc.a ./qt/libcalc.a
 	make clean

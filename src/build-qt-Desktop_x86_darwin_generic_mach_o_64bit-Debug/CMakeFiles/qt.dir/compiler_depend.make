@@ -384,11 +384,13 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtCore/qlocale.h \
   /usr/local/include/QtCore/qvariant.h \
   /usr/local/include/QtGui/qguiapplication_platform.h \
+  /usr/local/include/QtWidgets/QGroupBox \
+  /usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h \
+  /usr/local/include/QtWidgets/qframe.h \
   /usr/local/include/QtWidgets/QHBoxLayout \
   /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /usr/local/include/QtWidgets/QLabel \
   /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
-  /usr/local/include/QtWidgets/qframe.h \
   /usr/local/include/QtGui/qpicture.h \
   /usr/local/include/QtCore/qiodevice.h \
   /usr/local/include/QtGui/qtextdocument.h \
@@ -1000,7 +1002,6 @@ CMakeFiles/qt.dir/calculator.cpp.o: /Users/lightnin/projects/C7_SmartCalc_v1.0-0
   /usr/local/include/QtWidgets/qgraphicsscene.h \
   /usr/local/lib/QtWidgets.framework/Headers/qgraphicswidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h \
   /usr/local/lib/QtWidgets.framework/Headers/qheaderview.h \
   /usr/local/lib/QtWidgets.framework/Headers/qinputdialog.h \
   /usr/local/include/QtWidgets/qlineedit.h \
@@ -3728,8 +3729,6 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 
 /usr/local/lib/QtWidgets.framework/Headers/qheaderview.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h:
-
 /usr/local/lib/QtWidgets.framework/Headers/qgraphicswidget.h:
 
 /usr/local/include/QtWidgets/qgraphicsscene.h:
@@ -4019,6 +4018,10 @@ qt_autogen/EWIEGA46WW/moc_calculator.cpp:
 /usr/local/include/QtPrintSupport/qabstractprintdialog.h:
 
 /usr/local/lib/QtGui.framework/Headers/qbrush.h:
+
+/usr/local/lib/QtGui.framework/Headers/qvector2d.h:
+
+/usr/local/include/QtGui/qsurfaceformat.h:
 
 /usr/local/include/QtCore/qobject.h:
 
@@ -4760,6 +4763,8 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /usr/local/include/QtGui/qtextoption.h:
 
+/usr/local/include/QtGui/qpen.h:
+
 /usr/local/lib/QtCore.framework/Headers/qfutureinterface.h:
 
 /usr/local/include/QtGui/qtextcursor.h:
@@ -4768,6 +4773,8 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /usr/local/include/QtGui/qtextdocument.h:
 
+/usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h:
+
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/avx512pfintrin.h:
 
 /usr/local/lib/QtCore.framework/Headers/qiodevicebase.h:
@@ -4775,8 +4782,6 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 /usr/local/include/QtCore/qmetatype.h:
 
 /usr/local/include/QtWidgets/qframe.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h:
 
 /usr/local/include/QtGui/qinputmethod.h:
 
@@ -4860,6 +4865,12 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_caddr_t.h:
 
+/usr/local/lib/QtCore.framework/Headers/qurl.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/libkern/_OSByteOrder.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h:
+
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/f16cintrin.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int.h:
@@ -4939,10 +4950,6 @@ qt_autogen/EWIEGA46WW/moc_qcustomplot.cpp:
 /usr/local/lib/QtCore.framework/Headers/qvector.h:
 
 /usr/local/lib/QtCore.framework/Headers/QVector:
-
-/usr/local/lib/QtGui.framework/Headers/qvector2d.h:
-
-/usr/local/include/QtGui/qsurfaceformat.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/QDialog:
 
@@ -5318,6 +5325,12 @@ qt_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sched.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/filesystem:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__nullptr:
+
+/usr/local/include/QtWidgets/QGroupBox:
+
 /usr/local/lib/QtCore.framework/Headers/qoperatingsystemversion.h:
 
 /usr/local/include/QtCore/qbasicatomic.h:
@@ -5510,10 +5523,6 @@ qt_autogen/mocs_compilation.cpp:
 
 /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h:
 
-/usr/local/lib/QtCore.framework/Headers/qurl.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/libkern/_OSByteOrder.h:
-
 /usr/local/lib/QtCore.framework/Headers/qbytearray.h:
 
 /usr/local/include/QtCore/qbasictimer.h:
@@ -5589,10 +5598,6 @@ qt_autogen/include/ui_calculator.h:
 /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cstdlib:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__nullptr:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/filesystem:
 
 /usr/local/lib/QtGui.framework/Headers/qvectornd.h:
 
@@ -5738,8 +5743,6 @@ qt_autogen/include/ui_calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
-/usr/local/include/QtGui/qpen.h:
-
 /usr/local/include/QtCore/qcontiguouscache.h:
 
 /usr/local/lib/QtCore.framework/Headers/qhash.h:
@@ -5788,14 +5791,6 @@ qt_autogen/include/ui_calculator.h:
 
 /usr/local/include/QtCore/qpropertyprivate.h:
 
-/usr/local/include/QtCore/qeasingcurve.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qtreewidgetitemiterator.h:
-
-/usr/local/lib/QtCore.framework/Headers/qvariant.h:
-
-/usr/local/include/QtGui/qtextformat.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/AvailabilityMacros.h:
@@ -5815,6 +5810,14 @@ qt_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_mach_port_t.h:
 
 /usr/local/include/QtGui/qtguiglobal.h:
+
+/usr/local/include/QtCore/qeasingcurve.h:
+
+/usr/local/include/QtGui/qtextformat.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qtreewidgetitemiterator.h:
+
+/usr/local/lib/QtCore.framework/Headers/qvariant.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/istream:
 

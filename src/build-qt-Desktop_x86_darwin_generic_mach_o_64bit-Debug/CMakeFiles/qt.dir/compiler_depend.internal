@@ -385,11 +385,13 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtCore/qlocale.h
  /usr/local/include/QtCore/qvariant.h
  /usr/local/include/QtGui/qguiapplication_platform.h
+ /usr/local/include/QtWidgets/QGroupBox
+ /usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h
+ /usr/local/include/QtWidgets/qframe.h
  /usr/local/include/QtWidgets/QHBoxLayout
  /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h
  /usr/local/include/QtWidgets/QLabel
  /usr/local/lib/QtWidgets.framework/Headers/qlabel.h
- /usr/local/include/QtWidgets/qframe.h
  /usr/local/include/QtGui/qpicture.h
  /usr/local/include/QtCore/qiodevice.h
  /usr/local/include/QtGui/qtextdocument.h
@@ -1001,7 +1003,6 @@ CMakeFiles/qt.dir/calculator.cpp.o
  /usr/local/include/QtWidgets/qgraphicsscene.h
  /usr/local/lib/QtWidgets.framework/Headers/qgraphicswidget.h
  /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h
- /usr/local/lib/QtWidgets.framework/Headers/qgroupbox.h
  /usr/local/lib/QtWidgets.framework/Headers/qheaderview.h
  /usr/local/lib/QtWidgets.framework/Headers/qinputdialog.h
  /usr/local/include/QtWidgets/qlineedit.h
