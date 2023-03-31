@@ -24,7 +24,7 @@ int infix_to_polish(char *str, char *polish_str, double x) {
       }
 
       if (head_oper == NULL ||
-          priority == -1) {  // если стек пустой и символ открытая скобка
+          priority == -1) {  // если стек пустой или символ открытая скобка
         head_oper =
             (t_node_oper *)push((void *)head_oper, (void *)str, priority, 0);
         str++;

@@ -142,7 +142,7 @@ void Calculator::on_Button_x_clicked()
 {
     QString buff;
     buff = ui->Result_label->text();
-    if (!ui->Result_label->text().contains('x')) {
+//    if (!ui->Result_label->text().contains('x')) {
         if (ui->Result_label->text().length() == 1 && buff[ui->Result_label->text().length()-1] == '0') {
              ui->Result_label->setText("x");
         } else {
@@ -152,7 +152,7 @@ void Calculator::on_Button_x_clicked()
                 ui->Result_label->setText(ui->Result_label->text() + "x");
              }
         }
-    }
+//    }
 }
 
 void Calculator::on_Button_exit_clicked()

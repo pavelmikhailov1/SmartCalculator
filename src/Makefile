@@ -23,6 +23,13 @@ install: $(LIB)
 uninstall:
 	rm -rf App
 
+dvi:
+	doxygen doxygen_file
+	open ./Documentation/html/index.html
+
+dist: clean uninstall
+	tar -cvzf calc.tgz .	
+
 test: $(LIB) $(SOURSE_TEST)
 	gcc $(SOURSE_TEST) $(CFLAGS) ./qt/libcalc.a -o testcalc $(FLAGS)
 	./testcalc
@@ -31,7 +38,7 @@ calc.a: $(OBJECTS)
 	ar rc $(LIB) $(OBJECTS)
 	ranlib $(LIB)
 	mv $(LIB) ./qt/libcalc.a
-	make clean
+	rm -rf *.o
 
 calculate.o: calculate.c
 	gcc calculate.c -c -o calculate.o
@@ -59,4 +66,5 @@ valgrind: clean $(LIB)
 	# grep ERROR valgrind.log
 
 clean:
-	rm -rf *.o *.a a.out *.dSYM testcalc testlcov *gcda report *gcno *info testvalg *.log
+	rm -rf *.o ./qt/*.a a.out *.dSYM testcalc testlcov testvalg *gcda report *gcno *info *.log Documentation \
+	build-qt-Desktop_x86_darwin_generic_mach_o_64bit-Debug
