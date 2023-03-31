@@ -13,15 +13,15 @@ else
 	FLAGS += -lcheck -lm
 endif
 
-all: gcov_report
+all: install
 
 install: $(LIB)
-	cmake qt -B test
-	cd test && make
-	open test/qt.app
+	cmake qt -B App
+	cd App && make
+	open App/qt.app
 
 uninstall:
-	rm -rf test
+	rm -rf App
 
 test: $(LIB) $(SOURSE_TEST)
 	gcc $(SOURSE_TEST) $(CFLAGS) ./qt/libcalc.a -o testcalc $(FLAGS)

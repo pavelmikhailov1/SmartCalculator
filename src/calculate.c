@@ -1,30 +1,5 @@
 #include "calc.h"
 
-// typedef union Value
-// {
-// 	__int128_t val_int;
-// 	double     val_double;
-// } size_of_memory;
-
-// typedef enum Enum {
-// 	PLUS,  //0
-// 	MINUS, //1
-// } operands;
-
-// void remove_spases(char *str, char **result);
-// void remove_spases(char *str, char **result) {
-// 	char *p = str;
-// 	int i = 0;
-// 	while (*p != '\0') {
-// 		if (*p != ' ') {
-// 			*((*result)+i) = *p;
-// 			i++;
-// 		} else {
-// 		}
-// 		p++;
-// 	}
-// }
-
 // int main(int argc, char const *argv[])
 // {
 // 	double result = 0.0;
