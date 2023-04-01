@@ -7,6 +7,7 @@
 #include <QVector>
 #include <QLayout>
 #include <iostream>
+#include "creditwindow.h"
 
 extern "C" {
     #include "../calc.h"
@@ -44,5 +45,6 @@ private slots:
     void on_Button_pow_clicked();
     void on_Button_clear_clicked();
     void on_Button_backspase_clicked();
+    void on_Button_credit_clicked();
 };
 #endif // CALCULATOR_H

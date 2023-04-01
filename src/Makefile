@@ -62,7 +62,7 @@ gcov_report: $(LIB)
 
 valgrind: clean $(LIB)
 	gcc $(SOURSE_TEST) $(CFLAGS) ./qt/libcalc.a -o testvalg $(FLAGS)
-	valgrind --leak-check=full --track-fds=yes ./testvalg
+	valgrind --leak-check=full --track-origins=yes --track-fds=yes ./testvalg
 	# grep ERROR valgrind.log
 
 clean:

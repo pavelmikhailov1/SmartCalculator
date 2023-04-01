@@ -39,6 +39,17 @@
   "sctbnvqzo"  ///< для функции парсинга, которая ищет во входной строке функции
                ///< и заменяет их на соответствующие символы
 
+typedef struct credit
+{
+	double sum;
+	int term;
+	int interest_rate;
+	int type;
+	double monthly_payment;
+	double overpayment;
+	double* total_payment;
+} Credit;
+
 /*!
   Структура стека операторов
 */

@@ -27,6 +27,9 @@ set(PROJECT_SOURCES
         calculator.ui
         qcustomplot.h
         qcustomplot.cpp
+        creditwindow.h
+        creditwindow.cpp
+        creditwindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

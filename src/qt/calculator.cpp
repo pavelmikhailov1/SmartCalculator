@@ -201,7 +201,7 @@ void Calculator::on_Button_create_grapf_clicked()
             int y_size = ui->Oy->value();
             double x_start = -ui->Ox->value();
             double x_finish = ui->Ox->value();
-            double step = x_finish / 500;
+            double step = x_finish / 10000.;
             QVector<double>x(0), y(0); //массивы для x и y
             QString expression_buff;
 
@@ -260,5 +260,14 @@ void Calculator::on_Button_backspase_clicked()
         str.chop(1);
         ui->Result_label->setText(str);
     }
+}
+
+
+void Calculator::on_Button_credit_clicked()
+{
+    creditwindow nw;
+    this->hide();
+    nw.exec();
+    this->show();
 }
 
