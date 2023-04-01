@@ -22,12 +22,13 @@ int parser(char *str, char *result) {
       error = INCORRECT_EXPRESSION;
       break;
     }
-    if (isdigit(*str_buf) || *str_buf == '.') {  //если символ - цифра
+    if (isdigit(*str_buf) || *str_buf == '.') {  //если символ - цифра или точка
       if (num_flag_err == INCORRECT_EXPRESSION) {
         error = INCORRECT_EXPRESSION;
       }
       get_number(&str_buf, result);  // помещаем число в результирующую строку
       num_flag_err = INCORRECT_EXPRESSION;
+      if (*str_buf == '.') str_buf++;
     } else {  //если символ - символ
       if (*str_buf == '(' && (*(str_buf + 1) == '+' || *(str_buf + 1) == '-') &&
           (isdigit(*(str_buf + 2)) ||
@@ -87,7 +88,8 @@ int check_correct_string(
     } else if (*ptr == 'x' && (strchr("+-*/^)m\0", *(ptr + 1)) == NULL ||
                                strchr("+-*/^(m", *(ptr - 1)) == NULL)) {
       status = INCORRECT_EXPRESSION;
-    } else if (*ptr == '(' && *(ptr + 1) == ')') {
+    } else if (*ptr == '(' &&
+               (*(ptr + 1) == ')' || strchr("*/^", *(ptr + 1)) != NULL)) {
       status = INCORRECT_EXPRESSION;
     } else if (isdigit(*ptr) && (strchr("sctbnvqzo(", *(ptr + 1)) != NULL &&
                                  *(ptr + 1) != '\0')) {

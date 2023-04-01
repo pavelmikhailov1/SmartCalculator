@@ -67,4 +67,4 @@ valgrind: clean $(LIB)
 
 clean:
 	rm -rf *.o ./qt/*.a a.out *.dSYM testcalc testlcov testvalg *gcda report *gcno *info *.log Documentation \
-	build-qt-Desktop_x86_darwin_generic_mach_o_64bit-Debug
+	build-qt-Desktop_x86_darwin_generic_mach_o_64bit-Debug *.tgz

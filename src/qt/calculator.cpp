@@ -142,17 +142,15 @@ void Calculator::on_Button_x_clicked()
 {
     QString buff;
     buff = ui->Result_label->text();
-//    if (!ui->Result_label->text().contains('x')) {
-        if (ui->Result_label->text().length() == 1 && buff[ui->Result_label->text().length()-1] == '0') {
-             ui->Result_label->setText("x");
-        } else {
-             if (buff[buff.length()-1].isDigit()) {
-                ui->Result_label->setText(ui->Result_label->text() + "*x");
-             } else {
-                ui->Result_label->setText(ui->Result_label->text() + "x");
-             }
-        }
-//    }
+    if (ui->Result_label->text().length() == 1 && buff[ui->Result_label->text().length()-1] == '0') {
+         ui->Result_label->setText("x");
+    } else {
+         if (buff[buff.length()-1].isDigit() || buff[buff.length()-1] == 'x') {
+            ui->Result_label->setText(ui->Result_label->text() + "*x");
+         } else {
+            ui->Result_label->setText(ui->Result_label->text() + "x");
+         }
+    }
 }
 
 void Calculator::on_Button_exit_clicked()
@@ -256,7 +254,11 @@ void Calculator::on_Button_clear_clicked()
 void Calculator::on_Button_backspase_clicked()
 {
     QString str = ui->Result_label->text();
-    str.chop(1);
-    ui->Result_label->setText(str);
+    if (str.length() == 1) {
+        ui->Result_label->setText("0");
+    } else {
+        str.chop(1);
+        ui->Result_label->setText(str);
+    }
 }
 
