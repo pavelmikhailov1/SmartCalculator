@@ -43,12 +43,15 @@ typedef struct credit
 {
 	double sum;
 	int term;
-	int interest_rate;
+	double interest_rate;
 	int type;
 	double monthly_payment;
+  double last_monthly_payment;
 	double overpayment;
-	double* total_payment;
+	double total_payment;
 } Credit;
+
+void credit_calc(Credit* credit);
 
 /*!
   Структура стека операторов

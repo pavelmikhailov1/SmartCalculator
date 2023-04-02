@@ -15,6 +15,9 @@ public:
     explicit creditwindow(QWidget *parent = nullptr);
     ~creditwindow();
 
+private slots:
+    void on_Button_calculate_clicked();
+
 private:
     Ui::creditwindow *ui;
 };

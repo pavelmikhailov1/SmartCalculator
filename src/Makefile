@@ -1,5 +1,5 @@
 # valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s --trace-children=yes --track-fds=yes --log-file=valgrind.log ./test
-CFLAGS = -Wall -Werror -Wextra -pedantic -std=c11
+CFLAGS = -Wall -Werror -Wextra -pedantic -std=c11 -g
 SOURSES = calculate.c parser.c polish_convert.c stack.c
 OBJECTS = $(SOURSES:.c=.o)
 SOURSE_TEST = tests.c
@@ -41,16 +41,19 @@ calc.a: $(OBJECTS)
 	rm -rf *.o
 
 calculate.o: calculate.c
-	gcc calculate.c -c -o calculate.o
+	gcc $(CFLAGS) calculate.c -c -o calculate.o
 
 parser.o: parser.c
-	gcc parser.c -c -o parser.o
+	gcc $(CFLAGS) parser.c -c -o parser.o
 
 polish_convert.o: polish_convert.c
-	gcc polish_convert.c -c -o polish_convert.o
+	gcc $(CFLAGS) polish_convert.c -c -o polish_convert.o
 
 stack.o: stack.c
-	gcc stack.c -c -o stack.o
+	gcc $(CFLAGS) stack.c -c -o stack.o
+
+credit.o: credit.c
+	gcc $(CFLAGS) credit.c -c -o credit.o
 
 gcov_report: $(LIB)
 	gcc $(CFLAGS) $(SOURSE_TEST) -o testlcov --coverage $(SOURSES) $(FLAGS)
