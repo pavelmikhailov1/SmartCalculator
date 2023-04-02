@@ -1,6 +1,6 @@
 # valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s --trace-children=yes --track-fds=yes --log-file=valgrind.log ./test
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=c11 -g
-SOURSES = calculate.c parser.c polish_convert.c stack.c
+SOURSES = calculate.c parser.c polish_convert.c stack.c credit.c
 OBJECTS = $(SOURSES:.c=.o)
 SOURSE_TEST = tests.c
 LIB = calc.a

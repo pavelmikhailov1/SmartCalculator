@@ -13,12 +13,12 @@
 // } Credit;
 
 
-int main(int argc, char const *argv[])
-{
-	Credit credit = {120000, 24, 0, 2,0,0,0,0};
-	credit_calc(&credit);
-	return 0;
-}
+// int main(int argc, char const *argv[])
+// {
+// 	Credit credit = {120000, 24, 0, 2,0,0,0,0};
+// 	credit_calc(&credit);
+// 	return 0;
+// }
 
 void credit_calc(Credit* credit) {
 	printf("!!\n");
