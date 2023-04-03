@@ -403,6 +403,25 @@ START_TEST(test_calc_free_stack_value) {
 }
 END_TEST
 
+START_TEST(test_calc_credit_auen) {
+  Credit a = {120000, 12, 10, 0, 0, 0, 0, 0};
+  credit_calc(&a);
+  fail_unless(a.monthly_payment - 10549.91 < EPS);
+  fail_unless(a.overpayment - 6598.88 < EPS);
+  fail_unless(a.total_payment - 126598.88 < EPS);
+}
+END_TEST
+
+START_TEST(test_calc_credit_diff) {
+  Credit a = {10000000, 24, 12, 2, 0, 0, 0, 0};
+  credit_calc(&a);
+  fail_unless(a.monthly_payment - 466666.67 < EPS);
+  fail_unless(a.last_monthly_payment - 418750.00 < EPS);
+  fail_unless(a.overpayment - 625000.00 < EPS);
+  fail_unless(a.total_payment - 10625000.00 < EPS);
+}
+END_TEST
+
 Suite *test_for_calc() {
   Suite *s;
   TCase *tc_core;
@@ -450,6 +469,8 @@ Suite *test_for_calc() {
   tcase_add_test(tc_core, test_calc_free_stack_oper);
   tcase_add_test(tc_core, test_calc_free_stack_value);
   tcase_add_test(tc_core, test_calc_x);
+  tcase_add_test(tc_core, test_calc_credit_auen);
+  tcase_add_test(tc_core, test_calc_credit_diff);
 
   suite_add_tcase(s, tc_core);
 

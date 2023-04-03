@@ -3,7 +3,6 @@
 
 #include <ctype.h>
 #include <math.h>
-#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -39,19 +38,20 @@
   "sctbnvqzo"  ///< для функции парсинга, которая ищет во входной строке функции
                ///< и заменяет их на соответствующие символы
 
-typedef struct credit
-{
-	double sum;
-	int term;
-	double interest_rate;
-	int type;
-	double monthly_payment;
-  double last_monthly_payment;
-	double overpayment;
-	double total_payment;
+/*!
+  Структура входных и выходных параметров для кредитного калькулятора
+*/
+typedef struct credit {
+  double sum;            ///< Сумма займа
+  int term;              ///< Срок кредитования
+  double interest_rate;  ///< Процентная ставка
+  int type;  ///< Флаг(аннуиентный или дифференцированный платеж)
+  double monthly_payment;       ///< Ежемесячный платеж
+  double last_monthly_payment;  ///< Последний платеж(для дифференцированного
+                                ///< платежа)
+  double overpayment;           ///< Переплата по кредиту
+  double total_payment;         ///< Общая сумма выплаты
 } Credit;
-
-void credit_calc(Credit* credit);
 
 /*!
   Структура стека операторов
@@ -81,6 +81,13 @@ typedef struct Stack_value  // флаг 1
   завершилась с ошибкой "Не корректное выражение"
 */
 int calculator(char* str, double* result, double x);
+
+/*!
+  @brief Функция для рассчетов ежемесячного платежа по кредиту(калькулятор
+  кредитов)
+  @param credit Структура входных и выходных параметров
+*/
+void credit_calc(Credit* credit);
 
 //============FUNCTIONS FOR PARSER==============
 

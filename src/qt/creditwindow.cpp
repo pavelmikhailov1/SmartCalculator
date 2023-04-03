@@ -24,20 +24,23 @@ void creditwindow::on_Button_calculate_clicked()
         credit.term = ui->line_term->value();
         credit.interest_rate = ui->line_interest_rate->value();
         credit.type = ui->checkBox->checkState();
-
-        credit_calc(&credit);
-
-        if (credit.type != 0) {
-            ui->lineEdit_monthly_payment->setText(QString::number(credit.monthly_payment) + " ... " + QString::number(credit.last_monthly_payment));
+        if (credit.interest_rate == 0.) {
+            ui->lineEdit_monthly_payment->setText("0.00");
+            ui->lineEdit_overpayment->setText("0.00");
+            ui->lineEdit_total_payment->setText("0.00");
         } else {
-            ui->lineEdit_monthly_payment->setText(QString::number(credit.monthly_payment));
-        }
 
-        ui->lineEdit_overpayment->setText(QString::number(credit.overpayment));
-        ui->lineEdit_total_payment->setText(QString::number(credit.total_payment));
-        std::cout << credit.overpayment << '\n';
-        std::cout << credit.total_payment << '\n';
-        std::cout << credit.monthly_payment << '\n';
+            credit_calc(&credit);
+
+            if (credit.type != 0) {
+                ui->lineEdit_monthly_payment->setText(QString::number(credit.monthly_payment, 'f', 2) + " ... " + QString::number(credit.last_monthly_payment, 'f', 2));
+            } else {
+                ui->lineEdit_monthly_payment->setText(QString::number(credit.monthly_payment, 'f', 2));
+            }
+
+            ui->lineEdit_overpayment->setText(QString::number(credit.overpayment, 'f', 2));
+            ui->lineEdit_total_payment->setText(QString::number(credit.total_payment, 'f', 2));
+        }
    }
 }
 

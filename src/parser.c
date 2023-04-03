@@ -2,10 +2,11 @@
 
 int parser(char *str, char *result) {
   if (strchr("*/^", *str) != NULL) return INCORRECT_EXPRESSION;
-  char *str_buf = NULL;
   dot_replacement(
       str);  // меняем точки на запятые(для корректной работы через cmake)
-  str_buf = strdup(str);
+  char *str_buf = NULL;
+  str_buf = (char *)calloc(4096, sizeof(char));
+  strcpy(str_buf, str);
   char *p = str_buf;
   int error = OK;
   int num_flag_err = 0;
